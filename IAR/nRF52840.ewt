@@ -2217,17 +2217,17 @@
         <group>
           <name>inc</name>
           <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF52_FIFO.h</name>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_FIFO.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF52_UART.h</name>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_UART.h</name>
           </file>
         </group>
         <file>
-          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF52_FIFO.c</name>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_FIFO.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF52_UART.c</name>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</name>
         </file>
       </group>
       <file>

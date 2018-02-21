@@ -28,18 +28,18 @@ HardwareSerial::~HardwareSerial()
 }
 
 uint8_t HardwareSerial::begin(uint32 baud) {
-  nRF52_UART_init(port, baud, rx_pin, tx_pin);
+  nRF5x_UART_init(port, baud, rx_pin, tx_pin);
   return NRF_SUCCESS;
 }
 
 void HardwareSerial::end(void)
 {
-    nRF52_UART_deinit(port);
+    nRF5x_UART_deinit(port);
 }
 
 int HardwareSerial::available(void)
 {
-    return nRF52_UART_available(port);
+    return nRF5x_UART_available(port);
 }
 
 int HardwareSerial::peek(void)
@@ -55,9 +55,9 @@ int HardwareSerial::availableForWrite(void)
 
 int HardwareSerial::read(void)
 {
-    if(nRF52_UART_available(port)) {
+    if(nRF5x_UART_available(port)) {
       uint8_t byte;
-      if(nRF52_UART_read(port, &byte, 1)) return byte;
+      if(nRF5x_UART_read(port, &byte, 1)) return byte;
     }
     return -1;
 }
@@ -65,10 +65,10 @@ int HardwareSerial::read(void)
 size_t HardwareSerial::write(uint8_t txByte) {
   uint8_t tx_buffer[1];
   tx_buffer[0] = txByte;
-  nRF52_UART_write(port, tx_buffer, 1);
+  nRF5x_UART_write(port, tx_buffer, 1);
   return 1;
 }
 
 void HardwareSerial::flush(void) {
-  nRF52_UART_flush(port);
+  nRF5x_UART_flush(port);
 }

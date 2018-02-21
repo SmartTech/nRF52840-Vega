@@ -1,10 +1,10 @@
-#include "nRF52_FIFO.h"
+#include "nRF5x_FIFO.h"
 #include "sdk_common.h"
 
 /* ============================================================================
  * @brief     Получение размерности буфера FIFO
  * ------------------------------------------------------------------------- */
-uint32_t nrf52_fifo_length(nrf52_fifo_t * p_fifo)
+uint32_t nRF5x_FIFO_length(nRF5x_FIFO_t * p_fifo)
 {
     uint32_t tmp = p_fifo->read_pos;
     return p_fifo->write_pos - tmp;
@@ -13,7 +13,7 @@ uint32_t nrf52_fifo_length(nrf52_fifo_t * p_fifo)
 /* ============================================================================
  * @brief     Запись одного байта в буфер FIFO
  * ------------------------------------------------------------------------- */
-void fifo_put(nrf52_fifo_t * p_fifo, uint8_t byte)
+void fifo_put(nRF5x_FIFO_t * p_fifo, uint8_t byte)
 {
     p_fifo->p_buf[p_fifo->write_pos & p_fifo->buf_size_mask] = byte;
     p_fifo->write_pos++;
@@ -22,7 +22,7 @@ void fifo_put(nrf52_fifo_t * p_fifo, uint8_t byte)
 /* ============================================================================
  * @brief     Просмотр одного байта из буфера FIFO
  * ------------------------------------------------------------------------- */
-void fifo_peek(nrf52_fifo_t * p_fifo, uint16_t index, uint8_t * p_byte)
+void fifo_peek(nRF5x_FIFO_t * p_fifo, uint16_t index, uint8_t * p_byte)
 {
     *p_byte = p_fifo->p_buf[(p_fifo->read_pos + index) & p_fifo->buf_size_mask];
 }
@@ -30,7 +30,7 @@ void fifo_peek(nrf52_fifo_t * p_fifo, uint16_t index, uint8_t * p_byte)
 /* ============================================================================
  * @brief     Получение одного байта из буфера FIFO
  * ------------------------------------------------------------------------- */
-void fifo_get(nrf52_fifo_t * p_fifo, uint8_t * p_byte)
+void fifo_get(nRF5x_FIFO_t * p_fifo, uint8_t * p_byte)
 {
     fifo_peek(p_fifo, 0, p_byte);
     p_fifo->read_pos++;
@@ -38,7 +38,7 @@ void fifo_get(nrf52_fifo_t * p_fifo, uint8_t * p_byte)
 
 //-----------------------------------------------------------------------------
 
-uint32_t nrf52_fifo_init(nrf52_fifo_t * p_fifo, uint8_t * p_buf, uint16_t buf_size)
+uint32_t nRF5x_FIFO_init(nRF5x_FIFO_t * p_fifo, uint8_t * p_buf, uint16_t buf_size)
 {
     // Check buffer for null pointer.
     if (p_buf == NULL)
@@ -62,7 +62,7 @@ uint32_t nrf52_fifo_init(nrf52_fifo_t * p_fifo, uint8_t * p_buf, uint16_t buf_si
 
 //-----------------------------------------------------------------------------
 
-uint32_t nrf52_fifo_put(nrf52_fifo_t * p_fifo, uint8_t byte)
+uint32_t nRF5x_FIFO_put(nRF5x_FIFO_t * p_fifo, uint8_t byte)
 {
     if (FIFO_LENGTH <= p_fifo->buf_size_mask)
     {
@@ -75,7 +75,7 @@ uint32_t nrf52_fifo_put(nrf52_fifo_t * p_fifo, uint8_t byte)
 
 //-----------------------------------------------------------------------------
 
-uint32_t nrf52_fifo_get(nrf52_fifo_t * p_fifo, uint8_t * p_byte)
+uint32_t nRF5x_FIFO_get(nRF5x_FIFO_t * p_fifo, uint8_t * p_byte)
 {
     if (FIFO_LENGTH != 0)
     {
@@ -89,7 +89,7 @@ uint32_t nrf52_fifo_get(nrf52_fifo_t * p_fifo, uint8_t * p_byte)
 
 //-----------------------------------------------------------------------------
 
-uint32_t nrf52_fifo_peek(nrf52_fifo_t * p_fifo, uint16_t index, uint8_t * p_byte)
+uint32_t nRF5x_FIFO_peek(nRF5x_FIFO_t * p_fifo, uint16_t index, uint8_t * p_byte)
 {
     if (FIFO_LENGTH > index) {
         fifo_peek(p_fifo, index, p_byte);
@@ -100,7 +100,7 @@ uint32_t nrf52_fifo_peek(nrf52_fifo_t * p_fifo, uint16_t index, uint8_t * p_byte
 
 //-----------------------------------------------------------------------------
 
-uint32_t nrf52_fifo_flush(nrf52_fifo_t * p_fifo)
+uint32_t nRF5x_FIFO_flush(nRF5x_FIFO_t * p_fifo)
 {
     p_fifo->read_pos = p_fifo->write_pos;
     return NRF_SUCCESS;
@@ -108,12 +108,12 @@ uint32_t nrf52_fifo_flush(nrf52_fifo_t * p_fifo)
 
 //-----------------------------------------------------------------------------
 
-uint32_t nrf52_fifo_read(nrf52_fifo_t * p_fifo, uint8_t * p_byte_array, uint32_t * p_size)
+uint32_t nRF5x_FIFO_read(nRF5x_FIFO_t * p_fifo, uint8_t * p_byte_array, uint32_t * p_size)
 {
     VERIFY_PARAM_NOT_NULL(p_fifo);
     VERIFY_PARAM_NOT_NULL(p_size);
 
-    const uint32_t byte_count    = nrf52_fifo_length(p_fifo);
+    const uint32_t byte_count    = nRF5x_FIFO_length(p_fifo);
     const uint32_t requested_len = (*p_size);
     uint32_t       index         = 0;
     uint32_t       read_size     = MIN(requested_len, byte_count);
@@ -145,12 +145,12 @@ uint32_t nrf52_fifo_read(nrf52_fifo_t * p_fifo, uint8_t * p_byte_array, uint32_t
 
 //-----------------------------------------------------------------------------
 
-uint32_t nrf52_fifo_write(nrf52_fifo_t * p_fifo, uint8_t const * p_byte_array, uint32_t * p_size)
+uint32_t nRF5x_FIFO_write(nRF5x_FIFO_t * p_fifo, uint8_t const * p_byte_array, uint32_t * p_size)
 {
     VERIFY_PARAM_NOT_NULL(p_fifo);
     VERIFY_PARAM_NOT_NULL(p_size);
 
-    const uint32_t available_count = p_fifo->buf_size_mask - nrf52_fifo_length(p_fifo) + 1;
+    const uint32_t available_count = p_fifo->buf_size_mask - nRF5x_FIFO_length(p_fifo) + 1;
     const uint32_t requested_len   = (*p_size);
     uint32_t       index           = 0;
     uint32_t       write_size      = MIN(requested_len, available_count);

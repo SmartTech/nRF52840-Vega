@@ -247,7 +247,7 @@
         <option>
           <name>CCAllowList</name>
           <version>1</version>
-          <state>11111110</state>
+          <state>00000000</state>
         </option>
         <option>
           <name>CCDebugInfo</name>
@@ -400,7 +400,7 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>3</state>
+          <state>0</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
@@ -409,7 +409,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>3</state>
+          <state>0</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -2104,17 +2104,17 @@
         <group>
           <name>inc</name>
           <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF52_FIFO.h</name>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_FIFO.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF52_UART.h</name>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_UART.h</name>
           </file>
         </group>
         <file>
-          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF52_FIFO.c</name>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_FIFO.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF52_UART.c</name>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</name>
         </file>
       </group>
       <file>

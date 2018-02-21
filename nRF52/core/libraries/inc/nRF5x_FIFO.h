@@ -5,6 +5,7 @@
 #include <stdlib.h>
 
 
+#define nRF52_FIFO_VERSION   1
 
 /* ============================================================================
  * @brief     Структура экземпляра FIFO
@@ -14,14 +15,14 @@ typedef struct {
     uint16_t           buf_size_mask;   /**< Read/write index mask. Also used for size checking. */
     volatile uint32_t  read_pos;        /**< Next read position in the FIFO buffer.              */
     volatile uint32_t  write_pos;       /**< Next write position in the FIFO buffer.             */
-} nrf52_fifo_t;
+} nRF5x_FIFO_t;
 
 
 
-uint32_t nrf52_fifo_length(nrf52_fifo_t * p_fifo);
+uint32_t nRF5x_FIFO_length(nRF5x_FIFO_t * p_fifo);
 
 // Макрос для вычисления длины FIFO
-#define FIFO_LENGTH nrf52_fifo_length(p_fifo)
+#define FIFO_LENGTH nRF5x_FIFO_length(p_fifo)
 
 
 
@@ -36,7 +37,7 @@ uint32_t nrf52_fifo_length(nrf52_fifo_t * p_fifo);
  * @retval     NRF_ERROR_NULL                Если указатель NULL
  * @retval     NRF_ERROR_INVALID_LENGTH      Если размер буфера не равен двум
  * ------------------------------------------------------------------------- */
-uint32_t nrf52_fifo_init(nrf52_fifo_t * p_fifo, uint8_t * p_buf, uint16_t buf_size);
+uint32_t nRF5x_FIFO_init(nRF5x_FIFO_t * p_fifo, uint8_t * p_buf, uint16_t buf_size);
 
 
 
@@ -49,7 +50,7 @@ uint32_t nrf52_fifo_init(nrf52_fifo_t * p_fifo, uint8_t * p_buf, uint16_t buf_si
  * @retval     NRF_SUCCESS              если элемент успешно добавлен в FIFO
  * @retval     NRF_ERROR_NO_MEM         если буфер FIFO переполнен
  * ------------------------------------------------------------------------- */
-uint32_t nrf52_fifo_put(nrf52_fifo_t * p_fifo, uint8_t byte);
+uint32_t nRF5x_FIFO_put(nRF5x_FIFO_t * p_fifo, uint8_t byte);
 
 
 
@@ -62,7 +63,7 @@ uint32_t nrf52_fifo_put(nrf52_fifo_t * p_fifo, uint8_t byte);
  * @retval     NRF_SUCCESS              если элемент получен
  * @retval     NRF_ERROR_NOT_FOUND      если нет элементов для получения
  * ------------------------------------------------------------------------- */
-uint32_t nrf52_fifo_get(nrf52_fifo_t * p_fifo, uint8_t * p_byte);
+uint32_t nRF5x_FIFO_get(nRF5x_FIFO_t * p_fifo, uint8_t * p_byte);
 
 
 
@@ -76,7 +77,7 @@ uint32_t nrf52_fifo_get(nrf52_fifo_t * p_fifo, uint8_t * p_byte);
  * @retval     NRF_SUCCESS              если элемент получен
  * @retval     NRF_ERROR_NOT_FOUND      если нет элементов для просмотра
  * ------------------------------------------------------------------------- */
-uint32_t nrf52_fifo_peek(nrf52_fifo_t * p_fifo, uint16_t index, uint8_t * p_byte);
+uint32_t nRF5x_FIFO_peek(nRF5x_FIFO_t * p_fifo, uint16_t index, uint8_t * p_byte);
 
 
 
@@ -87,7 +88,7 @@ uint32_t nrf52_fifo_peek(nrf52_fifo_t * p_fifo, uint16_t index, uint8_t * p_byte
  * ----------------------------------------------------------------------------
  * @retval     NRF_SUCCESS              если буфер удачно очищен
  * ------------------------------------------------------------------------- */
-uint32_t nrf52_fifo_flush(nrf52_fifo_t * p_fifo);
+uint32_t nRF5x_FIFO_flush(nRF5x_FIFO_t * p_fifo);
 
 
 
@@ -103,7 +104,7 @@ uint32_t nrf52_fifo_flush(nrf52_fifo_t * p_fifo);
  * @retval     NRF_ERROR_NULL       если был задан параметр NULL
  * @retval     NRF_ERROR_NOT_FOUND  если буфер пустой
  * ------------------------------------------------------------------------- */
-uint32_t nrf52_fifo_read(nrf52_fifo_t * p_fifo, uint8_t * p_byte_array, uint32_t * p_size);
+uint32_t nRF5x_FIFO_read(nRF5x_FIFO_t * p_fifo, uint8_t * p_byte_array, uint32_t * p_size);
 
 
 
@@ -119,6 +120,6 @@ uint32_t nrf52_fifo_read(nrf52_fifo_t * p_fifo, uint8_t * p_byte_array, uint32_t
  * @retval     NRF_ERROR_NULL       если был задан параметр NULL
  * @retval     NRF_ERROR_NO_MEM     если буфер переполнен
  * ------------------------------------------------------------------------- */
-uint32_t nrf52_fifo_write(nrf52_fifo_t * p_fifo, uint8_t const * p_byte_array, uint32_t * p_size);
+uint32_t nRF5x_FIFO_write(nRF5x_FIFO_t * p_fifo, uint8_t const * p_byte_array, uint32_t * p_size);
 
 #endif // _NRF52_FIFO_H_
