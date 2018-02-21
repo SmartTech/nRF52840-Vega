@@ -1,69 +1,69 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.40.3.8902/W32 for ARM                 21/Feb/2018  13:30:27
+# IAR ELF Linker V7.40.3.8902/W32 for ARM                 21/Feb/2018  14:10:20
 # Copyright 2007-2015 IAR Systems AB.
 #
-#    Output file  =  D:\Projects\Vega\nRF52840\IAR\Debug\Exe\nRF52840.out
-#    Map file     =  D:\Projects\Vega\nRF52840\IAR\Debug\List\nRF52840.map
+#    Output file  =  D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Exe\nRF52840.out
+#    Map file     =  D:\Projects\Vega\nRF52840-Vega\IAR\Debug\List\nRF52840.map
 #    Command line =  
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\app_error.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\app_error_weak.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\app_util_platform.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\ble_flash.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\boards.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\delay.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\dtostrf.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\HardwareSerial.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\iar_startup_nrf52840.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\itoa.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\main.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nRF52_FIFO.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nRF52_UART.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_assert.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_clock.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_common.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_comp.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_gpiote.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_i2s.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_lpcomp.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_pdm.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_power.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_ppi.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_pwm.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_qdec.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_qspi.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_rng.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_rtc.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_saadc.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_spi.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_spis.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_swi.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_systick.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_timer.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_twi.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_twis.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_uart.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_uarte.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_usbd.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_drv_wdt.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_ecb.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_nvic.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_nvmc.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_saadc.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\nrf_soc.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\Print.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\radio_config.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\sdio.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\sdk_mapped_flags.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\Stream.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\system_nrf52840.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\USBSerial.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\wirish_digital.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\wirish_math.o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Obj\WString.o -o
-#        D:\Projects\Vega\nRF52840\IAR\Debug\Exe\nRF52840.out --redirect
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\app_error.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\app_error_weak.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\app_util_platform.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\ble_flash.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\boards.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\delay.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\dtostrf.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\HardwareSerial.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\iar_startup_nrf52840.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\itoa.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\main.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF52_FIFO.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF52_UART.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_assert.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_clock.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_common.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_comp.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_gpiote.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_i2s.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_lpcomp.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_pdm.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_power.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_ppi.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_pwm.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_qdec.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_qspi.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_rng.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_rtc.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_saadc.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_spi.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_spis.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_swi.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_systick.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_timer.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_twi.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_twis.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_uart.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_uarte.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_usbd.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_wdt.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_ecb.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_nvic.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_nvmc.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_saadc.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_soc.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\Print.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\radio_config.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\sdio.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\sdk_mapped_flags.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\Stream.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\system_nrf52840.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\USBSerial.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\wirish_digital.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\wirish_math.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\WString.o -o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Exe\nRF52840.out --redirect
 #        _Printf=_PrintfFull --redirect _Scanf=_ScanfFull --map
-#        D:\Projects\Vega\nRF52840\IAR\Debug\List\nRF52840.map --config
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\List\nRF52840.map --config
 #        "C:\Program Files (x86)\IAR Systems\Embedded Workbench
 #        7.2\arm\config\linker\NordicSemiconductor\nrf52840_xxaa.icf"
 #        --warnings_are_errors --entry __iar_program_start --inline --vfe
@@ -203,7 +203,7 @@ Copy (__iar_copy_init3)
 
     Module                  ro code  ro data  rw data
     ------                  -------  -------  -------
-D:\Projects\Vega\nRF52840\IAR\Debug\Obj: [1]
+D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj: [1]
     delay.o                     104                 8
     iar_startup_nrf52840.o      610
     main.o                      142
@@ -386,7 +386,7 @@ uart_1_handler()        0x00000fcd   0x12  Code  Gb  main.o [1]
 uarte_irq_handler       0x00000593   0xd8  Code  Gb  nrf_drv_uarte.o [1]
 
 
-[1] = D:\Projects\Vega\nRF52840\IAR\Debug\Obj
+[1] = D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj
 [2] = command line
 [3] = dl7M_tlf.a
 [4] = m7M_tls.a
