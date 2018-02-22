@@ -1,6 +1,7 @@
 #include "nRF52core.h"
 
 #include "nRF5x_UART.h"
+#include "nRF5x_SPI.h"
 
 //HardwareSerial Serial0(nRF52_UART0, LINK_RX, LINK_TX);
 //HardwareSerial Serial1(nRF52_UART1, P1_01,   P1_02);

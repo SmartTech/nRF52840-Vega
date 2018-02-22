@@ -1,4 +1,4 @@
-"D:\Projects\Vega\nRF52840-Vega\nRF52\core\drivers\nrf_drv_spi.c"
+"D:\Projects\Vega\nRF52840-Vega\nRF52\core\libraries\nRF5x_FIFO.c"
 -std=c99
 -ferror-limit=100
 -I

@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.40.3.8902/W32 for ARM                 21/Feb/2018  16:48:42
+# IAR ELF Linker V7.40.3.8902/W32 for ARM                 21/Feb/2018  17:39:51
 # Copyright 2007-2015 IAR Systems AB.
 #
 #    Output file  =  D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Exe\nRF52840.out
@@ -18,6 +18,7 @@
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\itoa.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\main.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF5x_FIFO.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF5x_SPI.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF5x_UART.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_assert.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_clock.o
@@ -71,6 +72,23 @@
 ###############################################################################
 
 *******************************************************************************
+*** MESSAGES
+***
+
+Error[Li006]: duplicate definitions for
+          "SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQHandler"; in
+          "D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_spi.o", and
+          "D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_spis.o"
+Error[Li006]: duplicate definitions for
+          "SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQHandler"; in
+          "D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_spi.o", and
+          "D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_spis.o"
+Error[Li006]: duplicate definitions for "SPIM2_SPIS2_SPI2_IRQHandler"; in
+          "D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_spi.o", and
+          "D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nrf_drv_spis.o"
+
+
+*******************************************************************************
 *** RUNTIME MODEL ATTRIBUTES
 ***
 
@@ -95,7 +113,7 @@ __dlib_dynamic_initialization = normal
   .intvec            ro code  0x00000000   0x200  iar_startup_nrf52840.o [1]
                             - 0x00000200   0x200
 
-"P1":                                     0x1a00
+"P1":                                     0x1aec
   .text              ro code  0x00000200   0x690  nrf_drv_uarte.o [1]
   .text              ro code  0x00000890    0x84  nrf_drv_common.o [1]
   .text              ro code  0x00000914   0x5c0  nRF5x_UART.o [1]
@@ -104,90 +122,89 @@ __dlib_dynamic_initialization = normal
   .text              ro code  0x0000134c   0x29c  system_nrf52840.o [1]
   .text              ro code  0x000015e8   0x1a6  wirish_digital.o [1]
   .text              ro code  0x0000178e     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001790    0xd4  nrf_drv_clock.o [1]
-  .text              ro code  0x00001864    0xcc  delay.o [1]
-  .text              ro code  0x00001930    0x8c  main.o [1]
-  .text              ro code  0x000019bc    0x88  nrf_drv_swi.o [1]
-  .text              ro code  0x00001a44    0x40  zero_init3.o [5]
-  .text              ro code  0x00001a84    0x2c  copy_init3.o [5]
-  .text              ro code  0x00001ab0    0x28  data_init.o [5]
-  .text              ro code  0x00001ad8    0x22  fpinit_M.o [4]
-  .iar.init_table    const    0x00001afc    0x24  - Linker created -
-  .text              ro code  0x00001b20     0x2  iar_startup_nrf52840.o [1]
-  .rodata            const    0x00001b24    0x20  nRF5x_UART.o [1]
-  .text              ro code  0x00001b44    0x1a  cmain.o [5]
-  .text              ro code  0x00001b5e     0x4  exit.o [3]
-  .text              ro code  0x00001b62     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001b64     0xa  cexit.o [5]
-  .text              ro code  0x00001b6e     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001b70     0xc  XXexit.o [5]
-  .text              ro code  0x00001b7c    0x10  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001b8c     0xc  cstartup_M.o [5]
-  .rodata            const    0x00001b98     0x8  nrf_drv_gpiote.o [1]
-  .text              ro code  0x00001ba0     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001ba2     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001ba4     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001ba6     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001ba8     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001baa     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bac     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bae     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bb0     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bb2     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bb4     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bb6     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bb8     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bba     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bbc     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bbe     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bc0     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bc2     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bc4     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bc6     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bc8     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bca     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bcc     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bce     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bd0     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bd2     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bd4     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bd6     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bd8     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bda     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bdc     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001bde     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001be0     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001be2     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001be4     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001be6     0x2  iar_startup_nrf52840.o [1]
-  .text              ro code  0x00001be8     0x2  iar_startup_nrf52840.o [1]
-  .rodata            const    0x00001bea     0x0  zero_init3.o [5]
-  .rodata            const    0x00001bea     0x0  copy_init3.o [5]
-  Initializer bytes  const    0x00001bec    0x14  <for P2 s0>
-                            - 0x00001c00  0x1a00
+  .text              ro code  0x00001790    0xf4  nrf_drv_spi.o [1]
+  .text              ro code  0x00001884    0xd4  nrf_drv_clock.o [1]
+  .text              ro code  0x00001958    0xcc  delay.o [1]
+  .text              ro code  0x00001a24    0x8c  main.o [1]
+  .text              ro code  0x00001ab0    0x88  nrf_drv_swi.o [1]
+  .text              ro code  0x00001b38    0x40  zero_init3.o [5]
+  .text              ro code  0x00001b78    0x2c  copy_init3.o [5]
+  .text              ro code  0x00001ba4    0x28  data_init.o [5]
+  .text              ro code  0x00001bcc    0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x00001bf0    0x24  - Linker created -
+  .text              ro code  0x00001c14     0x2  iar_startup_nrf52840.o [1]
+  .rodata            const    0x00001c18    0x20  nRF5x_UART.o [1]
+  .text              ro code  0x00001c38    0x1a  cmain.o [5]
+  .text              ro code  0x00001c52     0x4  exit.o [3]
+  .text              ro code  0x00001c56     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001c58     0xa  cexit.o [5]
+  .text              ro code  0x00001c62     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001c64     0xc  XXexit.o [5]
+  .text              ro code  0x00001c70    0x10  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001c80     0xc  cstartup_M.o [5]
+  .rodata            const    0x00001c8c     0x8  nrf_drv_gpiote.o [1]
+  .text              ro code  0x00001c94     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001c96     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001c98     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001c9a     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001c9c     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001c9e     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001ca0     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001ca2     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001ca4     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001ca6     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001ca8     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001caa     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cac     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cae     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cb0     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cb2     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cb4     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cb6     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cb8     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cba     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cbc     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cbe     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cc0     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cc2     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cc4     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cc6     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cc8     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cca     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001ccc     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cce     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cd0     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cd2     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cd4     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001cd6     0x2  iar_startup_nrf52840.o [1]
+  .rodata            const    0x00001cd8     0x0  zero_init3.o [5]
+  .rodata            const    0x00001cd8     0x0  copy_init3.o [5]
+  Initializer bytes  const    0x00001cd8    0x14  <for P2 s0> (used: 0x0)
+                            - 0x00001cec  0x1aec
 
-"P2":                                     0x2168
+"P2":                                     0x21d8
   P2 s0                       0x20000000    0x14  <Init block>
     .data            inited   0x20000000     0x8  nrf_drv_uarte.o [1]
     .data            inited   0x20000008     0x8  nrf_drv_uarte.o [1]
     .data            inited   0x20000010     0x4  system_nrf52840.o [1]
-  .bss               zero     0x20000014    0x68  nrf_drv_gpiote.o [1]
-  .bss               zero     0x2000007c    0x40  nrf_drv_uarte.o [1]
-  .bss               zero     0x200000bc    0x20  nRF5x_UART.o [1]
-  .bss               zero     0x200000dc    0x20  nRF5x_UART.o [1]
-  .bss               zero     0x200000fc    0x18  nRF5x_UART.o [1]
-  .bss               zero     0x20000114    0x18  nrf_drv_swi.o [1]
-  .bss               zero     0x2000012c    0x14  nrf_drv_clock.o [1]
-  .bss               zero     0x20000140     0xc  nrf_drv_swi.o [1]
-  .bss               zero     0x2000014c     0x8  nRF5x_UART.o [1]
-  .bss               zero     0x20000154     0x8  nRF5x_UART.o [1]
-  .bss               zero     0x2000015c     0x4  delay.o [1]
-  .bss               zero     0x20000160     0x2  nRF5x_UART.o [1]
-  .bss               zero     0x20000162     0x2  nRF5x_UART.o [1]
-  .bss               zero     0x20000164     0x1  delay.o [1]
-  CSTACK                      0x20000168  0x2000  <Block>
-    CSTACK           uninit   0x20000168  0x2000  <Block tail>
-                            - 0x20002168  0x2168
+  .bss               zero     0x20000014    0x6c  nrf_drv_spi.o [1]
+  .bss               zero     0x20000080    0x68  nrf_drv_gpiote.o [1]
+  .bss               zero     0x200000e8    0x40  nrf_drv_uarte.o [1]
+  .bss               zero     0x20000128    0x20  nRF5x_UART.o [1]
+  .bss               zero     0x20000148    0x20  nRF5x_UART.o [1]
+  .bss               zero     0x20000168    0x18  nRF5x_UART.o [1]
+  .bss               zero     0x20000180    0x18  nrf_drv_swi.o [1]
+  .bss               zero     0x20000198    0x14  nrf_drv_clock.o [1]
+  .bss               zero     0x200001ac     0xc  nrf_drv_swi.o [1]
+  .bss               zero     0x200001b8     0x8  nRF5x_UART.o [1]
+  .bss               zero     0x200001c0     0x8  nRF5x_UART.o [1]
+  .bss               zero     0x200001c8     0x4  delay.o [1]
+  .bss               zero     0x200001cc     0x2  nRF5x_UART.o [1]
+  .bss               zero     0x200001ce     0x2  nRF5x_UART.o [1]
+  .bss               zero     0x200001d0     0x1  delay.o [1]
+  CSTACK                      0x200001d8  0x2000  <Block>
+    CSTACK           uninit   0x200001d8  0x2000  <Block tail>
+                            - 0x200021d8  0x21d8
 
 
 *******************************************************************************
@@ -197,12 +214,12 @@ __dlib_dynamic_initialization = normal
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x151:
-          0x20000014  0x151
+    1 destination range, total size 0x1bd:
+          0x20000014  0x1bd
 
 Copy (__iar_copy_init3)
     1 source range, total size 0x14:
-          0x00001bec   0x14
+          0x00001cd8   0x14
     1 destination range, total size 0x14:
           0x20000000   0x14
 
@@ -216,19 +233,20 @@ Copy (__iar_copy_init3)
     ------                  -------  -------  -------
 D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj: [1]
     delay.o                     204                 5
-    iar_startup_nrf52840.o      610
+    iar_startup_nrf52840.o      604
     main.o                      140
     nRF5x_FIFO.o                192
     nRF5x_UART.o              1 472       32      108
     nrf_drv_clock.o             212                20
     nrf_drv_common.o            132
     nrf_drv_gpiote.o            952        8      104
+    nrf_drv_spi.o               244               108
     nrf_drv_swi.o               136                36
     nrf_drv_uarte.o           1 680       16       80
     system_nrf52840.o           668        4        4
     wirish_digital.o            422
     -------------------------------------------------
-    Total:                    6 820       60      357
+    Total:                    7 058       60      465
 
 command line: [2]
     -------------------------------------------------
@@ -256,9 +274,9 @@ rt7M_tl.a: [5]
     Total:                      208
 
     Gaps                                   4
-    Linker created                        38    8 192
+    Linker created                        36    8 192
 -----------------------------------------------------
-    Grand Total:              7 066      102    8 549
+    Grand Total:              7 304      100    8 657
 
 
 *******************************************************************************
@@ -267,27 +285,33 @@ rt7M_tl.a: [5]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x00001afc          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x00001b20          --   Gb  - Linker created -
-?main                   0x00001b45         Code  Gb  cmain.o [5]
-CSTACK$$Base            0x20000168          --   Gb  - Linker created -
-CSTACK$$Limit           0x20002168          --   Gb  - Linker created -
+.iar.init_table$$Base   0x00001bf0          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x00001c14          --   Gb  - Linker created -
+?main                   0x00001c39         Code  Gb  cmain.o [5]
+CSTACK$$Base            0x200001d8          --   Gb  - Linker created -
+CSTACK$$Limit           0x200021d8          --   Gb  - Linker created -
 GPIOTE_IRQHandler       0x000010f5  0x242  Code  Gb  nrf_drv_gpiote.o [1]
 NVIC_ClearPendingIRQ    0x000008a5   0x14  Code  Lc  nrf_drv_common.o [1]
 NVIC_EnableIRQ          0x00000891   0x14  Code  Lc  nrf_drv_common.o [1]
-NVIC_SetPriority        0x00001865   0x26  Code  Lc  delay.o [1]
+NVIC_SetPriority        0x00001959   0x26  Code  Lc  delay.o [1]
 NVIC_SetPriority        0x000008b9   0x26  Code  Lc  nrf_drv_common.o [1]
-POWER_CLOCK_IRQHandler  0x00001805   0x50  Code  Gb  nrf_drv_clock.o [1]
-Region$$Table$$Base     0x00001afc          --   Gb  - Linker created -
-Region$$Table$$Limit    0x00001b20          --   Gb  - Linker created -
-SWI0_EGU0_IRQHandler    0x000019e9    0xe  Code  Gb  nrf_drv_swi.o [1]
-SWI1_EGU1_IRQHandler    0x000019f7    0xe  Code  Gb  nrf_drv_swi.o [1]
-SWI2_EGU2_IRQHandler    0x00001a05    0xe  Code  Gb  nrf_drv_swi.o [1]
-SWI3_EGU3_IRQHandler    0x00001a13    0xe  Code  Gb  nrf_drv_swi.o [1]
-SWI4_EGU4_IRQHandler    0x00001a21    0xe  Code  Gb  nrf_drv_swi.o [1]
-SWI5_EGU5_IRQHandler    0x00001a2f    0xe  Code  Gb  nrf_drv_swi.o [1]
-SysTick_Config          0x0000188b   0x30  Code  Lc  delay.o [1]
-SysTick_Handler         0x000018dd    0xc  Code  Gb  delay.o [1]
+POWER_CLOCK_IRQHandler  0x000018f9   0x50  Code  Gb  nrf_drv_clock.o [1]
+Region$$Table$$Base     0x00001bf0          --   Gb  - Linker created -
+Region$$Table$$Limit    0x00001c14          --   Gb  - Linker created -
+SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQHandler
+                        0x0000183f    0xe  Code  Gb  nrf_drv_spi.o [1]
+SPIM1_SPIS1_TWIM1_TWIS1_SPI1_TWI1_IRQHandler
+                        0x0000184d   0x10  Code  Gb  nrf_drv_spi.o [1]
+SPIM2_SPIS2_SPI2_IRQHandler
+                        0x0000185d    0xe  Code  Gb  nrf_drv_spi.o [1]
+SWI0_EGU0_IRQHandler    0x00001add    0xe  Code  Gb  nrf_drv_swi.o [1]
+SWI1_EGU1_IRQHandler    0x00001aeb    0xe  Code  Gb  nrf_drv_swi.o [1]
+SWI2_EGU2_IRQHandler    0x00001af9    0xe  Code  Gb  nrf_drv_swi.o [1]
+SWI3_EGU3_IRQHandler    0x00001b07    0xe  Code  Gb  nrf_drv_swi.o [1]
+SWI4_EGU4_IRQHandler    0x00001b15    0xe  Code  Gb  nrf_drv_swi.o [1]
+SWI5_EGU5_IRQHandler    0x00001b23    0xe  Code  Gb  nrf_drv_swi.o [1]
+SysTick_Config          0x0000197f   0x30  Code  Lc  delay.o [1]
+SysTick_Handler         0x000019d1    0xc  Code  Gb  delay.o [1]
 SystemCoreClock         0x20000010    0x4  Data  Gb  system_nrf52840.o [1]
 SystemCoreClockUpdate   0x0000134d    0x8  Code  Gb  system_nrf52840.o [1]
 SystemInit              0x00001355  0x128  Code  Gb  system_nrf52840.o [1]
@@ -297,24 +321,24 @@ UARTE1_IRQHandler       0x00000865    0xc  Code  Gb  nrf_drv_uarte.o [1]
 __Vectors               0x00000000          --   Gb  iar_startup_nrf52840.o [1]
 __Vectors_End           0x00000200         Data  Gb  iar_startup_nrf52840.o [1]
 __Vectors_Size {Abs}    0x00000200          --   Gb  iar_startup_nrf52840.o [1]
-__cmain                 0x00001b45         Code  Gb  cmain.o [5]
-__exit                  0x00001b71         Code  Gb  XXexit.o [5]
-__iar_copy_init3        0x00001a85   0x2c  Code  Gb  copy_init3.o [5]
-__iar_data_init3        0x00001ab1   0x28  Code  Gb  data_init.o [5]
-__iar_init_vfp          0x00001ad9         Code  Gb  fpinit_M.o [4]
-__iar_program_start     0x00001b8d         Code  Gb  cstartup_M.o [5]
-__iar_zero_init3        0x00001a45   0x40  Code  Gb  zero_init3.o [5]
+__cmain                 0x00001c39         Code  Gb  cmain.o [5]
+__exit                  0x00001c65         Code  Gb  XXexit.o [5]
+__iar_copy_init3        0x00001b79   0x2c  Code  Gb  copy_init3.o [5]
+__iar_data_init3        0x00001ba5   0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x00001bcd         Code  Gb  fpinit_M.o [4]
+__iar_program_start     0x00001c81         Code  Gb  cstartup_M.o [5]
+__iar_zero_init3        0x00001b39   0x40  Code  Gb  zero_init3.o [5]
 __vector_table          0x00000000         Data  Gb  iar_startup_nrf52840.o [1]
-_call_main              0x00001b51         Code  Gb  cmain.o [5]
-_exit                   0x00001b65         Code  Gb  cexit.o [5]
-_main                   0x00001b5b         Code  Gb  cmain.o [5]
-_ulTickCount            0x2000015c    0x4  Data  Lc  delay.o [1]
+_call_main              0x00001c45         Code  Gb  cmain.o [5]
+_exit                   0x00001c59         Code  Gb  cexit.o [5]
+_main                   0x00001c4f         Code  Gb  cmain.o [5]
+_ulTickCount            0x200001c8    0x4  Data  Lc  delay.o [1]
 apply_config            0x0000039b   0x7c  Code  Gb  nrf_drv_uarte.o [1]
 channel_handler_get     0x000010eb    0xa  Code  Lc  nrf_drv_gpiote.o [1]
 channel_port_get        0x000010df    0xc  Code  Lc  nrf_drv_gpiote.o [1]
 clock_clk_started_notify
-                        0x000017d9   0x2c  Code  Lc  nrf_drv_clock.o [1]
-delay                   0x000018e9   0x26  Code  Gb  delay.o [1]
+                        0x000018cd   0x2c  Code  Lc  nrf_drv_clock.o [1]
+delay                   0x000019dd   0x26  Code  Gb  delay.o [1]
 digitalToggle(unsigned char)
                         0x00001781    0xe  Code  Gb  wirish_digital.o [1]
 errata_103              0x000014c5   0x18  Code  Lc  system_nrf52840.o [1]
@@ -324,19 +348,22 @@ errata_136              0x0000150d   0x18  Code  Lc  system_nrf52840.o [1]
 errata_36               0x0000147d   0x18  Code  Lc  system_nrf52840.o [1]
 errata_66               0x00001495   0x18  Code  Lc  system_nrf52840.o [1]
 errata_98               0x000014ad   0x18  Code  Lc  system_nrf52840.o [1]
-exit                    0x00001b5f    0x4  Code  Gb  exit.o [3]
+exit                    0x00001c53    0x4  Code  Gb  exit.o [3]
 fifo_get                0x00000f09   0x18  Code  Gb  nRF5x_FIFO.o [1]
 fifo_peek               0x00000ef3   0x16  Code  Gb  nRF5x_FIFO.o [1]
 fifo_put                0x00000edd   0x16  Code  Gb  nRF5x_FIFO.o [1]
+finish_transfer         0x000017f5   0x24  Code  Lc  nrf_drv_spi.o [1]
 interrupts_enable       0x00000417   0x4a  Code  Gb  nrf_drv_uarte.o [1]
-item_dequeue            0x000017cb    0xe  Code  Lc  nrf_drv_clock.o [1]
-loop()                  0x000019a1   0x10  Code  Gb  main.o [1]
-m_cb                    0x20000014   0x68  Data  Lc  nrf_drv_gpiote.o [1]
-m_cb                    0x2000007c   0x40  Data  Lc  nrf_drv_uarte.o [1]
-m_clock_cb              0x2000012c   0x14  Data  Lc  nrf_drv_clock.o [1]
-m_swi_flags             0x20000140    0xc  Data  Lc  nrf_drv_swi.o [1]
-m_swi_handlers          0x20000114   0x18  Data  Lc  nrf_drv_swi.o [1]
-main                    0x000019b1    0xc  Code  Gb  main.o [1]
+irq_handler_spim        0x00001819   0x26  Code  Lc  nrf_drv_spi.o [1]
+item_dequeue            0x000018bf    0xe  Code  Lc  nrf_drv_clock.o [1]
+loop()                  0x00001a95   0x10  Code  Gb  main.o [1]
+m_cb                    0x20000080   0x68  Data  Lc  nrf_drv_gpiote.o [1]
+m_cb                    0x20000014   0x6c  Data  Lc  nrf_drv_spi.o [1]
+m_cb                    0x200000e8   0x40  Data  Lc  nrf_drv_uarte.o [1]
+m_clock_cb              0x20000198   0x14  Data  Lc  nrf_drv_clock.o [1]
+m_swi_flags             0x200001ac    0xc  Data  Lc  nrf_drv_swi.o [1]
+m_swi_handlers          0x20000180   0x18  Data  Lc  nrf_drv_swi.o [1]
+main                    0x00001aa5    0xc  Code  Gb  main.o [1]
 nRF5x_FIFO_get          0x00000f75   0x20  Code  Gb  nRF5x_FIFO.o [1]
 nRF5x_FIFO_init         0x00000f21   0x30  Code  Gb  nRF5x_FIFO.o [1]
 nRF5x_FIFO_length       0x00000ed5    0x8  Code  Gb  nRF5x_FIFO.o [1]
@@ -345,31 +372,31 @@ nRF5x_UART_0_handler    0x00000a79   0x10  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_1_handler    0x00000a89   0x10  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_attachCallback
                         0x00000c9d   0x2e  Code  Gb  nRF5x_UART.o [1]
-nRF5x_UART_callback     0x200000fc   0x18  Data  Gb  nRF5x_UART.o [1]
+nRF5x_UART_callback     0x20000168   0x18  Data  Gb  nRF5x_UART.o [1]
 nRF5x_UART_get          0x00000d35   0x6e  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_handler      0x0000099d   0xdc  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_init         0x00000a99  0x204  Code  Gb  nRF5x_UART.o [1]
-nRF5x_UART_inited_flag  0x20000160    0x2  Data  Gb  nRF5x_UART.o [1]
+nRF5x_UART_inited_flag  0x200001cc    0x2  Data  Gb  nRF5x_UART.o [1]
 nRF5x_UART_put          0x00000da3   0xaa  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_read         0x00000ccb   0x2a  Code  Gb  nRF5x_UART.o [1]
-nRF5x_UART_rx_buffer    0x2000014c    0x8  Data  Gb  nRF5x_UART.o [1]
-nRF5x_UART_rx_fifo      0x200000bc   0x20  Data  Gb  nRF5x_UART.o [1]
-nRF5x_UART_rx_ovf       0x20000162    0x2  Data  Gb  nRF5x_UART.o [1]
-nRF5x_UART_tx_buffer    0x20000154    0x8  Data  Gb  nRF5x_UART.o [1]
-nRF5x_UART_tx_fifo      0x200000dc   0x20  Data  Gb  nRF5x_UART.o [1]
+nRF5x_UART_rx_buffer    0x200001b8    0x8  Data  Gb  nRF5x_UART.o [1]
+nRF5x_UART_rx_fifo      0x20000128   0x20  Data  Gb  nRF5x_UART.o [1]
+nRF5x_UART_rx_ovf       0x200001ce    0x2  Data  Gb  nRF5x_UART.o [1]
+nRF5x_UART_tx_buffer    0x200001c0    0x8  Data  Gb  nRF5x_UART.o [1]
+nRF5x_UART_tx_fifo      0x20000148   0x20  Data  Gb  nRF5x_UART.o [1]
 nRF5x_UART_wait_tx      0x00000e4d   0x38  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_write        0x00000cf5   0x40  Code  Gb  nRF5x_UART.o [1]
 nrf_bitmask_bit_is_set  0x000010b7   0x12  Code  Lc  nrf_drv_gpiote.o [1]
 nrf_bitmask_bit_set     0x000010c9   0x16  Code  Lc  nrf_drv_gpiote.o [1]
-nrf_clock_event_check   0x000017b5   0x16  Code  Lc  nrf_drv_clock.o [1]
-nrf_clock_event_clear   0x00001799   0x1c  Code  Lc  nrf_drv_clock.o [1]
-nrf_clock_int_disable   0x00001791    0x8  Code  Lc  nrf_drv_clock.o [1]
+nrf_clock_event_check   0x000018a9   0x16  Code  Lc  nrf_drv_clock.o [1]
+nrf_clock_event_clear   0x0000188d   0x1c  Code  Lc  nrf_drv_clock.o [1]
+nrf_clock_int_disable   0x00001885    0x8  Code  Lc  nrf_drv_clock.o [1]
 nrf_delay_us            0x00000915   0x88  Code  Lc  nRF5x_UART.o [1]
 nrf_drv_common_irq_enable
                         0x000008f1   0x24  Code  Gb  nrf_drv_common.o [1]
 nrf_drv_get_IRQn        0x00000201    0x8  Code  Lc  nrf_drv_uarte.o [1]
 nrf_drv_is_in_RAM       0x00000209   0x14  Code  Lc  nrf_drv_uarte.o [1]
-nrf_drv_swi_process     0x000019bd   0x2c  Code  Lc  nrf_drv_swi.o [1]
+nrf_drv_swi_process     0x00001ab1   0x2c  Code  Lc  nrf_drv_swi.o [1]
 nrf_drv_uart0           0x20000000    0x8  Data  Gb  nrf_drv_uarte.o [1]
 nrf_drv_uart1           0x20000008    0x8  Data  Gb  nrf_drv_uarte.o [1]
 nrf_drv_uart_rx_for_uarte
@@ -398,14 +425,18 @@ nrf_gpio_cfg_sense_set  0x00001023   0x40  Code  Lc  nrf_drv_gpiote.o [1]
 nrf_gpio_pin_port_decode
                         0x00001007   0x1c  Code  Lc  nrf_drv_gpiote.o [1]
 nrf_gpio_pin_port_decode
+                        0x000017b7   0x1c  Code  Lc  nrf_drv_spi.o [1]
+nrf_gpio_pin_port_decode
                         0x000002cf   0x1c  Code  Lc  nrf_drv_uarte.o [1]
 nrf_gpio_pin_port_decode(unsigned int *)
                         0x000015e9   0x1a  Code  Lc  wirish_digital.o [1]
 nrf_gpio_pin_sense_get  0x00001063   0x1a  Code  Lc  nrf_drv_gpiote.o [1]
+nrf_gpio_pin_set        0x000017d3   0x1c  Code  Lc  nrf_drv_spi.o [1]
 nrf_gpio_pin_set        0x00000365   0x1c  Code  Lc  nrf_drv_uarte.o [1]
 nrf_gpio_pin_toggle(unsigned int)
                         0x000016a5   0x26  Code  Lc  wirish_digital.o [1]
 nrf_gpio_port_in_read   0x0000107d    0x6  Code  Lc  nrf_drv_gpiote.o [1]
+nrf_gpio_port_out_set   0x000017ef    0x6  Code  Lc  nrf_drv_spi.o [1]
 nrf_gpio_port_out_set   0x00000381    0x6  Code  Lc  nrf_drv_uarte.o [1]
 nrf_gpio_ports_read     0x00001083   0x34  Code  Lc  nrf_drv_gpiote.o [1]
 nrf_gpiote_event_addr_get
@@ -419,6 +450,8 @@ nrf_gpiote_event_polarity_get
                         0x00000ff7   0x10  Code  Lc  nrf_drv_gpiote.o [1]
 nrf_gpiote_int_is_enabled
                         0x00000fdf    0xa  Code  Lc  nrf_drv_gpiote.o [1]
+nrf_spim_event_check    0x000017a5   0x12  Code  Lc  nrf_drv_spi.o [1]
+nrf_spim_event_clear    0x00001791   0x14  Code  Lc  nrf_drv_spi.o [1]
 nrf_uarte_baudrate_set  0x000002a5    0x6  Code  Lc  nrf_drv_uarte.o [1]
 nrf_uarte_configure     0x00000297    0xe  Code  Lc  nrf_drv_uarte.o [1]
 nrf_uarte_enable        0x00000273    0x8  Code  Lc  nrf_drv_uarte.o [1]
@@ -448,12 +481,12 @@ nrf_uarte_txrx_pins_set
 pinMode(unsigned char, unsigned char)
                         0x000016cb   0xb6  Code  Gb  wirish_digital.o [1]
 rx_done_event           0x000006ff   0x1e  Code  Gb  nrf_drv_uarte.o [1]
-setup()                 0x00001961   0x38  Code  Gb  main.o [1]
-systick_init            0x000018bd   0x20  Code  Gb  delay.o [1]
-systick_inited          0x20000164    0x1  Data  Gb  delay.o [1]
+setup()                 0x00001a55   0x38  Code  Gb  main.o [1]
+systick_init            0x000019b1   0x20  Code  Gb  delay.o [1]
+systick_inited          0x200001d0    0x1  Data  Gb  delay.o [1]
 tx_done_event           0x0000071d   0x26  Code  Gb  nrf_drv_uarte.o [1]
-uart_0_handler()        0x00001931   0x18  Code  Gb  main.o [1]
-uart_1_handler()        0x00001949   0x18  Code  Gb  main.o [1]
+uart_0_handler()        0x00001a25   0x18  Code  Gb  main.o [1]
+uart_1_handler()        0x00001a3d   0x18  Code  Gb  main.o [1]
 uart_enable             0x00000461    0xc  Code  Gb  nrf_drv_uarte.o [1]
 uarte_irq_handler       0x00000743  0x116  Code  Gb  nrf_drv_uarte.o [1]
 
@@ -464,9 +497,9 @@ uarte_irq_handler       0x00000743  0x116  Code  Gb  nrf_drv_uarte.o [1]
 [4] = m7M_tls.a
 [5] = rt7M_tl.a
 
-  7 066 bytes of readonly  code memory
-    102 bytes of readonly  data memory
-  8 549 bytes of readwrite data memory
+  7 304 bytes of readonly  code memory
+    100 bytes of readonly  data memory
+  8 657 bytes of readwrite data memory
 
-Errors: none
+Errors: 3
 Warnings: none

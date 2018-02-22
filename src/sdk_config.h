@@ -1347,7 +1347,7 @@
 // <e> SPIS_ENABLED - nrf_drv_spis - SPI Slave driver
 //==========================================================
 #ifndef SPIS_ENABLED
-#define SPIS_ENABLED 0
+#define SPIS_ENABLED 1
 #endif
 // <o> SPIS_DEFAULT_CONFIG_IRQ_PRIORITY  - Interrupt priority
  
@@ -1404,21 +1404,21 @@
  
 
 #ifndef SPIS0_ENABLED
-#define SPIS0_ENABLED 0
+#define SPIS0_ENABLED 1
 #endif
 
 // <q> SPIS1_ENABLED  - Enable SPIS1 instance
  
 
 #ifndef SPIS1_ENABLED
-#define SPIS1_ENABLED 0
+#define SPIS1_ENABLED 1
 #endif
 
 // <q> SPIS2_ENABLED  - Enable SPIS2 instance
  
 
 #ifndef SPIS2_ENABLED
-#define SPIS2_ENABLED 0
+#define SPIS2_ENABLED 1
 #endif
 
 // </e>
@@ -1426,7 +1426,7 @@
 // <e> SPI_ENABLED - nrf_drv_spi - SPI/SPIM peripheral driver
 //==========================================================
 #ifndef SPI_ENABLED
-#define SPI_ENABLED 0
+#define SPI_ENABLED 1
 #endif
 // <o> SPI_DEFAULT_CONFIG_IRQ_PRIORITY  - Interrupt priority
  
@@ -1448,7 +1448,7 @@
 // <e> SPI0_ENABLED - Enable SPI0 instance
 //==========================================================
 #ifndef SPI0_ENABLED
-#define SPI0_ENABLED 0
+#define SPI0_ENABLED 1
 #endif
 // <q> SPI0_USE_EASY_DMA  - Use EasyDMA
  
@@ -1476,7 +1476,7 @@
 // <e> SPI1_ENABLED - Enable SPI1 instance
 //==========================================================
 #ifndef SPI1_ENABLED
-#define SPI1_ENABLED 0
+#define SPI1_ENABLED 1
 #endif
 // <q> SPI1_USE_EASY_DMA  - Use EasyDMA
  
@@ -1504,7 +1504,7 @@
 // <e> SPI2_ENABLED - Enable SPI2 instance
 //==========================================================
 #ifndef SPI2_ENABLED
-#define SPI2_ENABLED 0
+#define SPI2_ENABLED 1
 #endif
 // <q> SPI2_USE_EASY_DMA  - Use EasyDMA
  

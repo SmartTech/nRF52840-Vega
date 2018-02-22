@@ -2053,9 +2053,21 @@
         <group>
           <name>inc</name>
           <file>
+            <name>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_spi.h</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_spis.h</name>
+          </file>
+          <file>
             <name>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_uarte.h</name>
           </file>
         </group>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spi.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spis.c</name>
+        </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_uarte.c</name>
         </file>
@@ -2107,11 +2119,17 @@
             <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_FIFO.h</name>
           </file>
           <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_SPI.h</name>
+          </file>
+          <file>
             <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_UART.h</name>
           </file>
         </group>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_FIFO.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_SPI.c</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</name>
@@ -2299,12 +2317,6 @@
             <name>$PROJ_DIR$\..\nRF52\system\drivers\inc\nrf_drv_saadc.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\nRF52\system\drivers\inc\nrf_drv_spi.h</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\nRF52\system\drivers\inc\nrf_drv_spis.h</name>
-          </file>
-          <file>
             <name>$PROJ_DIR$\..\nRF52\system\drivers\inc\nrf_drv_swi.h</name>
           </file>
           <file>
@@ -2342,9 +2354,6 @@
           </file>
           <file>
             <name>$PROJ_DIR$\..\nRF52\system\drivers\inc\sdio.h</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\nRF52\system\drivers\inc\spi_5W_master.h</name>
           </file>
           <file>
             <name>$PROJ_DIR$\..\nRF52\system\drivers\inc\twi_master.h</name>
@@ -2397,12 +2406,6 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_saadc.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_spi.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_spis.c</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_swi.c</name>

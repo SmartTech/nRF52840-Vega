@@ -1,5 +1,5 @@
-#ifndef _NRF52_UART_H_
-#define _NRF52_UART_H_
+#ifndef _NRF5x_UART_H_
+#define _NRF5x_UART_H_
 
 #define nRF5x_UART_VERSION   1
 
@@ -61,4 +61,4 @@ uint8_t nRF5x_UART_wait_tx(uint8_t instance, uint32_t timeout_us);
 }
 #endif
 
-#endif // _NRF52_UART_H_
+#endif // _NRF5x_UART_H_

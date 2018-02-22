@@ -1,5 +1,5 @@
-#ifndef _NRF52_FIFO_H_
-#define _NRF52_FIFO_H_
+#ifndef _NRF5x_FIFO_H_
+#define _NRF5x_FIFO_H_
 
 #include <stdint.h>
 #include <stdlib.h>
@@ -122,4 +122,4 @@ uint32_t nRF5x_FIFO_read(nRF5x_FIFO_t * p_fifo, uint8_t * p_byte_array, uint32_t
  * ------------------------------------------------------------------------- */
 uint32_t nRF5x_FIFO_write(nRF5x_FIFO_t * p_fifo, uint8_t const * p_byte_array, uint32_t * p_size);
 
-#endif // _NRF52_FIFO_H_
+#endif // _NRF5x_FIFO_H_

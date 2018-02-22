@@ -1,4 +1,4 @@
-"D:\Projects\Vega\nRF52840-Vega\nRF52\system\drivers\nrf_drv_spis.c"
+"D:\Projects\Vega\nRF52840-Vega\nRF52\core\drivers\nrf_drv_spis.c"
 -std=c99
 -ferror-limit=100
 -I
