@@ -2270,6 +2270,9 @@
           <file>
             <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_UART.h</name>
           </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB.h</name>
+          </file>
         </group>
         <group>
           <name>usbd</name>
@@ -2447,6 +2450,9 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB.c</name>
         </file>
       </group>
       <file>
@@ -2835,6 +2841,9 @@
         <file>
           <name>$PROJ_DIR$\..\nRF52\system\hal\nrf_wdt.h</name>
         </file>
+      </group>
+      <group>
+        <name>libraries</name>
       </group>
       <group>
         <name>toolchain</name>

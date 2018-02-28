@@ -643,6 +643,7 @@ static inline app_usbd_class_data_t * app_usbd_class_data_access(
  *
  * @sa APP_USBD_CLASS_TYPEDEF
  */
+
 #define APP_USBD_CLASS_INSTANCE_TYPEDEF(type_name, interfaces_configs, class_config_dec)     \
     typedef union CONCAT_2(type_name, _u)                                                    \
     {                                                                                        \
@@ -659,7 +660,7 @@ static inline app_usbd_class_data_t * app_usbd_class_data_access(
                 app_usbd_class_ep_conf_t                                                     \
                                 ep[APP_USBD_CLASS_CONF_TOTAL_EP_COUNT(interfaces_configs)];  \
             } iface;                                                                         \
-            class_config_dec                                                                 \
+            class_config_dec                                                               \
         } specific;                                                                          \
     } APP_USBD_CLASS_INSTANCE_TYPE(type_name)
 

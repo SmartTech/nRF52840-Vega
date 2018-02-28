@@ -2,48 +2,148 @@
 
 <project>
   <fileVersion>2</fileVersion>
-  <fileChecksum>3589655842</fileChecksum>
+  <fileChecksum>450779604</fileChecksum>
   <configuration>
     <name>Debug</name>
     <outputs>
+      <file>$PROJ_DIR$\..\nRF52\boards\boards.h</file>
       <file>$PROJ_DIR$\..\nRF52\boards\boards.c</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\arduino_primo.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_comp.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_lpcomp.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_saadc.o</file>
-      <file>$PROJ_DIR$\Debug\Exe\nRF52840.out</file>
-      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_clock.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_error_weak.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF52_UART.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\radio_config.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_nvic.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\HardwareSerial.__cstat.et</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\nrf_log_ctrl.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qspi.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_power.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\itoa.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\itoa.o</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\src\nrf_log_internal.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Stream.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\wirish_digital.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\wirish_digital.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocalelist.h</file>
+      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPIClass.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPIClass.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_RTC.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_RTC.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\dtostrf.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pdm.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twi.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rtc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_systick.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_i2s.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qdec.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_TWI.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_TWI.pbi</file>
+      <file>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include\core_cmInstr.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\atomic\nrf_atomic_internal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rng.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qdec.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pwm.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_ppi.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_power.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pdm.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_gpiote.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\boards.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_FIFO.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_SPI.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_SPI.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_SPI.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\sdk_mapped_flags.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_common.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\wirish_math.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\WString.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_swi.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_uarte.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_comp.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_soc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_wdt.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twis.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pwm.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\WString.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_clock.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\HardwareSerial.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\wirish_math.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_util_platform.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_ecb.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_nrf52840.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_lpcomp.pbi</file>
+      <file>$TOOLKIT_DIR$\config\linker\NordicSemiconductor\nrf52840_xxaa.icf</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_gpiote.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_error_weak.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_clock.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twis.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ble_flash.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_util_platform.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_nvic.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_error.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pwm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_ppi.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\sdk_mapped_flags.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_USB.__cstat.et</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_section_vars\nrf_section_iter.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_soc.__cstat.et</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\pwr_mgmt\nrf_pwr_mgmt.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_error.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_saadc.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_error_weak.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_util_platform.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_timer.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twi.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\sdk_mapped_flags.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twis.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_nrf52840.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\sdio.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_nvic.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_nvmc.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_wdt.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_ecb.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_usbd.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spis.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spi.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_systick.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rtc.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_uarte.pbi</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\atomic\nrf_atomic.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_error.pbi</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_usbd_errata.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_generic.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF52840.pbd</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_cdc_acm.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_cdc_acm.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_generic.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_audio.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_audio.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_msc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_msc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_string_desc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_core.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_string_desc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_core.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_kbd.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_kbd.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_mouse.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_mouse.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\USBSerial.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\Print.pbi</file>
       <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\src\nrf_log_ctrl_internal.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\nrf_log_backend_interface.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\wirish_digital.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\WString.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\Print.__cstat.et</file>
       <file>$PROJ_DIR$\Debug\Obj\wirish_math.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\wirish_digital.__cstat.et</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\nrf_log_backend_interface.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Print.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\WString.__cstat.et</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qspi.o</file>
       <file>$PROJ_DIR$\Debug\Obj\ble_flash.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_drv_i2s.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\balloc\nrf_balloc.h</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_drv_ppi.o</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_uart.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rng.o</file>
       <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rng.o</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_drv_timer.o</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\balloc\nrf_balloc.h</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_drv_usbd.o</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_drv_power.o</file>
       <file>$PROJ_DIR$\Debug\Obj\nRF5x_UART.__cstat.et</file>
@@ -56,28 +156,44 @@
       <file>$PROJ_DIR$\Debug\List\nRF52840.map</file>
       <file>$TOOLKIT_DIR$\lib\dl7M_tlf.a</file>
       <file>$PROJ_DIR$\Debug\Obj\sdio.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_common.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_saadc.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
-      <file>$TOOLKIT_DIR$\config\linker\NordicSemiconductor\nrf52840_xxaa.icf</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_lpcomp.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_section_vars\nrf_section_iter.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_gpiote.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twis.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_clock.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_error_weak.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\ble_flash.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_util_platform.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_nvic.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_error.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pwm.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_ppi.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_ecb.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qdec.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_wdt.pbi</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\nrf_log.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\toolchain\system_nrf52840.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_swi.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\dtostrf.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\dtostrf.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pdm.pbi</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\strerror\nrf_strerror.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_comp.__cstat.et</file>
+      <file>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include\core_cm4.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_nvmc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\USBSerial.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_uarte.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spis.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rtc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\delay.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\boards.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_assert.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\Stream.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_gpiote.__cstat.et</file>
+      <file>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include\core_cmFunc.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_i2s.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spi.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_soc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Print.o</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_drv_timer.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\radio_config.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\sdk_mapped_flags.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\Print.o</file>
       <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_drv_usbd.pbi</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_assert.o</file>
@@ -94,211 +210,137 @@
       <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_section_vars\nrf_section.h</file>
       <file>$PROJ_DIR$\Debug\Obj\main.o</file>
       <file>$PROJ_DIR$\Debug\Obj\HardwareSerial.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\WString.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_clock.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\HardwareSerial.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\wirish_math.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_util_platform.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_ecb.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\system_nrf52840.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Threads.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_saadc.o</file>
+      <file>$TOOLKIT_DIR$\inc\c\cmsis_iar.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_common.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_lpcomp.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_comp.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\Print.pbi</file>
+      <file>$TOOLKIT_DIR$\inc\c\ystdio.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_error_weak.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_saadc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\radio_config.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Exe\nRF52840.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_nvic.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_power.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\itoa.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\HardwareSerial.__cstat.et</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\nrf_log_ctrl.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qspi.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\itoa.o</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\src\nrf_log_internal.h</file>
+      <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\Stream.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_msc.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_string_desc.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_mouse.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_TWI.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_audio.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\SPIClass.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_RTC.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_core.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_kbd.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_USB.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_cdc_acm.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_USB.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_generic.__cstat.et</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\queue\nrf_queue.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\atomic_fifo\nrf_atfifo.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\nrf_block_dev.h</file>
       <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Full.h</file>
       <file>$PROJ_DIR$\Debug\Obj\nrf_nvmc.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_ecb.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\nrf_log.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\toolchain\system_nrf52840.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\stdbool.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qdec.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_wdt.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_swi.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\ymath.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\strerror\nrf_strerror.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\dtostrf.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\dtostrf.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\intrinsics.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pdm.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include\core_cm4.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_nvmc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_comp.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_uart.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\USBSerial.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_uarte.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spis.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF52_UART.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF52_FIFO.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rtc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\delay.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\delay.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\boards.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF52_FIFO.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_assert.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF52_UART.o</file>
-      <file>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include\core_cmFunc.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_gpiote.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_i2s.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\Stream.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spi.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_FIFO.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twi.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\USBSerial.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_soc.o</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_spi.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_FIFO.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\xtls.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_UART.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_UART.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_lpcomp.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_saadc.__cstat.et</file>
-      <file>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include\core_cmSimd.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spis.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_clock.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_spis.c</file>
-      <file>$PROJ_DIR$\Debug\Obj\ble_flash.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_saadc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_assert.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_error.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_error_weak.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_util_platform.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_soc.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_saadc.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\sdk_mapped_flags.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_timer.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\system_nrf52840.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twi.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twis.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\sdio.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_nvic.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF52_FIFO.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_nvmc.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_wdt.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_ecb.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_uart.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_usbd.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_systick.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spis.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spi.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rtc.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rng.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qdec.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pwm.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_ppi.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_power.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pdm.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_gpiote.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_SPI.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_FIFO.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\sdk_mapped_flags.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_SPI.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_SPI.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_common.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\wirish_math.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\pwr_mgmt\nrf_pwr_mgmt.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\WString.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\inttypes.h</file>
-      <file>$TOOLKIT_DIR$\inc\c\xlocale.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_swi.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_uarte.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_comp.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_soc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_wdt.o</file>
-      <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twis.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pwm.o</file>
-      <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\delay.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\itoa.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\Stream.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spi.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\sdio.o</file>
-      <file>$TOOLKIT_DIR$\lib\dlpp7M_tl_fe.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\boards.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\wirish_digital.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\boards.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\wirish_digital.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\xlocalelist.h</file>
-      <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-      <file>$PROJ_DIR$\Debug\Obj\SPIClass.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\SPIClass.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_RTC.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_RTC.o</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_twis.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_clock.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_usbd.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_twi.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\dtostrf.__cstat.et</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_pdm.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twi.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_rtc.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_systick.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_i2s.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_qdec.o</file>
-      <file>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include\core_cmInstr.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\atomic\nrf_atomic_internal.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_TWI.o</file>
-      <file>$PROJ_DIR$\..\nRF52\system\libraries\atomic\nrf_atomic.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF5x_TWI.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_usbd_errata.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_gpiote.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_gpio.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_i2s.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_lpcomp.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_nvmc.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_nvmc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_pdm.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_peripherals.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_power.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_ppi.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_pwm.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_qdec.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_qspi.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_rng.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_rtc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_saadc.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_saadc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_spi.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_spim.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_spis.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\toolchain\iar\iar_startup_nrf52840.s</file>
-      <file>$PROJ_DIR$\..\nRF52\system\toolchain\system_nrf52840.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\app_error.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\app_error.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\app_error_weak.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\app_error_weak.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\app_util.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\app_util_bds.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\app_util_platform.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\app_util_platform.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\nordic_common.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\nrf_assert.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\nrf_assert.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\nrf_bitmask.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_common.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_errors.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_macros.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_mapped_flags.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_mapped_flags.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_os.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_resources.h</file>
-      <file>$PROJ_DIR$\..\src\main.cpp</file>
-      <file>$PROJ_DIR$\..\src\sdk_config.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_uarte.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF52_FIFO.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF52_FIFO.c</file>
-      <file>$TOOLKIT_DIR$\inc\c\string.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_error.pbi</file>
-      <file>$TOOLKIT_DIR$\inc\c\xmtx.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF52_UART.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF52_UART.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\nRF52840.pbd</file>
+      <file>$PROJ_DIR$\..\nRF52\boards\pca10056.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\avr\dtostrf.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\avr\dtostrf.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\avr\pgmspace.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\delay.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_clock.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_spi.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_spis.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_twi.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_uarte.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_usbd.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_clock.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spi.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spis.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_twi.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_twis.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_uarte.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_usbd.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\HardwareSerial.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\itoa.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\pinName.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\Print.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\Printable.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\SPIClass.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\Stream.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\types.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\USBSerial.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\wirish_digital.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\wirish_math.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\inc\WString.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_FIFO.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_RTC.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_SPI.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_TWI.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_UART.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio_desc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio_internal.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio_types.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm_internal.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\app_usbd_cdc_desc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\app_usbd_cdc_types.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic_desc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic_internal.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_desc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_internal.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_desc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_internal.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\app_usbd_hid.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\app_usbd_hid.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\app_usbd_hid_types.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc_desc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc_internal.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc_scsi.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc_types.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_class_base.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\config\app_usbd_string_config.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_core.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_core.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_descriptor.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_langid.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_request.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_types.h</file>
+      <file>$PROJ_DIR$\..\nRF52\core\delay.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_FIFO.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_RTC.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_SPI.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_TWI.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\HardwareSerial.cpp</file>
+      <file>$PROJ_DIR$\..\nRF52\core\itoa.c</file>
+      <file>$PROJ_DIR$\..\nRF52\core\nRF52core.h</file>
       <file>$PROJ_DIR$\..\nRF52\core\Print.cpp</file>
       <file>$PROJ_DIR$\..\nRF52\core\SPIClass.cpp</file>
       <file>$PROJ_DIR$\..\nRF52\core\Stream.cpp</file>
@@ -308,60 +350,33 @@
       <file>$PROJ_DIR$\..\nRF52\core\WString.cpp</file>
       <file>$PROJ_DIR$\..\nRF52\system\device\compiler_abstraction.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\device\nrf.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf51.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf51422_peripherals.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf51802_peripherals.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf51822_peripherals.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf51_bitfields.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf51_deprecated.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf51_to_nrf52.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf51_to_nrf52810.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\device\nrf51_to_nrf52840.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf52.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf52810.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf52810_bitfields.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf52810_peripherals.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf52832_peripherals.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\config\radio_config.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\device\nrf52840.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\device\nrf52840_bitfields.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\device\nrf52840_peripherals.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf52_bitfields.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf52_name_change.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\device\nrf52_to_nrf52810.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\drivers\config\radio_config.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\device\nrf52_to_nrf52840.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\config\radio_config.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\config\sdio_config.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\config\twi_master_config.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_spim.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\ble_flash.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_delay.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_common.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_comp.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_delay.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_gpiote.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_i2s.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_lpcomp.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_pdm.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_power.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_ppi.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_pwm.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_qdec.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_qspi.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_rng.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_rtc.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_saadc.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_swi.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_systick.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_timer.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_wdt.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_spis.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_error.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_nvic.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_soc.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\include\sdio.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\spi_5W_master.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\include\twi_master.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_nvic.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\ble_flash.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_comp.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_common.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_comp.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_gpiote.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_i2s.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_lpcomp.c</file>
@@ -373,235 +388,98 @@
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_qspi.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_rng.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_rtc.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_swi.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_saadc.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_swi.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_systick.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_timer.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_wdt.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_soc.c</file>
-      <file>$PROJ_DIR$\..\nRF52\system\drivers\nrf_nvic.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\drivers\sdio.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_clock.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_comp.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_ecb.c</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_ecb.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_egu.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_temp.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_gpio.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_gpiote.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_nvmc.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_nvmc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_power.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_peripherals.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_ppi.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_rtc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_saadc.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_saadc.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_spi.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_systick.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_timer.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_twi.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_twim.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_twis.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_uart.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_uarte.h</file>
       <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_usbd.h</file>
-      <file>$PROJ_DIR$\..\nRF52\system\hal\nrf_wdt.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\boards.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\d52_starterkit.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\n5_starterkit.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\nrf6310.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca10000.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca10001.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca10003.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca10028.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca10031.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca10036.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca10040.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca10056.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\pca20006.h</file>
-      <file>$PROJ_DIR$\..\nRF52\boards\wt51822.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\avr\dtostrf.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\avr\dtostrf.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\avr\pgmspace.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_spi.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_clock.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_spis.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_twi.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_twis.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_uarte.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_usbd.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spi.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_clock.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spis.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_twi.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_twis.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_uarte.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_usbd.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\delay.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\HardwareSerial.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\itoa.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\pinName.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\Print.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\Printable.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\SPIClass.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\Stream.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\types.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\USBSerial.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\wirish_math.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\wirish_digital.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\inc\WString.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_RTC.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_FIFO.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_SPI.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_TWI.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_UART.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_FIFO.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_SPI.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_RTC.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_TWI.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\HardwareSerial.cpp</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\delay.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\itoa.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\nRF52core.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_generic.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_generic.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_cdc_acm.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_cdc_acm.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_audio.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_audio.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_msc.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_msc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_string_desc.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_core.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_string_desc.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_core.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_kbd.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_kbd.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm_internal.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\app_usbd_hid.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\app_usbd_hid.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\app_usbd_hid_types.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic_desc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic_internal.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_desc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd_internal.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_desc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_internal.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc_desc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc_internal.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc_scsi.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc_types.h</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_mouse.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid_mouse.pbi</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid.o</file>
-      <file>$PROJ_DIR$\Debug\Obj\app_usbd_hid.pbi</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio_internal.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\app_usbd_cdc_types.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\app_usbd_cdc_desc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio_types.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio_desc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_types.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_request.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_langid.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_descriptor.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_core.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\config\app_usbd_string_config.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd.c</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_class_base.h</file>
-      <file>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_core.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\toolchain\iar\iar_startup_nrf52840.s</file>
+      <file>$PROJ_DIR$\..\nRF52\system\toolchain\system_nrf52840.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\app_error.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\app_error.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\app_util.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\app_error_weak.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\app_error_weak.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\nrf_assert.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\app_util_platform.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\app_util_platform.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\nordic_common.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\nrf_assert.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\nrf_bitmask.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_common.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_errors.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_macros.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_os.h</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_mapped_flags.c</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_mapped_flags.h</file>
+      <file>$PROJ_DIR$\..\src\main.cpp</file>
+      <file>$PROJ_DIR$\..\nRF52\system\util\sdk_resources.h</file>
+      <file>$PROJ_DIR$\..\src\sdk_config.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_FIFO.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_FIFO.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_twi.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_clock.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_saadc.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_UART.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_lpcomp.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nRF5x_UART.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\USBSerial.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_saadc.pbi</file>
+      <file>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include\core_cmSimd.h</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spis.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\ble_flash.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_assert.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\delay.__cstat.et</file>
+      <file>$TOOLKIT_DIR$\lib\dlpp7M_tl_fe.a</file>
+      <file>$TOOLKIT_DIR$\lib\m7M_tls.a</file>
+      <file>$PROJ_DIR$\Debug\Obj\sdio.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\boards.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\itoa.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\Stream.__cstat.et</file>
+      <file>$PROJ_DIR$\Debug\Obj\nrf_drv_spi.o</file>
     </outputs>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\boards\boards.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 213</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 215</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 128</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 266 273 310 132 97 347 53 94 105 301 78 317 300 116 50 96 242 401 248 318 323 104 235 148 199 45 98 101 114 263 276 81 390 319 82 271 6 283</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 390 242 301 317 116 50 94 97 199 98 101 45 96 235 53 114 132 148 104 318 310 323 300 248 319 273 263 82 81 6 105 276 347 283 271 266 78 401</file>
-        </tool>
-      </inputs>
-    </file>
     <file>
       <name>[ROOT_NODE]</name>
       <outputs>
         <tool>
           <name>ILINK</name>
-          <file> 5 47</file>
+          <file> 215 147</file>
         </tool>
       </outputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\Debug\Exe\nRF52840.out</name>
+      <name>$PROJ_DIR$\..\nRF52\boards\boards.c</name>
       <outputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 47</file>
-        </tool>
-        <tool>
-          <name>OBJCOPY</name>
-          <file> 77</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>ILINK</name>
-          <file> 54 64 60 458 452 450 459 490 449 462 488 454 460 62 61 215 126 112 90 84 17 86 137 222 189 237 144 74 89 44 2 57 233 3 229 39 33 205 234 29 35 231 52 210 122 108 232 37 230 204 121 38 202 100 63 99 4 140 71 75 211 187 220 135 95 139 214 91 88 218 212 206 48</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_uart.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 119</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 172</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_spi.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 136</file>
-        </tool>
         <tool>
           <name>ICCARM</name>
-          <file> 210</file>
+          <file> 30</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 450</file>
         </tool>
         <tool>
           <name>__cstat</name>
@@ -610,651 +488,44 @@
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
+          <name>ICCARM</name>
+          <file> 0 392 343 345 168 204 57 60 44 244 150 145 59 20 206 163 180 441 156 346 344 349 342 397 347 420 412 198 197 211 157 423 364 430 419 415 194 246</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
+          <name>BICOMP</name>
+          <file> 206 204 420 344 180 60 157 343 194 345 342 168 57 59 415 364 392 246 397 346 349 156 20 441 44 145 244 150 163 412 423 197 0 347 198 419 211 430</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_spis.c</name>
+      <name>$PROJ_DIR$\Debug\Exe\nRF52840.out</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 149</file>
+          <name>ILINK</name>
+          <file> 147</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 122</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 175</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_twis.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 58</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 204</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 165</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_clock.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 150</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 89</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 59</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 300 273 97 276 347 94 81 114 53 271 270 105 277 50 318 7 283 96 70 301 323 104 132 6 103 287 280 267 199 45 98 101 109 317 310 116 235 148 266 85 18 275 375 329 263 82</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277 7 273 263 82 6 266 375 329 270 103 85 18</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_usbd.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 73</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 38</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 173</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_twi.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 138</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 230</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 164</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\hal\nrf_nvmc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 117</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 99</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 169</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 114 50 310 132 97 246 317 300 116 94 96 53 301 318 323 104 235 148 199 45 98 101 105</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 105 301 317 116 50 94 97 199 98 101 45 96 235 53 114 132 148 104 318 310 323 300 246</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\hal\nrf_saadc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 83</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 4</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 160</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\toolchain\iar\iar_startup_nrf52840.s</name>
-      <outputs>
-        <tool>
-          <name>AARM</name>
-          <file> 84</file>
-        </tool>
-      </outputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\toolchain\system_nrf52840.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 42</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 95</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 163</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 317 97 300 116 50 301 96 310 132 53 105 104 199 45 98 101 318 323 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 50 94 97 199 98 101 45 96 105 301 317 116 235 53 114 132 148 104 318 310 323 300</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\util\app_error.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 288</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 64</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 156</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 98 276 323 148 45 94 53 263 318 104 235 199 101 301 50 82 271 317 310 300 116 132 97 96 114 81 283 6 105 266 347</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 301 317 116 50 94 97 199 98 101 45 96 235 53 114 132 148 104 318 310 323 300 82 81 6 263 105 276 347 283 271 266</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\util\app_error_weak.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 8</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 60</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 157</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 276 94 277 266 45 323 104 275 105 98 81 132 13 199 101 97 318 114 53 283 300 271 24 103 111 82 301 96 6 317 310 116 235 148 70 109 347 41 270 273 263 85 18 287 280 267 23 78 32</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 263 50 94 97 199 98 101 45 96 82 81 6 105 301 317 116 235 53 114 132 148 104 318 310 323 300 276 347 283 271 266 103 275 287 70 280 267 109 277 85 18 13 23 24 41 78 32 270 273 111</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\util\app_util_platform.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 92</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 62</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 158</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 132 301 310 53 96 97 50 81 263 94 317 300 116 276 273 199 45 98 101 318 323 104 235 148 114 105 266 283 270 82 271 6 347</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 270 50 94 97 199 98 101 45 96 300 301 317 116 235 53 114 132 148 104 318 310 323 273 263 82 81 6 105 276 347 283 271 266</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\util\nrf_assert.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 130</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 74</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 154</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 310 53 132 301 97 199 101 50 81 271 94 45 98 317 300 116 276 263 96 318 323 104 235 148 114 105 266 283 273 82 6 347</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 273 50 94 97 199 98 101 45 96 301 317 116 235 53 114 132 148 104 318 310 323 300 263 82 81 6 105 276 347 283 271 266</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\util\sdk_mapped_flags.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 69</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 187</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 161</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 116 300 50 199 101 267 97 317 94 105 45 98 301 310 132 53 109 96 271 81 318 323 104 235 148 114 279</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 279 50 94 97 199 98 101 45 96 105 267 109 81 300 271 301 317 116 235 53 114 132 148 104 318 310 323</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\src\main.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 198</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 86</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 155</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 271 408 242 81 276 85 50 97 329 82 335 310 132 53 283 105 280 273 301 328 336 94 96 317 300 104 114 263 248 287 109 429 401 241 192 342 345 199 45 98 101 6 318 323 116 235 148 267 275 250 382 447 78 319 266 347 56 249 277 70 257 281 375</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 447 105 50 94 97 199 98 101 45 96 82 81 6 429 301 317 116 235 53 114 132 148 104 318 310 323 300 401 242 248 319 273 263 276 347 283 271 266 78 241 109 328 192 56 85 267 335 249 329 275 287 70 280 277 342 257 336 250 281 345 382 408 375 331 421 424 432 422 425 433 102 195 143 289 19 72 46 217 406 194 426 428 438 412 387 435 427 436 407 258 259 260 409 270 437 410 384 383 434 255</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF52_FIFO.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 129</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 124</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 168</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 287 81 98 94 45 280 310 132 53 199 101 97 271 267 70 300 275 78 96 105 283 276 277 301 317 116 285 347 109 318 323 104 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 285 50 94 97 199 98 101 45 96 78 81 275 105 287 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF52_UART.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 123</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 131</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 9</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 94 318 319 283 81 429 53 96 114 276 271 78 412 97 323 104 132 329 70 300 82 301 328 285 199 45 98 101 317 310 116 235 148 242 105 273 277 263 291 248 387 275 347 287 280 267 109 266 6</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 291 429 50 94 97 199 98 101 45 96 328 301 317 116 235 53 114 132 148 104 318 310 323 300 412 248 319 329 105 276 347 283 275 287 81 70 271 280 267 109 277 273 263 82 6 266 387 242 78 285</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\Print.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 22</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 71</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 27</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 102 429 78 97 227 203 426 94 96 143 217 431 433 50 199 45 98 101 287 406 81 19 289 36 425 70 195 72 46 194 110</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 425 429 50 94 97 199 98 101 45 96 433 78 81 287 70 102 195 143 289 19 72 46 217 406 194 426 431 227 110 36 203</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\SPIClass.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 219</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 220</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 301 50 97 347 310 132 53 267 105 6 109 81 424 317 300 104 94 96 114 328 259 275 271 266 248 436 318 323 116 235 148 199 45 98 101 409 329 242 287 280 276 260 273 427 429 407 258 283 277 70 263 82 319 78 270</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 427 424 301 317 116 50 94 97 199 98 101 45 96 235 53 114 132 148 104 318 310 323 300 436 429 328 407 329 105 276 347 283 275 287 81 70 271 280 267 109 277 273 263 82 6 266 258 248 319 259 260 242 78 409 270</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\Stream.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 20</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 135</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 209</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 192 97 287 94 105 347 289 50 323 116 148 109 329 425 45 19 81 401 345 273 300 301 96 433 406 143 217 429 241 342 6 318 235 53 276 249 271 277 283 447 194 199 98 101 426 78 102 70 195 72 46 82 242 328 335 336 408 317 310 104 132 114 319 266 56 250 382 428 248 263 85 267 275 280 257 281 375</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 428 194 94 50 97 199 98 101 45 96 425 429 433 78 81 287 70 102 195 143 289 19 72 46 217 406 426 447 105 82 6 301 317 116 235 53 114 132 148 104 318 310 323 300 401 242 248 319 273 263 276 347 283 271 266 241 109 328 192 56 85 267 335 249 329 275 280 277 342 257 336 250 281 345 382 408 375 331 421 424 432 422 438 412 387 435 427 436 407 258 259 260 409 270</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\USBSerial.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 21</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 139</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 120</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 19 97 50 199 45 94 81 425 433 101 287 289 428 429 426 98 406 143 217 430 96 78 102 70 195 72 46 194</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 430 425 429 50 94 97 199 98 101 45 96 433 78 81 287 70 102 195 143 289 19 72 46 217 406 194 426 428</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\wirish_digital.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 216</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 214</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 25</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 114 271 96 336 300 104 301 94 276 85 50 97 329 105 328 317 82 283 280 273 447 242 335 408 81 310 132 53 263 248 287 109 429 401 241 192 342 345 199 45 98 101 6 318 323 116 235 148 267 275 250 382 432 78 319 266 347 56 249 277 70 257 281 375</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 432 447 105 50 94 97 199 98 101 45 96 82 81 6 429 301 317 116 235 53 114 132 148 104 318 310 323 300 401 242 248 319 273 263 276 347 283 271 266 78 241 109 328 192 56 85 267 335 249 329 275 287 70 280 277 342 257 336 250 281 345 382 408 375 331 421 424 422 425 433 102 195 143 289 19 72 46 217 406 194 426 428 438 412 387 435 427 436 407 258 259 260 409 270</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\wirish_math.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 191</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 91</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 28</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 227 94 97 199 45 36 431 81 96 98 101 50 110 78</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 78 94 97 199 98 101 45 96 81 431 227 110 36 50</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\WString.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
+          <name>OBJCOPY</name>
           <file> 193</file>
         </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 88</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 26</file>
-        </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 96 406 405 287 45 70 195 72 78 423 102 199 98 101 143 19 217 289 50 433 46 194</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 433 78 94 97 199 98 101 45 96 81 287 70 102 195 143 289 19 72 46 217 406 194 50 423 405</file>
+          <name>ILINK</name>
+          <file> 62 70 64 113 107 104 114 121 102 117 120 109 115 68 67 30 174 161 53 200 222 202 432 9 34 18 436 239 190 52 144 209 63 16 208 12 139 133 50 17 130 135 14 205 453 172 158 15 136 13 49 171 138 47 152 69 245 213 184 185 191 449 35 7 178 58 439 2 54 51 5 447 448 148</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\config\radio_config.c</name>
+      <name>$PROJ_DIR$\..\nRF52\core\avr\dtostrf.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 68</file>
+          <name>ICCARM</name>
+          <file> 161</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 75</file>
+          <name>BICOMP</name>
+          <file> 162</file>
         </tool>
         <tool>
           <name>__cstat</name>
@@ -1263,645 +534,456 @@
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 235 318 94 199 101 104 323 148 45 98 53 328 301 317 310 300 116 50 132 97 96 114 324</file>
+          <name>ICCARM</name>
+          <file> 198 57 60 44 244 150 145 59 197 211</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 324 328 301 317 116 50 94 97 199 98 101 45 96 235 53 114 132 148 104 318 310 323 300</file>
+          <name>BICOMP</name>
+          <file> 44 150 197 57 145 244 60 211 59 198</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\ble_flash.c</name>
+      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_clock.c</name>
       <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 30</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 61</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 152</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 97 267 300 116 50 271 349 317 347 105 96 310 132 53 78 287 301 199 45 98 101 318 323 104 235 148 114 109 327 81 70</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 327 50 94 97 199 98 101 45 96 105 301 317 116 235 53 114 132 148 104 318 310 323 300 78 81 287 70 349 271 347 267 109</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_comp.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 200</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 2</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 118</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_common.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 190</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 44</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 51</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 82 148 81 97 323 273 50 6 248 105 267 300 96 276 318 104 235 271 319 329 270 199 45 98 101 301 275 317 310 116 132 53 347 287 280 109 114 283 277 70 263 266</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 109 94 97 199 98 101 45 96 81 329 50 105 301 317 116 235 53 114 132 148 104 318 310 323 300 276 347 283 275 287 70 271 280 267 277 273 263 82 6 266 270 248 319</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_gpiote.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 184</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 57</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 133</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 97 81 301 50 94 347 300 271 270 105 277 109 317 148 82 331 274 283 276 96 310 116 235 53 248 263 329 273 287 103 280 267 199 45 98 101 70 318 323 104 132 114 242 319 275 85 18 241 78 266 6</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277 331 241 248 319 242 273 263 82 6 266 78 329 270 274 103 85 18</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_i2s.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 31</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 233</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 134</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_lpcomp.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 55</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 3</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 146</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_pdm.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 115</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 229</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 183</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_power.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 15</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 39</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 182</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_ppi.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 66</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 33</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 181</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_pwm.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 65</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 205</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 180</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_qdec.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 106</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 234</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 179</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_qspi.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 14</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 29</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 76</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_rng.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 80</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 35</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 178</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_rtc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 125</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 231</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 177</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_swi.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 79</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 108</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 196</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 270 50 96 235 347 271 97 301 310 116 53 267 300 273 343 103 275 94 317 148 263 81 105 319 78 276 199 45 98 101 318 323 104 132 114 287 280 109 82 283 85 18 329 277 70 266 6 248</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 329 50 94 97 199 98 101 45 96 105 301 317 116 235 53 114 132 148 104 318 310 323 300 276 347 283 275 287 81 70 271 280 267 109 277 273 263 82 6 266 78 343 270 248 319 103 85 18</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_saadc.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 153</file>
-        </tool>
         <tool>
           <name>ICCARM</name>
           <file> 52</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 434</file>
+        </tool>
+        <tool>
           <name>__cstat</name>
-          <file> 147</file>
+          <file> 65</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
+          <name>ICCARM</name>
+          <file> 251 389 159 57 60 44 244 150 145 59 197 157 343 345 168 204 20 206 163 180 441 156 346 344 349 342 354 423 364 430 422 22 74 419 425 413 424 420 412 198 211 415 418</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
+          <name>BICOMP</name>
+          <file> 343 145 57 156 159 60 244 346 20 204 22 418 354 44 150 349 441 163 422 364 425 157 342 389 197 59 345 344 168 180 206 419 413 198 211 420 251 423 430 424 74 412 415</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_systick.c</name>
+      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spi.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 43</file>
+          <name>ICCARM</name>
+          <file> 453</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 232</file>
+          <name>BICOMP</name>
+          <file> 182</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 174</file>
+          <file> 95</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 318 53 276 105 271 96 70 301 283 94 104 344 300 277 97 81 50 323 148 82 6 381 273 287 280 267 199 45 98 101 347 109 317 310 116 235 114 275 132 263 266</file>
+          <name>ICCARM</name>
+          <file> 252 354 204 57 60 44 244 150 145 59 157 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 430 422 22 197 74 419 425 413 159 424 420 412 198 211 415 402 397 347 352 363 392 194</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277 344 381 273 263 82 6 266</file>
+          <name>BICOMP</name>
+          <file> 343 354 59 20 204 424 392 344 168 206 157 57 60 397 347 352 422 345 342 441 430 197 412 159 194 145 402 363 423 420 44 244 150 346 349 156 180 163 74 198 419 252 364 22 425 413 415 211</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_timer.c</name>
+      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spis.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 67</file>
+          <name>ICCARM</name>
+          <file> 172</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 37</file>
+          <name>BICOMP</name>
+          <file> 442</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 162</file>
+          <file> 94</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 253 363 397 347 392 420 412 198 211 415 194 418 354 155 201 223</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
+          <name>BICOMP</name>
+          <file> 57 345 155 419 145 441 363 364 412 60 159 157 397 204 413 244 197 342 253 343 354 22 425 44 150 344 168 20 206 198 211 420 392 418 430 423 424 59 74 346 349 156 180 163 422 347 201 223 194 415</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_wdt.c</name>
+      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_twi.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 107</file>
+          <name>ICCARM</name>
+          <file> 13</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 202</file>
+          <name>BICOMP</name>
+          <file> 433</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 170</file>
+          <file> 84</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
+          <name>ICCARM</name>
+          <file> 254 397 347 406 204 57 60 44 244 150 145 59 159 197 157 343 345 168 20 206 163 180 441 156 346 344 349 342 405 354 423 364 430 422 22 74 419 425 413 424 420 412 198 211 415 392 194 355</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
+          <name>BICOMP</name>
+          <file> 204 424 60 156 180 159 57 206 419 194 397 197 346 157 392 405 347 343 59 349 423 342 415 354 355 406 44 145 244 150 345 344 168 420 430 74 412 254 20 441 163 422 364 22 425 413 198 211</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_soc.c</name>
+      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_twis.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 201</file>
-        </tool>
-        <tool>
           <name>ICCARM</name>
-          <file> 140</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 159</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 97 94 45 98 317 301 300 116 50 347 199 101 310 132 53 349 81 96 318 323 104 235 148 114 78</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 78 94 97 199 98 101 45 96 81 349 50 301 317 116 235 53 114 132 148 104 318 310 323 300 347</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_nvic.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 11</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 63</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 167</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 318 235 94 97 104 114 50 347 81 96 323 148 53 349 45 199 98 101 301 317 310 300 116 132 78</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 78 94 97 199 98 101 45 96 81 349 50 301 317 116 235 53 114 132 148 104 318 310 323 300 347</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\system\drivers\sdio.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
           <file> 49</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 211</file>
+          <name>BICOMP</name>
+          <file> 66</file>
         </tool>
         <tool>
           <name>__cstat</name>
-          <file> 166</file>
+          <file> 86</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 50 98 300 301 283 116 105 242 94 45 317 328 199 101 310 132 114 78 266 97 350 325 96 318 323 104 235 148 53 273 263 276 81 248 319 82 271 6 347</file>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 50 94 97 199 98 101 45 96 301 317 116 235 53 114 132 148 104 318 310 323 300 328 350 105 242 248 319 273 263 82 81 6 276 347 283 271 266 78 325</file>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\system\hal\nrf_ecb.c</name>
+      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_uarte.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 93</file>
-        </tool>
-        <tool>
           <name>ICCARM</name>
-          <file> 100</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
           <file> 171</file>
         </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 98</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 42</file>
+        </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 70 94 104 97 378 318 235 287 81 96 323 148 105 301 45 199 98 101 317 310 300 116 50 132 53 78 114</file>
+          <name>ICCARM</name>
+          <file> 255 397 347 354 204 57 60 44 244 150 145 59 157 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 430 422 22 197 74 419 425 413 159 424 420 412 198 211 415 407 392 194</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 78 94 97 199 98 101 45 96 81 105 287 70 301 317 116 50 235 53 114 132 148 104 318 310 323 300 378</file>
+          <name>BICOMP</name>
+          <file> 204 343 206 344 168 74 342 397 59 20 423 198 407 422 60 57 345 441 430 419 194 145 354 392 347 157 420 44 244 150 346 349 156 180 163 424 197 412 255 364 22 425 413 159 415 211</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\avr\dtostrf.c</name>
+      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_usbd.c</name>
       <outputs>
         <tool>
+          <name>ICCARM</name>
+          <file> 138</file>
+        </tool>
+        <tool>
           <name>BICOMP</name>
+          <file> 189</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 256 354 204 57 60 44 244 150 145 59 157 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 430 422 22 197 74 419 425 413 159 424 420 412 198 211 415 408 397 347 101 99 21 418 361 39</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 364 180 204 157 244 57 101 419 412 361 408 423 145 349 156 354 39 420 44 150 346 163 206 413 74 342 198 99 418 22 343 422 60 59 345 344 168 20 441 425 197 397 159 347 256 430 424 415 211 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 232</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 430 276 204 57 60 44 244 150 145 59 157 256 354 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 422 22 197 74 419 425 413 159 424 420 412 198 211 415 408 397 347 101 316 324 321 319 320 418 313 318 286 284 285</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 206 256 343 313 316 354 344 168 419 60 286 59 157 20 364 204 415 319 420 276 285 57 408 101 422 345 342 441 413 423 412 418 318 284 44 145 244 150 346 349 156 180 163 22 425 159 197 211 321 324 430 424 74 198 397 347 320</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 238</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 430 288 204 57 60 44 244 150 145 59 157 256 354 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 422 22 197 74 419 425 413 159 424 420 412 198 211 415 408 397 347 101 313 324 321 319 320 418 316 318 290 291 289 39 155 201 223</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 150 206 223 60 289 44 157 419 422 346 204 418 342 313 291 318 420 163 364 343 415 320 57 288 155 290 145 244 423 413 349 156 180 324 256 201 39 316 319 59 354 408 101 345 344 168 20 441 22 425 159 197 211 430 424 74 412 198 397 347 321</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 240</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 430 22 57 60 44 244 150 145 59 197 74 422 204 157 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 292 256 354 420 412 198 211 415 408 397 347 101 313 324 321 319 320 418 306 304 99 21 316 318 294 295 241</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 346 59 204 197 423 313 418 57 342 206 408 292 60 430 163 422 412 397 343 99 21 304 22 157 424 349 156 180 318 101 159 347 256 321 324 420 74 44 145 244 150 419 425 413 364 345 344 168 20 441 294 354 198 319 316 306 295 415 211 320 241</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 117</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 236</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 430 22 57 60 44 244 150 145 59 197 74 422 204 157 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 296 256 354 420 412 198 211 415 408 397 347 101 313 324 321 319 320 418 306 304 99 21 316 318 298 299</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 204 145 256 57 157 420 197 419 20 423 296 244 60 413 364 344 168 206 319 343 313 422 22 74 44 150 425 159 345 342 441 306 211 316 418 59 430 424 346 349 156 180 163 299 415 324 320 99 304 318 298 354 408 101 412 198 397 347 321 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 120</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 229</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 430 22 57 60 44 244 150 145 59 197 74 422 204 157 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 300 256 354 420 412 198 211 415 408 397 347 101 313 324 321 319 320 418 306 304 99 21 316 318 302 303</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 206 342 408 57 59 423 204 346 306 197 418 300 60 430 163 422 412 397 343 99 21 22 157 424 349 156 180 319 101 159 347 256 321 324 74 44 145 244 150 419 425 413 364 345 344 168 20 441 316 303 354 198 420 313 304 318 302 415 211 320</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\app_usbd_hid.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 121</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 226</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 430 316 256 354 204 57 60 44 244 150 145 59 157 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 422 22 197 74 419 425 413 159 424 420 412 198 211 415 408 397 347 101 324 321 319 320 418 313 318 304 99 21 306</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 206 343 413 324 354 344 168 157 422 159 304 59 20 204 419 57 256 316 408 101 60 345 342 441 364 415 418 320 306 318 313 423 420 44 145 244 150 346 349 156 180 163 22 425 197 211 430 424 74 412 198 397 347 321 319 99 21</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 227</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 430 22 57 60 44 244 150 145 59 197 74 151 40 183 166 194 224 188 146 4 316 256 354 204 157 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 422 419 425 413 159 424 420 412 198 211 415 408 397 347 101 324 321 319 320 418 313 308 243 318 312 309 311 310 323 314 155 201 223</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 206 157 60 204 211 422 59 430 420 316 40 188 194 145 256 343 346 342 319 22 308 155 146 313 423 413 163 424 419 243 310 151 323 197 74 44 244 150 183 224 4 166 324 354 408 101 349 156 180 159 415 418 320 309 364 345 344 168 20 441 425 412 198 397 347 321 318 312 311 314 201 223</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
           <file> 113</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 231</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
           <name>ICCARM</name>
+          <file> 430 422 204 57 60 44 244 150 145 59 157 22 197 74 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 316 256 354 420 412 198 211 415 408 397 347 101 324 321 319 320 418 313 318 396 251 389 242 155 201 223</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 422 223 150 60 20 412 418 22 44 204 419 242 397 318 425 364 57 344 168 206 408 197 343 157 251 413 145 244 159 345 342 441 101 347 321 324 256 389 201 316 396 155 430 423 424 59 74 346 349 156 180 163 354 198 420 319 313 415 211 320</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_core.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 114</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 235</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 430 318 204 57 60 44 244 150 145 59 422 157 22 197 74 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 256 354 420 412 198 211 415 408 397 347 101 324 321 319 320 418 313 316 323 314 99 21</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 204 57 157 256 422 418 413 180 321 313 44 150 419 74 430 343 60 349 156 423 318 145 244 22 425 197 342 346 163 206 420 211 324 316 323 99 59 424 364 159 345 344 168 20 441 415 320 314 21 354 408 101 412 198 397 347 319</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 115</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
           <file> 112</file>
         </tool>
         <tool>
@@ -1911,339 +993,12 @@
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 199 101 81 94 45 98 97 6 96 82</file>
-        </tool>
-        <tool>
           <name>ICCARM</name>
-          <file> 82 94 97 199 98 101 45 96 81 6</file>
+          <file> 430 323 204 57 60 44 244 150 145 59 422 157 22 197 74 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 316 256 354 420 412 198 211 415 408 397 347 101 324 321 319 320 418 313 314 318</file>
         </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spi.c</name>
-      <outputs>
         <tool>
           <name>BICOMP</name>
-          <file> 136</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 210</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 176</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 301 329 96 235 50 277 242 310 116 53 283 105 94 97 248 319 259 275 317 300 148 81 263 109 78 45 258 260 276 273 199 98 101 318 323 104 132 114 70 82 271 407 347 287 280 267 266 6</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 407 329 50 94 97 199 98 101 45 96 105 301 317 116 235 53 114 132 148 104 318 310 323 300 276 347 283 275 287 81 70 271 280 267 109 277 273 263 82 6 266 258 248 319 259 260 242 78</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_clock.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 150</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 89</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 275 301 45 94 104 109 97 98 318 235 114 50 347 287 270 329 199 101 323 148 280 105 300 375 81 96 317 310 116 132 53 271 267 82 6 273 408 276 283 277 70 263 266</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 408 375 109 94 97 199 98 101 45 96 81 105 301 317 116 50 235 53 114 132 148 104 318 310 323 300 329 276 347 283 275 287 70 271 280 267 277 273 263 82 6 266 270</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spis.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 149</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 122</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 175</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 103 271 45 300 260 347 263 97 81 105 248 50 267 98 109 317 148 409 301 329 287 280 199 101 310 116 235 53 82 6 273 242 270 283 276 277 96 70 318 323 104 132 114 275 319 85 18 78 266</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277 409 260 248 319 242 273 263 82 6 266 78 270 329 103 85 18</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_twi.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 138</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 230</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 277 97 104 109 94 276 271 78 248 81 318 105 242 383 319 301 96 323 132 53 300 266 329 328 384 199 45 98 101 317 310 116 273 283 70 263 410 235 148 114 275 347 287 280 267 82 6</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 410 248 319 384 50 94 97 199 98 101 45 96 109 81 105 301 317 116 235 53 114 132 148 104 318 310 323 300 383 329 276 347 283 275 287 70 271 280 267 277 273 263 82 6 266 242 78 328</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_twis.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 58</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 204</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 81 97 300 317 105 277 50 116 132 53 283 276 96 70 301 310 287 271 280 267 199 45 98 101 347 109 318 323 104 275 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 275 50 94 97 199 98 101 45 96 105 287 81 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_uarte.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 284</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 121</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 197</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 301 53 310 116 70 300 248 96 235 276 82 387 275 97 94 317 148 283 271 78 45 329 242 319 105 273 199 98 101 318 323 104 132 114 277 81 263 412 347 287 280 267 109 266 6</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 412 248 319 329 50 94 97 199 98 101 45 96 105 301 317 116 235 53 114 132 148 104 318 310 323 300 276 347 283 275 287 81 70 271 280 267 109 277 273 263 82 6 266 387 242 78</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_usbd.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 73</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 38</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 132 50 105 98 94 240 271 263 344 388 276 45 323 104 329 194 273 199 101 318 114 53 347 267 70 300 82 238 270 287 301 275 97 96 317 310 116 235 148 280 81 248 109 319 413 283 277 266 6 236</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 413 329 50 94 97 199 98 101 45 96 105 301 317 116 235 53 114 132 148 104 318 310 323 300 276 347 283 275 287 81 70 271 280 267 109 277 273 263 82 6 266 388 248 319 240 238 236 270 344 194</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_FIFO.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 142</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 137</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 186</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 287 81 98 94 45 280 310 132 53 199 101 97 271 267 70 300 275 78 96 105 283 276 277 301 317 116 435 347 109 318 323 104 235 148 114</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 435 50 94 97 199 98 101 45 96 78 81 275 105 287 70 283 271 300 280 276 347 267 109 301 317 116 235 53 114 132 148 104 318 310 323 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_SPI.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 185</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 189</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 188</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 271 301 328 276 248 97 96 114 53 94 50 318 260 283 273 409 323 104 132 70 300 82 105 109 242 429 407 199 45 98 101 317 310 116 235 148 258 277 81 263 319 78 270 436 329 259 275 347 287 280 267 266 6</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 436 429 50 94 97 199 98 101 45 96 328 301 317 116 235 53 114 132 148 104 318 310 323 300 407 329 105 276 347 283 275 287 81 70 271 280 267 109 277 273 263 82 6 266 258 248 319 259 260 242 78 409 270</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_RTC.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 221</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 222</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 97 248 94 114 53 319 109 280 81 318 50 301 266 255 96 323 104 132 105 275 287 408 273 199 45 98 101 317 310 300 116 235 148 276 6 347 329 271 267 434 263 82 283 375 277 70</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 434 255 50 94 97 199 98 101 45 96 109 81 105 301 317 116 235 53 114 132 148 104 318 310 323 300 273 263 82 6 276 347 283 271 266 248 319 408 375 329 275 287 70 280 267 277</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_TWI.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 239</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 237</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 105 53 347 384 199 101 323 148 50 94 45 98 97 318 104 235 114 301 410 248 383 319 109 96 81 317 310 300 116 132 437</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 437 410 248 319 384 50 94 97 199 98 101 45 96 109 81 105 301 317 116 235 53 114 132 148 104 318 310 323 300 383 347</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\HardwareSerial.cpp</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 87</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 90</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 12</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 50 280 94 102 97 287 328 109 300 104 114 425 96 433 70 195 72 78 46 301 317 424 81 194 310 132 242 276 248 429 428 438 199 45 98 101 426 406 143 19 217 289 318 323 116 235 148 53 347 329 275 271 267 105 266 6 422 412 435 387 319 273 283 277 263 82</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 422 429 50 94 97 199 98 101 45 96 425 433 78 81 287 70 102 195 143 289 19 72 46 217 406 194 426 428 424 301 317 116 235 53 114 132 148 104 318 310 323 300 438 328 412 248 319 329 105 276 347 283 275 271 280 267 109 277 273 263 82 6 266 387 242 435</file>
-        </tool>
-      </inputs>
-    </file>
-    <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</name>
-      <outputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 145</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 144</file>
-        </tool>
-        <tool>
-          <name>__cstat</name>
-          <file> 40</file>
-        </tool>
-      </outputs>
-      <inputs>
-        <tool>
-          <name>BICOMP</name>
-          <file> 94 53 319 283 81 328 98 318 50 45 276 271 78 347 323 104 132 199 101 329 70 300 82 301 412 435 317 310 116 235 148 97 96 114 242 105 273 277 263 438 248 387 275 287 280 267 109 266 6</file>
-        </tool>
-        <tool>
-          <name>ICCARM</name>
-          <file> 438 328 301 317 116 50 94 97 199 98 101 45 96 235 53 114 132 148 104 318 310 323 300 412 248 319 329 105 276 347 283 275 287 81 70 271 280 267 109 277 273 263 82 6 266 387 242 78 435</file>
+          <file> 344 168 256 157 364 413 430 419 57 206 318 316 60 423 204 20 324 343 313 323 59 342 424 159 197 345 441 415 420 320 422 314 44 145 244 150 22 425 74 346 349 156 180 163 211 418 354 408 101 412 198 397 347 321 319</file>
         </tool>
       </inputs>
     </file>
@@ -2251,12 +1006,521 @@
       <name>$PROJ_DIR$\..\nRF52\core\delay.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 127</file>
+          <name>ICCARM</name>
+          <file> 174</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 175</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 446</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
           <name>ICCARM</name>
+          <file> 250 204 57 60 44 244 150 145 59 355 343 345 168 20 206 163 180 441 156 346 344 349 342</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 156 204 60 57 346 20 59 349 441 206 355 44 145 244 150 343 345 344 342 168 180 250</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_FIFO.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 432</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 431</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 31</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 277 204 57 60 44 244 150 145 59 194 197 422 157 22 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 204 22 197 244 57 145 425 344 180 206 44 150 60 419 413 74 342 422 194 59 157 430 423 424 343 345 168 277 364 159 346 349 156 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_RTC.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 9</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 8</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 234</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 278 399 204 57 60 44 244 150 145 59 159 197 157 343 345 168 20 206 163 180 441 156 346 344 349 342 420 412 198 211 423 364 430 419 415 397 347 251 389 354 422 22 74 425 413 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 397 60 157 57 163 206 347 159 425 197 346 204 343 399 59 349 156 180 415 422 22 251 420 44 145 244 150 345 344 342 168 20 441 423 211 364 354 419 413 278 412 198 430 389 424 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_SPI.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 34</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 33</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 32</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 279 271 204 57 60 44 244 150 145 59 355 343 345 168 20 206 163 180 441 156 346 344 349 342 252 354 157 423 364 430 422 22 197 74 419 425 413 159 424 420 412 198 211 415 402 397 347 352 363 392 194 253 418</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 419 343 355 397 60 59 163 206 204 57 346 430 420 253 349 156 180 363 423 74 342 198 157 159 392 271 252 44 145 244 150 345 344 168 20 441 402 424 197 412 347 194 418 279 354 352 422 364 22 425 413 415 211</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_TWI.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 18</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 19</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 230</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 280 254 397 347 406 204 57 60 44 244 150 145 59 159 197 157 343 345 168 20 206 163 180 441 156 346 344 349 342 405 364</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 157 206 364 406 44 150 349 441 204 57 145 244 60 346 156 20 163 343 254 397 405 347 159 59 197 345 344 342 168 180 280</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 436</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 438</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 140</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 281 355 343 345 168 204 57 60 44 244 150 145 59 20 206 163 180 441 156 346 344 349 342 255 397 347 354 157 423 364 430 422 22 197 74 419 425 413 159 424 420 412 198 211 415 407 392 194 277</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 239</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 237</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 75</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 282 343 345 168 204 57 60 44 244 150 145 59 20 206 163 180 441 156 346 344 349 342</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 204 344 180 60 343 345 342 168 57 59 206 346 349 156 20 441 44 145 244 150 282</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\HardwareSerial.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 203</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 219</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 264 271 204 57 60 44 244 150 145 59 267 275 194 197 22 74 151 40 183 166 224 188 146 4 249 39 268 270 266 343 345 168 20 206 163 180 441 156 346 344 349 342 281 355 255 397 347 354 157 423 364 430 422 419 425 413 159 424 420 412 198 211 415 407 392 277</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 204 425 57 151 60 22 343 159 342 156 163 392 267 59 275 74 40 188 194 146 345 266 197 39 344 180 355 423 397 271 270 281 44 145 244 150 268 249 183 224 4 166 346 349 168 20 441 206 364 354 422 419 413 157 415 211 264 255 277 407 347 420 430 424 412 198</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\itoa.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 222</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 218</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 451</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 265 22 57 60 44 244 150 145 59 197 74</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 60 44 150 22 197 74 145 244 265 59</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\Print.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 185</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 210</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 128</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 267 271 204 57 60 44 244 150 145 59 275 194 197 22 74 151 40 183 166 224 188 146 4 249 39 268 274 11 160 134 48</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151 271 194 60 11 48 268 57 59 183 4 274 275 204 44 145 244 150 22 249 197 224 166 134 267 74 40 188 146 39 160</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\SPIClass.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 7</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 6</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 233</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 269 266 343 345 168 204 57 60 44 244 150 145 59 20 206 163 180 441 156 346 344 349 342 279 271 355 252 354 157 423 364 430 422 22 197 74 419 425 413 159 424 420 412 198 211 415 402 397 347 352 363 392 194 253 418</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 343 204 60 364 344 180 206 355 352 422 413 157 211 159 197 266 345 342 156 57 59 163 419 415 397 279 346 349 168 20 441 44 145 244 150 253 354 392 22 425 423 363 420 269 271 252 402 430 424 74 412 198 347 194 418</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\Stream.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 178</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 225</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 452</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 270 39 57 204 60 44 244 150 145 59 267 271 275 194 197 22 74 151 40 183 166 224 188 146 4 249 268 334 157 198 211 343 345 168 20 206 163 180 441 156 346 344 349 342 246 392 397 347 420 412 423 364 430 419 415 393 159 355 78 76 201 413 357 396 354 422 425 424 359 401 358 398 429 362 404 251 389 356 250 266 273 264 281 255 407 277 269 279 252 402 352 363 253 418</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 78 60 420 22 57 423 157 166 204 349 168 441 343 159 354 267 145 224 197 246 362 206 342 59 275 249 183 4 271 393 359 211 346 20 364 396 419 424 430 334 39 44 244 150 268 194 151 74 40 188 146 198 392 355 357 358 251 345 344 156 180 163 347 415 76 398 404 270 397 412 201 413 422 425 401 429 389</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\USBSerial.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 439</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 123</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 170</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 272 267 271 204 57 60 44 244 150 145 59 275 194 197 22 74 151 40 183 166 224 188 146 4 249 39 268 270</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 224 60 204 44 145 57 197 267 275 150 22 166 270 271 268 244 249 183 4 272 59 194 151 74 40 188 146 39</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\wirish_digital.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 2</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 3</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
           <file> 126</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 273 334 157 204 57 60 44 244 150 145 59 198 197 211 271 343 345 168 20 206 163 180 441 156 346 344 349 342 246 392 397 347 420 412 423 364 430 419 415 194 393 159 355 78 76 201 413 357 396 354 422 22 74 425 424 359 401 358 398 429 362 404 251 389 356 250 266 264 267 275 151 40 183 166 224 188 146 4 249 39 268 270 281 255 407 277 269 279 252 402 352 363 253 418</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 163 419 59 358 342 156 343 57 423 201 204 60 354 157 355 345 412 425 420 334 198 392 357 251 197 344 180 206 430 397 22 159 271 246 393 78 359 362 44 145 244 150 211 346 349 168 20 441 413 422 398 404 273 194 347 415 364 76 396 424 74 401 429 389</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\wirish_math.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 37</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 125</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194 57 60 44 244 150 145 59 197 274 11 160 134 204</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 11 57 60 44 145 134 274 197 59 244 150 204 160 194</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\core\WString.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 38</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 129</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 275 194 57 60 44 244 150 145 59 197 22 74 151 40 183 166 224 188 146 4 249 39 204 265 248</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 197 60 59 249 248 22 145 74 40 188 194 265 151 44 244 150 183 224 4 166 204 275 146 39</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\config\radio_config.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 191</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 187</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 214</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 350 355 343 345 168 204 57 60 44 244 150 145 59 20 206 163 180 441 156 346 344 349 342</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 20 346 57 44 150 156 349 441 145 244 206 355 343 345 344 342 168 204 180 60 59 163 350</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_nvic.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 216</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194 57 60 44 244 150 145 59 197 365 204 343 345 168 20 206 163 180 441 156 346 344 349 342 364</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 346 20 57 60 156 163 204 364 197 59 349 441 206 365 145 44 244 150 343 345 344 342 168 180 194</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\ble_flash.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 443</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 353 204 57 60 44 244 150 145 59 157 343 345 168 20 206 163 180 441 156 346 344 349 342 194 197 22 74 365 419 364 413 159</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57 60 413 342 168 204 419 365 345 364 157 59 344 180 206 194 22 343 44 145 244 150 346 349 156 20 441 163 159 353 197 74</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_common.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 144</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 36</file>
         </tool>
         <tool>
           <name>__cstat</name>
@@ -2265,269 +1529,804 @@
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 114 104 50 97 94 318 235 96 323 148 53 328 199 45 98 101 301 317 310 300 116 132 421</file>
+          <name>ICCARM</name>
+          <file> 159 57 60 44 244 150 145 59 197 354 204 157 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 430 422 22 74 419 425 413 424 420 412 198 211 415 418 397 347</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 421 50 94 97 199 98 101 45 96 328 301 317 116 235 53 114 132 148 104 318 310 323 300</file>
+          <name>BICOMP</name>
+          <file> 198 441 197 60 349 420 204 211 397 57 157 413 342 59 423 346 156 20 419 347 354 418 44 145 244 150 343 422 345 344 168 180 206 364 22 425 159 163 430 424 74 412 415</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\itoa.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_comp.c</name>
       <outputs>
         <tool>
+          <name>ICCARM</name>
+          <file> 209</file>
+        </tool>
+        <tool>
           <name>BICOMP</name>
+          <file> 45</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 167</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_gpiote.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 29</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 179</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 356 393 397 347 392 420 412 198 211 415 194 354 418 421 155 201 223</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60 343 204 57 159 197 364 342 345 441 419 418 157 424 198 356 421 430 423 59 344 168 20 206 397 412 354 420 22 155 425 413 44 145 244 150 74 346 349 156 180 163 392 347 422 201 223 393 194 415 211</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_i2s.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
           <file> 16</file>
         </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 132</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 181</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_lpcomp.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 208</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 437</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_pdm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 12</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 164</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 28</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_power.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 139</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 217</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 27</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_ppi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 133</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 26</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_pwm.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 25</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_qdec.c</name>
+      <outputs>
         <tool>
           <name>ICCARM</name>
           <file> 17</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 153</file>
+        </tool>
+        <tool>
           <name>__cstat</name>
-          <file> 208</file>
+          <file> 24</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 94 97 199 101 287 81 70 45 98 423 96</file>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 423 287 94 97 199 98 101 45 96 81 70</file>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm\app_usbd_cdc_acm.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_qspi.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 451</file>
+          <name>ICCARM</name>
+          <file> 130</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 450</file>
+          <name>BICOMP</name>
+          <file> 221</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 192</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 430</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 430</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\app_usbd_hid.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_rng.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 491</file>
+          <name>ICCARM</name>
+          <file> 135</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 490</file>
+          <name>BICOMP</name>
+          <file> 196</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 23</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic\app_usbd_hid_generic.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_rtc.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 448</file>
+          <name>ICCARM</name>
+          <file> 14</file>
         </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 173</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_saadc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 205</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 440</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 435</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_swi.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 158</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 195</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 41</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 354 204 57 60 44 244 150 145 59 157 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 430 422 22 197 74 419 425 413 159 424 420 412 198 211 415 194 360 418 397 347 155 201 223</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 418 204 59 20 364 419 60 343 344 168 206 413 342 420 360 155 422 57 345 441 412 197 157 347 194 423 44 145 244 150 346 349 156 180 163 22 425 159 198 430 201 223 354 424 74 415 211 397</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_systick.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 15</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424 361 403 420 412 198 211 415</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 206 423 430 419 59 74 343 156 57 157 346 361 342 424 60 197 204 349 441 198 211 403 420 22 425 413 44 145 244 150 364 159 345 344 168 20 163 422 180 412 415</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_timer.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 136</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 186</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 83</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_wdt.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 47</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 154</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 422 204 57 60 44 244 150 145 59 157 22 197 74 430 419 342 425 423 364 413 159 343 345 168 20 206 163 180 441 156 346 344 349 424</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 342 57 197 60 168 204 157 424 345 180 206 430 423 59 74 343 344 22 419 425 413 44 145 244 150 364 159 346 349 156 422 20 441 163</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_soc.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 184</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 46</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 77</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 194 57 60 44 244 150 145 59 197 365 204 343 345 168 20 206 163 180 441 156 346 344 349 342 364</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 60 57 145 244 345 343 342 168 204 364 44 150 344 180 206 365 197 59 346 349 156 20 441 163 194</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\drivers\sdio.c</name>
+      <outputs>
         <tool>
           <name>ICCARM</name>
           <file> 449</file>
         </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 149</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 88</file>
+        </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 204 57 60 44 244 150 145 59 343 345 168 20 206 163 180 441 156 346 344 349 342 355 366 157 392 397 347 420 412 198 197 211 423 364 430 419 415 194 351</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 204 415 244 342 168 392 57 145 345 163 194 355 44 150 344 180 343 157 430 60 366 351 59 346 349 156 20 441 206 420 412 423 197 397 347 198 419 211 364</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd\app_usbd_hid_kbd.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\hal\nrf_ecb.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 463</file>
+          <name>ICCARM</name>
+          <file> 152</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 462</file>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 92</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 194 57 60 44 244 150 145 59 197 157 22 74 343 345 168 204 20 206 163 180 441 156 346 344 349 342 391</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 74 57 156 60 391 346 20 22 197 59 349 441 157 343 145 44 244 150 345 344 342 168 204 180 206 194 163</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\hal\nrf_nvmc.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 489</file>
+          <name>ICCARM</name>
+          <file> 245</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 488</file>
+          <name>BICOMP</name>
+          <file> 169</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 90</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 157 343 345 168 204 57 60 44 244 150 145 59 20 206 163 180 441 156 346 344 349 342 395</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 163 204 344 180 60 395 345 342 168 57 59 206 343 346 349 156 20 441 44 145 244 150 157</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc\app_usbd_msc.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\hal\nrf_saadc.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 455</file>
+          <name>ICCARM</name>
+          <file> 213</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 454</file>
+          <name>BICOMP</name>
+          <file> 199</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 80</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 430</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 430</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio\app_usbd_audio.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\toolchain\iar\iar_startup_nrf52840.s</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 453</file>
+          <name>AARM</name>
+          <file> 200</file>
         </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\toolchain\system_nrf52840.c</name>
+      <outputs>
         <tool>
           <name>ICCARM</name>
-          <file> 452</file>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 87</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 204 57 60 44 244 150 145 59 157 343 345 168 20 206 163 180 441 156 346 344 349 342</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 57 345 60 342 168 204 343 59 344 180 206 157 156 44 145 244 150 346 349 20 441 163</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\util\app_error.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 457</file>
+          <name>ICCARM</name>
+          <file> 70</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 460</file>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 79</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 343 345 168 204 57 60 44 244 150 145 59 20 206 163 180 441 156 346 344 349 342 198 197 211 412 157 423 364 430 419 415</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 244 423 349 441 145 57 206 343 204 412 346 156 20 44 150 198 419 345 344 342 168 180 60 59 163 197 430 211 157 415 364</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\util\app_error_weak.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 456</file>
+          <name>ICCARM</name>
+          <file> 64</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 458</file>
+          <name>BICOMP</name>
+          <file> 212</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 81</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 412 204 57 60 44 244 150 145 59 198 197 211 157 343 345 168 20 206 163 180 441 156 346 344 349 342 423 364 430 419 415 155 422 22 74 425 413 159 424 201 223 220 124 127 141 194 137 418 420 165</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 283</file>
+          <name>BICOMP</name>
+          <file> 204 423 57 424 415 145 349 156 422 430 157 244 197 180 220 44 150 60 346 163 206 342 419 127 155 165 198 343 59 211 345 344 168 20 441 74 159 364 141 418 420 412 201 223 22 425 413 124 194 137</file>
         </tool>
       </inputs>
     </file>
     <file>
-      <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_core.c</name>
+      <name>$PROJ_DIR$\..\nRF52\system\util\nrf_assert.c</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 461</file>
+          <name>ICCARM</name>
+          <file> 190</file>
         </tool>
         <tool>
-          <name>ICCARM</name>
-          <file> 459</file>
+          <name>BICOMP</name>
+          <file> 177</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 444</file>
         </tool>
       </outputs>
       <inputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 283</file>
+          <name>ICCARM</name>
+          <file> 420 204 57 60 44 244 150 145 59 343 345 168 20 206 163 180 441 156 346 344 349 342 412 198 197 211 157 423 364 430 419 415</file>
         </tool>
         <tool>
+          <name>BICOMP</name>
+          <file> 344 206 180 343 44 150 423 204 419 57 145 244 345 342 168 197 60 412 59 346 349 156 20 441 163 157 415 430 420 198 211 364</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\util\app_util_platform.c</name>
+      <outputs>
+        <tool>
           <name>ICCARM</name>
-          <file> 283</file>
+          <file> 68</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 82</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 418 204 57 60 44 244 150 145 59 342 343 345 168 20 206 163 180 441 156 346 344 349 420 412 198 197 211 157 423 364 430 419 415</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 180 343 344 206 412 59 423 204 60 57 345 342 168 197 420 44 145 244 150 346 349 156 20 441 163 157 415 430 418 198 419 211 364</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\nRF52\system\util\sdk_mapped_flags.c</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 35</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 427 204 57 60 44 244 150 145 59 157 413 159 197 342 419 343 345 168 20 206 163 180 441 156 346 344 349</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 168 342 204 44 150 413 60 345 57 157 145 244 343 344 180 206 159 59 419 197 346 349 156 20 441 163 427</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\..\src\main.cpp</name>
+      <outputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 202</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 43</file>
+        </tool>
+        <tool>
+          <name>__cstat</name>
+          <file> 445</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 334 157 204 57 60 44 244 150 145 59 198 197 211 271 343 345 168 20 206 163 180 441 156 346 344 349 342 246 392 397 347 420 412 423 364 430 419 415 194 393 159 355 78 76 201 413 357 396 354 422 22 74 425 424 359 401 358 398 429 362 404 251 389 356 250 266 273 264 267 275 151 40 183 166 224 188 146 4 249 39 268 270 281 255 407 277 269 279 252 402 352 363 253 418 280 254 406 405 282 278 399</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 419 251 392 197 423 201 204 60 354 198 357 344 180 206 157 412 425 420 343 355 358 57 59 345 342 156 163 430 397 22 159 271 246 393 78 359 362 44 145 244 150 211 346 349 168 20 441 413 422 398 404 334 194 347 415 364 76 396 424 74 401 429 389</file>
         </tool>
       </inputs>
     </file>
@@ -2553,12 +2352,12 @@
       <name>$PROJ_DIR$\..\main.cpp</name>
       <outputs>
         <tool>
-          <name>BICOMP</name>
-          <file> 0</file>
-        </tool>
-        <tool>
           <name>ICCARM</name>
           <file> 1</file>
+        </tool>
+        <tool>
+          <name>BICOMP</name>
+          <file> 0</file>
         </tool>
       </outputs>
     </file>

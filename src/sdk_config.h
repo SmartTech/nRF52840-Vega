@@ -2,6 +2,29 @@
 #ifndef SDK_CONFIG_H
 #define SDK_CONFIG_H
 
+#define APP_USBD_VID                    0x1915 // Vendor ID
+#define APP_USBD_PID                    0x520C // Product ID
+
+#define USBD_ENABLED                         1
+#define APP_USBD_ENABLED                     1
+
+#define APP_USBD_CLASS_CDC_ACM_ENABLED       1
+#define APP_USBD_CLASS_AUDIO_ENABLED         1
+#define APP_USBD_CLASS_HID_ENABLED           1
+#define APP_USBD_MSC_ENABLED                 1
+#define APP_USBD_HID_KBD_ENABLED             1
+#define APP_USBD_HID_MOUSE_ENABLED           1
+#define APP_USBD_HID_GENERIC_ENABLED         1
+
+#define APP_USBD_DEVICE_VER_MAJOR            1
+#define APP_USBD_DEVICE_VER_MINOR            0
+
+#define APP_USBD_EVENT_QUEUE_ENABLE          1
+#define APP_USBD_EVENT_QUEUE_SIZE           32
+
+#define USBD_CONFIG_IRQ_PRIORITY             7
+#define NRF_DRV_USBD_DMASCHEDULER_MODE       0
+
 
 //==========================================================
 // <h> nRF_ANT
@@ -483,54 +506,7 @@
 #define NRF_DFU_BLE_BUTTONLESS_SUPPORTS_BONDS 0
 #endif
 
-//==========================================================
-// <h> nRF_Drivers 
-//==========================================================
-// <e> APP_USBD_ENABLED - app_usbd - USB Device library
-//==========================================================
-#ifndef APP_USBD_ENABLED
-#define APP_USBD_ENABLED 0
-#endif
 
-// <o> APP_USBD_VID - Vendor ID  <0x0000-0xFFFF> 
-// <i> Vendor ID ordered from USB IF: http://www.usb.org/developers/vendor/
-#ifndef APP_USBD_VID
-#define APP_USBD_VID 0
-#endif
-
-// <o> APP_USBD_PID - Product ID  <0x0000-0xFFFF> 
-// <i> Selected Product ID
-#ifndef APP_USBD_PID
-#define APP_USBD_PID 0
-#endif
-
-// <o> APP_USBD_DEVICE_VER_MAJOR - Device version, major part  <0-99> 
-// <i> Device version, will be converted automatically to BCD notation. Use just decimal values.
-#ifndef APP_USBD_DEVICE_VER_MAJOR
-#define APP_USBD_DEVICE_VER_MAJOR 1
-#endif
-
-// <o> APP_USBD_DEVICE_VER_MINOR - Device version, minor part  <0-99> 
-// <i> Device version, will be converted automatically to BCD notation. Use just decimal values.
-#ifndef APP_USBD_DEVICE_VER_MINOR
-#define APP_USBD_DEVICE_VER_MINOR 0
-#endif
-
-// <e> APP_USBD_EVENT_QUEUE_ENABLE - Enable event queue
-// <i> This is the default configuration when all the events are placed into internal queue.
-// <i> Disable it when external queue is used like app_scheduler or if you wish to process all events inside interrupts.
-// <i> Processing all events from the interrupt level adds requirement not to call any functions that modifies the USBD library state from the context higher than USB interrupt context.
-// <i> Functions that modify USBD state are functions for sleep, wakeup, start, stop, enable and disable.
-//==========================================================
-#ifndef APP_USBD_EVENT_QUEUE_ENABLE
-#define APP_USBD_EVENT_QUEUE_ENABLE 1
-#endif
-
-// <o> APP_USBD_EVENT_QUEUE_SIZE - The size of event queue  <16-64> 
-// <i> The size of the queue for the events that would be processed in the main loop.
-#ifndef APP_USBD_EVENT_QUEUE_SIZE
-#define APP_USBD_EVENT_QUEUE_SIZE 32
-#endif
 
 // <e> CLOCK_ENABLED - nrf_drv_clock - CLOCK peripheral driver
 //==========================================================
@@ -1785,36 +1761,6 @@
 #define TWI1_USE_EASY_DMA 0
 #endif
 
-// <e> USBD_ENABLED - nrf_drv_usbd - USB driver
-//==========================================================
-#ifndef USBD_ENABLED
-#define USBD_ENABLED 0
-#endif
-// <o> USBD_CONFIG_IRQ_PRIORITY  - Interrupt priority
- 
-
-// <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
-// <0=> 0 (highest) 
-// <1=> 1 
-// <2=> 2 
-// <3=> 3 
-// <4=> 4 
-// <5=> 5 
-// <6=> 6 
-// <7=> 7 
-
-#ifndef USBD_CONFIG_IRQ_PRIORITY
-#define USBD_CONFIG_IRQ_PRIORITY 7
-#endif
-
-// <o> NRF_DRV_USBD_DMASCHEDULER_MODE  - USBD SMA scheduler working scheme
- 
-// <0=> Prioritized access 
-// <1=> Round Robin 
-
-#ifndef NRF_DRV_USBD_DMASCHEDULER_MODE
-#define NRF_DRV_USBD_DMASCHEDULER_MODE 0
-#endif
 
 // </e>
 
@@ -2001,56 +1947,6 @@
 #define APP_UART_DRIVER_INSTANCE 0
 #endif
 
-// </e>
-
-// <q> APP_USBD_CLASS_AUDIO_ENABLED  - app_usbd_audio - USB AUDIO class
- 
-
-#ifndef APP_USBD_CLASS_AUDIO_ENABLED
-#define APP_USBD_CLASS_AUDIO_ENABLED 0
-#endif
-
-// <q> APP_USBD_CLASS_CDC_ACM_ENABLED  - app_usbd_cdc_acm - USB CDC ACM class
- 
-
-#ifndef APP_USBD_CLASS_CDC_ACM_ENABLED
-#define APP_USBD_CLASS_CDC_ACM_ENABLED 0
-#endif
-
-// <q> APP_USBD_CLASS_HID_ENABLED  - app_usbd_hid - USB HID class
- 
-
-#ifndef APP_USBD_CLASS_HID_ENABLED
-#define APP_USBD_CLASS_HID_ENABLED 0
-#endif
-
-// <q> APP_USBD_HID_GENERIC_ENABLED  - app_usbd_hid_generic - USB HID generic
- 
-
-#ifndef APP_USBD_HID_GENERIC_ENABLED
-#define APP_USBD_HID_GENERIC_ENABLED 0
-#endif
-
-// <q> APP_USBD_HID_KBD_ENABLED  - app_usbd_hid_kbd - USB HID keyboard
- 
-
-#ifndef APP_USBD_HID_KBD_ENABLED
-#define APP_USBD_HID_KBD_ENABLED 0
-#endif
-
-// <q> APP_USBD_HID_MOUSE_ENABLED  - app_usbd_hid_mouse - USB HID mouse
- 
-
-#ifndef APP_USBD_HID_MOUSE_ENABLED
-#define APP_USBD_HID_MOUSE_ENABLED 0
-#endif
-
-// <q> APP_USBD_MSC_ENABLED  - app_usbd_msc - USB MSC class
- 
-
-#ifndef APP_USBD_MSC_ENABLED
-#define APP_USBD_MSC_ENABLED 0
-#endif
 
 // <q> BUTTON_ENABLED  - app_button - buttons handling module
  
@@ -4314,57 +4210,6 @@
 
 // </e>
 
-// <e> USBD_CONFIG_LOG_ENABLED - Enable logging in the module
-//==========================================================
-#ifndef USBD_CONFIG_LOG_ENABLED
-#define USBD_CONFIG_LOG_ENABLED 0
-#endif
-// <o> USBD_CONFIG_LOG_LEVEL  - Default Severity level
- 
-// <0=> Off 
-// <1=> Error 
-// <2=> Warning 
-// <3=> Info 
-// <4=> Debug 
-
-#ifndef USBD_CONFIG_LOG_LEVEL
-#define USBD_CONFIG_LOG_LEVEL 3
-#endif
-
-// <o> USBD_CONFIG_INFO_COLOR  - ANSI escape code prefix.
- 
-// <0=> Default 
-// <1=> Black 
-// <2=> Red 
-// <3=> Green 
-// <4=> Yellow 
-// <5=> Blue 
-// <6=> Magenta 
-// <7=> Cyan 
-// <8=> White 
-
-#ifndef USBD_CONFIG_INFO_COLOR
-#define USBD_CONFIG_INFO_COLOR 0
-#endif
-
-// <o> USBD_CONFIG_DEBUG_COLOR  - ANSI escape code prefix.
- 
-// <0=> Default 
-// <1=> Black 
-// <2=> Red 
-// <3=> Green 
-// <4=> Yellow 
-// <5=> Blue 
-// <6=> Magenta 
-// <7=> Cyan 
-// <8=> White 
-
-#ifndef USBD_CONFIG_DEBUG_COLOR
-#define USBD_CONFIG_DEBUG_COLOR 0
-#endif
-
-// </e>
-
 // <e> WDT_CONFIG_LOG_ENABLED - Enables logging in the module.
 //==========================================================
 #ifndef WDT_CONFIG_LOG_ENABLED
@@ -4419,110 +4264,6 @@
 // </h> 
 //==========================================================
 
-// <h> nrf_log in nRF_Libraries 
-
-//==========================================================
-// <e> APP_USBD_CDC_ACM_CONFIG_LOG_ENABLED - Enables logging in the module.
-//==========================================================
-#ifndef APP_USBD_CDC_ACM_CONFIG_LOG_ENABLED
-#define APP_USBD_CDC_ACM_CONFIG_LOG_ENABLED 0
-#endif
-// <o> APP_USBD_CDC_ACM_CONFIG_LOG_LEVEL  - Default Severity level
- 
-// <0=> Off 
-// <1=> Error 
-// <2=> Warning 
-// <3=> Info 
-// <4=> Debug 
-
-#ifndef APP_USBD_CDC_ACM_CONFIG_LOG_LEVEL
-#define APP_USBD_CDC_ACM_CONFIG_LOG_LEVEL 3
-#endif
-
-// <o> APP_USBD_CDC_ACM_CONFIG_INFO_COLOR  - ANSI escape code prefix.
- 
-// <0=> Default 
-// <1=> Black 
-// <2=> Red 
-// <3=> Green 
-// <4=> Yellow 
-// <5=> Blue 
-// <6=> Magenta 
-// <7=> Cyan 
-// <8=> White 
-
-#ifndef APP_USBD_CDC_ACM_CONFIG_INFO_COLOR
-#define APP_USBD_CDC_ACM_CONFIG_INFO_COLOR 0
-#endif
-
-// <o> APP_USBD_CDC_ACM_CONFIG_DEBUG_COLOR  - ANSI escape code prefix.
- 
-// <0=> Default 
-// <1=> Black 
-// <2=> Red 
-// <3=> Green 
-// <4=> Yellow 
-// <5=> Blue 
-// <6=> Magenta 
-// <7=> Cyan 
-// <8=> White 
-
-#ifndef APP_USBD_CDC_ACM_CONFIG_DEBUG_COLOR
-#define APP_USBD_CDC_ACM_CONFIG_DEBUG_COLOR 0
-#endif
-
-// </e>
-
-// <e> APP_USBD_MSC_CONFIG_LOG_ENABLED - Enables logging in the module.
-//==========================================================
-#ifndef APP_USBD_MSC_CONFIG_LOG_ENABLED
-#define APP_USBD_MSC_CONFIG_LOG_ENABLED 0
-#endif
-// <o> APP_USBD_MSC_CONFIG_LOG_LEVEL  - Default Severity level
- 
-// <0=> Off 
-// <1=> Error 
-// <2=> Warning 
-// <3=> Info 
-// <4=> Debug 
-
-#ifndef APP_USBD_MSC_CONFIG_LOG_LEVEL
-#define APP_USBD_MSC_CONFIG_LOG_LEVEL 3
-#endif
-
-// <o> APP_USBD_MSC_CONFIG_INFO_COLOR  - ANSI escape code prefix.
- 
-// <0=> Default 
-// <1=> Black 
-// <2=> Red 
-// <3=> Green 
-// <4=> Yellow 
-// <5=> Blue 
-// <6=> Magenta 
-// <7=> Cyan 
-// <8=> White 
-
-#ifndef APP_USBD_MSC_CONFIG_INFO_COLOR
-#define APP_USBD_MSC_CONFIG_INFO_COLOR 0
-#endif
-
-// <o> APP_USBD_MSC_CONFIG_DEBUG_COLOR  - ANSI escape code prefix.
- 
-// <0=> Default 
-// <1=> Black 
-// <2=> Red 
-// <3=> Green 
-// <4=> Yellow 
-// <5=> Blue 
-// <6=> Magenta 
-// <7=> Cyan 
-// <8=> White 
-
-#ifndef APP_USBD_MSC_CONFIG_DEBUG_COLOR
-#define APP_USBD_MSC_CONFIG_DEBUG_COLOR 0
-#endif
-
-// </e>
 
 // <q> MEM_MANAGER_ENABLE_LOGS  - Enable debug trace in the module.
  

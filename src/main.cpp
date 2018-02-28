@@ -2,6 +2,7 @@
 #include "nRF5x_UART.h"
 #include "nRF5x_SPI.h"
 #include "nRF5x_TWI.h"
+#include "nRF5x_USB.h"
 #include "nRF5x_RTC.h"
 
 //HardwareSerial Serial0(nRF52_UART0, LINK_RX, LINK_TX);
@@ -129,11 +130,14 @@ void TWI_init() {
 // »нициализаци€ --------------------------------------------------------------
 void setup() {
   
+  nRF5x_USB_CDC_init();
+  
   UART_init();
   
   SPI_init();
   
   TWI_init();
+  
   
   nRF5x_RTC_resetTime(2);                            // обнул€ем врем€
   nRF5x_RTC_ALARM_t alarm = nRF5x_RTC_DEFAULT_ALARM; // объ€вл€ем аларм

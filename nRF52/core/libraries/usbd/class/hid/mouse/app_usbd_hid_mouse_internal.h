@@ -53,13 +53,16 @@
  */
 APP_USBD_CLASS_FORWARD(app_usbd_hid_mouse);
 
-
 /**
  * @brief HID mouse part of class instance data.
  */
 typedef struct {
     app_usbd_hid_inst_t hid_inst;      //!< HID instance data.
+#ifdef __cplusplus
+    uint8_t       button_count;  //!< Number of buttons mouse specific.
+#else
     const uint8_t       button_count;  //!< Number of buttons mouse specific.
+#endif
 } app_usbd_hid_mouse_inst_t;
 
 /**

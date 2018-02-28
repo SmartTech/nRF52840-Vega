@@ -248,7 +248,7 @@
         <option>
           <name>CCAllowList</name>
           <version>1</version>
-          <state>00000000</state>
+          <state>11111110</state>
         </option>
         <option>
           <name>CCDebugInfo</name>
@@ -330,6 +330,7 @@
           <state>$PROJ_DIR$\..\nRF52\core\avr</state>
           <state>$PROJ_DIR$\..\nRF52\core\inc</state>
           <state>$PROJ_DIR$\..\nRF52\core\drivers\inc</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries</state>
           <state>$PROJ_DIR$\..\nRF52\core\libraries\inc</state>
           <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd</state>
           <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\config</state>
@@ -383,16 +384,6 @@
           <state>$PROJ_DIR$\..\nRF52\system\libraries\twi</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\twi_mngr</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\uart</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\class\audio</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\class\cdc</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\class\cdc\acm</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\class\hid</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\class\hid\generic</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\class\hid\kbd</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\class\hid\mouse</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\class\msc</state>
-          <state>$PROJ_DIR$\..\nRF52\system\libraries\usbd\config</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -412,7 +403,7 @@
         </option>
         <option>
           <name>CCOptLevel</name>
-          <state>0</state>
+          <state>3</state>
         </option>
         <option>
           <name>CCOptStrategy</name>
@@ -421,7 +412,7 @@
         </option>
         <option>
           <name>CCOptLevelSlave</name>
-          <state>0</state>
+          <state>3</state>
         </option>
         <option>
           <name>CompilerMisraRules98</name>
@@ -2169,6 +2160,9 @@
           <file>
             <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_UART.h</name>
           </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB.h</name>
+          </file>
         </group>
         <group>
           <name>usbd</name>
@@ -2346,6 +2340,9 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_UART.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB.c</name>
         </file>
       </group>
       <file>
@@ -2734,6 +2731,9 @@
         <file>
           <name>$PROJ_DIR$\..\nRF52\system\hal\nrf_wdt.h</name>
         </file>
+      </group>
+      <group>
+        <name>libraries</name>
       </group>
       <group>
         <name>toolchain</name>
