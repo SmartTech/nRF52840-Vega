@@ -53,7 +53,7 @@ uint32_t micros( void ) {
 
 void SysTick_Handler(void){
   // Increment tick count each ms
-  _ulTickCount++ ;
+  _ulTickCount++;
 }
 
 void delay(uint32_t ms) {

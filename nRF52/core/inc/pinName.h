@@ -1,7 +1,7 @@
 #ifndef _PINNAME_H_
 #define _PINNAME_H_
 
-#include "nRF52core.h"
+#include "nrf.h"
 
 
 /* -------------------------------------------------------------
@@ -78,20 +78,26 @@
  *  PCA10056 board pins mapping
  * ------------------------------------------------------------*/
  
-#define PIN_RX    SER_CON_RX_PIN         // P1_13 // NRF_GPIO_PIN_MAP(1,13)
-#define PIN_TX    SER_CON_TX_PIN         // P1_14 // NRF_GPIO_PIN_MAP(1,14)
-#define PIN_RTS   SER_CON_RTS_PIN        // P1_15 // NRF_GPIO_PIN_MAP(1,15)
-#define PIN_CTS   SER_CON_CTS_PIN        // P0_02 // NRF_GPIO_PIN_MAP(0, 2)
+#define PIN_RX    P1_01                  // P1.01 // NRF_GPIO_PIN_MAP(1, 1)
+#define PIN_TX    P1_02                  // P1.02 // NRF_GPIO_PIN_MAP(1, 2)
+#define PIN_RTS   P1_03                  // P1.03 // NRF_GPIO_PIN_MAP(1, 3)
+#define PIN_CTS   P1_04                  // P1.04 // NRF_GPIO_PIN_MAP(1, 4)
 
-#define LINK_RX   P0_08                  // P0_02 // NRF_GPIO_PIN_MAP(0, 2)
-#define LINK_TX   P0_06                  // P0_02 // NRF_GPIO_PIN_MAP(0, 2)
+#define LINK_RX   P0_08                  // P0.08 // NRF_GPIO_PIN_MAP(0, 8)
+#define LINK_TX   P0_06                  // P0.06 // NRF_GPIO_PIN_MAP(0, 6)
 
-#define PIN_SDA   P0_31
-#define PIN_SCL   P0_31
+#define PIN_SDA   P0_30                  // P0.30 // NRF_GPIO_PIN_MAP(0,30)
+#define PIN_SCL   P0_31                  // P0.31 // NRF_GPIO_PIN_MAP(0,31)
 
-#define PIN_MOSI  SER_APP_SPIM0_MOSI_PIN // P0_27 // NRF_GPIO_PIN_MAP(0,27)
-#define PIN_MISO  SER_APP_SPIM0_MISO_PIN // P0_02 // NRF_GPIO_PIN_MAP(0, 2) 
-#define PIN_SCK   SER_APP_SPIM0_SCK_PIN  // P0_26 // NRF_GPIO_PIN_MAP(0,26)
-#define PIN_NSS   SER_APP_SPIM0_SS_PIN   // P1_13 // NRF_GPIO_PIN_MAP(1,13)
+#define PIN_MOSI  P1_11                  // P1.11 // NRF_GPIO_PIN_MAP(1,11)
+#define PIN_MISO  P1_12                  // P1.12 // NRF_GPIO_PIN_MAP(1,12) 
+#define PIN_SCK   P1_13                  // P1.13 // NRF_GPIO_PIN_MAP(1,13)
+#define PIN_NSS   P1_10                  // P1.10 // NRF_GPIO_PIN_MAP(1,10)
+
+#define LORA_NSS   P1_12                  // P1.12 // NRF_GPIO_PIN_MAP(1,12)
+#define LORA_MOSI  P1_13                  // P1.13 // NRF_GPIO_PIN_MAP(1,13)
+#define LORA_MISO  P1_14                  // P1.14 // NRF_GPIO_PIN_MAP(1,14)
+#define LORA_SCK   P1_15                  // P1.15 // NRF_GPIO_PIN_MAP(1,15)
+#define LORA_RST   P0_03                  // P0.03 // NRF_GPIO_PIN_MAP(0, 3)
 
 #endif // _PINNAME_H_

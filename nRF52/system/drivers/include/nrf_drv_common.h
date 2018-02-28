@@ -349,6 +349,7 @@ __STATIC_INLINE bool nrf_drv_is_in_RAM(void const * const ptr)
 #endif // SUPPRESS_INLINE_IMPLEMENTATION
 
 
+
 #ifdef __cplusplus
 }
 #endif

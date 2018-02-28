@@ -3,9 +3,9 @@
 
 #define nRF5x_UART_VERSION   1
 
-#include "types.h"
 #include "nrf_delay.h"
 #include "nrf_drv_uarte.h"
+#include "nrf_error.h"
 #include "nRF5x_FIFO.h"
 
 // Размерности буферов FIFO
