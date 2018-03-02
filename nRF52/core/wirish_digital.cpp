@@ -48,7 +48,7 @@ void attachInterrupt(uint8_t pin, interruptHandler handler, uint8_t mode) {
     default: break;
   }
   if(!nrf_drv_gpiote_is_init()) nrf_drv_gpiote_init();
-  //nrf_drv_gpiote_in_init(pin, &in_config, handler);
+  nrf_drv_gpiote_in_init(pin, &in_config, NULL);
 }
 
 //-----------------------------------------------------

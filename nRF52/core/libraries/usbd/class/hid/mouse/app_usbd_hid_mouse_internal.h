@@ -53,6 +53,7 @@
  */
 APP_USBD_CLASS_FORWARD(app_usbd_hid_mouse);
 
+
 /**
  * @brief HID mouse part of class instance data.
  */

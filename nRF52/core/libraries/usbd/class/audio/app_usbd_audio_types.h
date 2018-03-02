@@ -195,7 +195,11 @@ typedef struct {
     uint8_t bcdADC[2];           //!< BCD ADC
     uint8_t wTotalLength[2];     //!< Total interfaces length
     uint8_t bInCollection;       //!< Input collection
+#ifdef __cplusplus
+    uint8_t baInterfaceNr[0];     //!< Interface number list
+#else
     uint8_t baInterfaceNr[];     //!< Interface number list
+#endif
 } app_usbd_audio_ac_iface_header_desc_t;
 
 
@@ -274,7 +278,11 @@ typedef struct {
     uint8_t bUnitID;                //!< Unit ID
     uint8_t bSourceID;              //!< Source ID
     uint8_t bControlSize;           //!< Control size
+#ifdef __cplusplus
+    uint8_t bmaControls[0];          //!< Controls array
+#else
     uint8_t bmaControls[];          //!< Controls array
+#endif
 } app_usbd_audio_feature_unit_desc_t;
 
 /**
@@ -327,7 +335,11 @@ typedef struct {
     uint8_t bSubframeSize;          //!< Subframe size
     uint8_t bBitResolution;         //!< Bit resolution
     uint8_t bSamFreqType;           //!< Number of supported sampling frequencies
+#ifdef __cplusplus
+    uint8_t tSamFreq[0];             //!< Number of supported sampling frequencies table (24 bit entries)
+#else
     uint8_t tSamFreq[];             //!< Number of supported sampling frequencies table (24 bit entries)
+#endif
 } app_usbd_audio_as_format_type_one_desc_t;
 
 
@@ -342,7 +354,11 @@ typedef struct {
     uint8_t wMaxBitRate[2];         //!< Maximum bitrate
     uint8_t wSamplesPerFrame[2];    //!< Samples per frame
     uint8_t bSamFreqType;           //!< Number of supported sampling frequencies
+#ifdef __cplusplus
+    uint8_t tSamFreq[0];             //!< Number of supported sampling frequencies table (24 bit entries)
+#else
     uint8_t tSamFreq[];             //!< Number of supported sampling frequencies table (24 bit entries)
+#endif
 } app_usbd_audio_as_format_type_two_desc_t;
 
 /**
@@ -357,7 +373,11 @@ typedef struct {
     uint8_t bSubframeSize;        //!< Subframe size
     uint8_t bBitResolution;       //!< Bit resolution
     uint8_t bSamFreqType;         //!< Number of supported sampling frequencies
+#ifdef __cplusplus
+    uint8_t tSamFreq[0];           //!< Number of supported sampling frequencies table (24 bit entries)
+#else
     uint8_t tSamFreq[];           //!< Number of supported sampling frequencies table (24 bit entries)
+#endif
 } app_usbd_audio_as_format_type_three_desc_t;
 
 /**

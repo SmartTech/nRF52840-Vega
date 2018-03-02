@@ -1,14 +1,68 @@
+/**
+ * Copyright (c) 2016 - 2017, Nordic Semiconductor ASA
+ * 
+ * All rights reserved.
+ * 
+ * Redistribution and use in source and binary forms, with or without modification,
+ * are permitted provided that the following conditions are met:
+ * 
+ * 1. Redistributions of source code must retain the above copyright notice, this
+ *    list of conditions and the following disclaimer.
+ * 
+ * 2. Redistributions in binary form, except as embedded into a Nordic
+ *    Semiconductor ASA integrated circuit in a product or a software update for
+ *    such product, must reproduce the above copyright notice, this list of
+ *    conditions and the following disclaimer in the documentation and/or other
+ *    materials provided with the distribution.
+ * 
+ * 3. Neither the name of Nordic Semiconductor ASA nor the names of its
+ *    contributors may be used to endorse or promote products derived from this
+ *    software without specific prior written permission.
+ * 
+ * 4. This software, with or without modification, must only be used with a
+ *    Nordic Semiconductor ASA integrated circuit.
+ * 
+ * 5. Any software provided in binary form under this license must not be reverse
+ *    engineered, decompiled, modified and/or disassembled.
+ * 
+ * THIS SOFTWARE IS PROVIDED BY NORDIC SEMICONDUCTOR ASA "AS IS" AND ANY EXPRESS
+ * OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES
+ * OF MERCHANTABILITY, NONINFRINGEMENT, AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL NORDIC SEMICONDUCTOR ASA OR CONTRIBUTORS BE
+ * LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ * CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE
+ * GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ * LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT
+ * OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ * 
+ */
+
+#include "sdk_config.h"
+#if USBD_ENABLED
 #include "nrf_drv_usbd.h"
-#include "nrf_atomic.h"
+#include "nrf.h"
+#include "nordic_common.h"
 #include "nrf_drv_common.h"
+#include "nrf_atomic.h"
+#include "nrf_delay.h"
 #include "app_util_platform.h"
 #include "nrf_drv_systick.h" /* Marker to delete when not required anymore: >> NRF_DRV_USBD_ERRATA_ENABLE << */
 
 #include <string.h>
 #include <inttypes.h>
 
-#define NRF_LOG_DEBUG(...)
-#define NRF_DRV_USBD_LOG_PROTO1_FIX_PRINTF(...)
+#define NRF_LOG_MODULE_NAME USBD
+
+#if USBD_CONFIG_LOG_ENABLED
+#define NRF_LOG_LEVEL       USBD_CONFIG_LOG_LEVEL
+#define NRF_LOG_INFO_COLOR  USBD_CONFIG_INFO_COLOR
+#define NRF_LOG_DEBUG_COLOR USBD_CONFIG_DEBUG_COLOR
+#else //USBD_CONFIG_LOG_ENABLED
+#define NRF_LOG_LEVEL       0
+#endif //USBD_CONFIG_LOG_ENABLED
+#include "nrf_log.h"
+NRF_LOG_MODULE_REGISTER();
 
 #ifndef NRF_DRV_USBD_EARLY_DMA_PROCESS
 /* Try to process DMA request when endpoint transmission has been detected
@@ -24,6 +78,10 @@
 #define NRF_DRV_USBD_PROTO1_FIX_DEBUG 1
 #endif
 
+#define NRF_DRV_USBD_LOG_PROTO1_FIX_PRINTF(...)                          \
+    do{                                                                  \
+        if (NRF_DRV_USBD_PROTO1_FIX_DEBUG){ NRF_LOG_DEBUG(__VA_ARGS__); }\
+    } while (0)
 
 #ifndef NRF_DRV_USBD_STARTED_EV_ENABLE
 #define NRF_DRV_USBD_STARTED_EV_ENABLE    1
@@ -1508,7 +1566,6 @@ void USBD_IRQHandler(void)
                 *((volatile uint32_t *)(NRF_USBD_BASE + 0x800)) = 0x7A9;
                 *((volatile uint32_t *)(NRF_USBD_BASE + 0x804)) = uii;
                 rb = (uint8_t)*((volatile uint32_t *)(NRF_USBD_BASE + 0x804));
-                ASSERT(rb);
             NRF_DRV_USBD_LOG_PROTO1_FIX_PRINTF("   uii: 0x%.2x (0x%.2x)", uii, rb);
             }
 
@@ -1521,7 +1578,6 @@ void USBD_IRQHandler(void)
                 *((volatile uint32_t *)(NRF_USBD_BASE + 0x800)) = 0x7AA;
                 *((volatile uint32_t *)(NRF_USBD_BASE + 0x804)) = uoi;
                 rb = (uint8_t)*((volatile uint32_t *)(NRF_USBD_BASE + 0x804));
-                ASSERT(rb);
             NRF_DRV_USBD_LOG_PROTO1_FIX_PRINTF("   uoi: 0x%.2u (0x%.2x)", uoi, rb);
             }
 
@@ -1541,8 +1597,7 @@ void USBD_IRQHandler(void)
                 *((volatile uint32_t *)(NRF_USBD_BASE + 0x800)) = 0x7AB;
                 *((volatile uint32_t *)(NRF_USBD_BASE + 0x804)) = usbi;
                 rb = (uint8_t)*((volatile uint32_t *)(NRF_USBD_BASE + 0x804));
-              NRF_DRV_USBD_LOG_PROTO1_FIX_PRINTF("   usbi: 0x%.2u (0x%.2x)", usbi, rb);
-                ASSERT(rb);
+            NRF_DRV_USBD_LOG_PROTO1_FIX_PRINTF("   usbi: 0x%.2u (0x%.2x)", usbi, rb);
             }
 
             if (0 != (m_simulated_dataepstatus &
@@ -2161,3 +2216,5 @@ void nrf_drv_usbd_transfer_out_drop(nrf_drv_usbd_ep_t ep)
         CRITICAL_REGION_EXIT();
     }
 }
+
+#endif // USBD_ENABLED

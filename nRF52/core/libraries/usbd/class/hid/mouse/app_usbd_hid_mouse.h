@@ -75,7 +75,6 @@ APP_USBD_CLASS_TYPEDEF(app_usbd_hid_mouse,                      \
             APP_USBD_HID_MOUSE_INSTANCE_SPECIFIC_DEC,           \
             APP_USBD_HID_MOUSE_DATA_SPECIFIC_DEC                \
 );
-
 /*lint -restore*/
 #endif
 

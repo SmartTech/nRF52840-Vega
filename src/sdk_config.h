@@ -2,29 +2,65 @@
 #ifndef SDK_CONFIG_H
 #define SDK_CONFIG_H
 
-#define APP_USBD_VID                    0x1915 // Vendor ID
-#define APP_USBD_PID                    0x520C // Product ID
+//-----------------------------------------------------------------------------
+#define APP_USBD_VID                     0x1915 // Vendor ID
+#define APP_USBD_PID                     0x520E // Product ID
 
-#define USBD_ENABLED                         1
-#define APP_USBD_ENABLED                     1
+//-----------------------------------------------------------------------------
+#define SYSTICK_ENABLED                       1
+#define CLOCK_ENABLED                         1
+#define POWER_ENABLED                         1
+#define USBD_ENABLED                          1
 
-#define APP_USBD_CLASS_CDC_ACM_ENABLED       1
-#define APP_USBD_CLASS_AUDIO_ENABLED         1
-#define APP_USBD_CLASS_HID_ENABLED           1
-#define APP_USBD_MSC_ENABLED                 1
-#define APP_USBD_HID_KBD_ENABLED             1
-#define APP_USBD_HID_MOUSE_ENABLED           1
-#define APP_USBD_HID_GENERIC_ENABLED         1
+//-----------------------------------------------------------------------------
+#define APP_USBD_ENABLED                      1
+//#define APP_FIFO_ENABLED                      1
 
-#define APP_USBD_DEVICE_VER_MAJOR            1
-#define APP_USBD_DEVICE_VER_MINOR            0
+//-----------------------------------------------------------------------------
+#define NRF_FSTORAGE_ENABLED                  0
+#define NRF_SDH_ENABLED                       0
+#define NRF_SDH_SOC_ENABLED                   0
 
-#define APP_USBD_EVENT_QUEUE_ENABLE          1
-#define APP_USBD_EVENT_QUEUE_SIZE           32
+//-----------------------------------------------------------------------------
 
-#define USBD_CONFIG_IRQ_PRIORITY             7
-#define NRF_DRV_USBD_DMASCHEDULER_MODE       0
+#define APP_USBD_CLASS_CDC_ACM_ENABLED        1
+#define APP_USBD_CLASS_AUDIO_ENABLED          1
+#define APP_USBD_CLASS_HID_ENABLED            1
+#define APP_USBD_HID_KBD_ENABLED              1
+#define APP_USBD_HID_MOUSE_ENABLED            1
+#define APP_USBD_HID_GENERIC_ENABLED          1
+#define APP_USBD_MSC_ENABLED                  1
 
+#define APP_USBD_CONFIG_PROVIDE_SOF_TIMESTAMP 0
+
+#define APP_USBD_DEVICE_VER_MAJOR             1
+#define APP_USBD_DEVICE_VER_MINOR             0
+                                           
+#define APP_USBD_EVENT_QUEUE_ENABLE           1
+#define APP_USBD_EVENT_QUEUE_SIZE            32
+                                           
+#define NRF_DRV_USBD_DMASCHEDULER_MODE        0
+#define USBD_CONFIG_IRQ_PRIORITY              7
+
+//-----------------------------------------------------------------------------
+
+#define CLOCK_CONFIG_XTAL_FREQ                0
+#define CLOCK_CONFIG_LF_SRC                   1
+#define CLOCK_CONFIG_IRQ_PRIORITY             7
+
+//-----------------------------------------------------------------------------
+
+#define POWER_CONFIG_DEFAULT_DCDCEN           0
+#define POWER_CONFIG_DEFAULT_DCDCENHV         0
+#define POWER_CONFIG_IRQ_PRIORITY             7
+
+//-----------------------------------------------------------------------------
+
+#define NRF_FSTORAGE_SD_QUEUE_SIZE            4
+#define NRF_FSTORAGE_SD_MAX_RETRIES           8
+#define NRF_FSTORAGE_SD_MAX_WRITE_SIZE     4096
+
+//-----------------------------------------------------------------------------
 
 //==========================================================
 // <h> nRF_ANT
@@ -507,42 +543,6 @@
 #endif
 
 
-
-// <e> CLOCK_ENABLED - nrf_drv_clock - CLOCK peripheral driver
-//==========================================================
-#ifndef CLOCK_ENABLED
-#define CLOCK_ENABLED 1
-#endif
-
-// <o> CLOCK_CONFIG_XTAL_FREQ  - HF XTAL Frequency
-// <0=> Default (64 MHz) 
-#ifndef CLOCK_CONFIG_XTAL_FREQ
-#define CLOCK_CONFIG_XTAL_FREQ 0
-#endif
-
-// <o> CLOCK_CONFIG_LF_SRC  - LF Clock Source
-// <0=> RC 
-// <1=> XTAL 
-// <2=> Synth 
-#ifndef CLOCK_CONFIG_LF_SRC
-#define CLOCK_CONFIG_LF_SRC 1
-#endif
-
-// <o> CLOCK_CONFIG_IRQ_PRIORITY  - Interrupt priority
-// <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
-// <0=> 0 (highest) 
-// <1=> 1 
-// <2=> 2 
-// <3=> 3 
-// <4=> 4 
-// <5=> 5 
-// <6=> 6 
-// <7=> 7 
-
-#ifndef CLOCK_CONFIG_IRQ_PRIORITY
-#define CLOCK_CONFIG_IRQ_PRIORITY 7
-#endif
-
 // <e> COMP_ENABLED - nrf_drv_comp - COMP peripheral driver
 //==========================================================
 #ifndef COMP_ENABLED
@@ -883,45 +883,6 @@
 #define PERIPHERAL_RESOURCE_SHARING_ENABLED 0
 #endif
 
-// <e> POWER_ENABLED - nrf_drv_power - POWER peripheral driver
-//==========================================================
-#ifndef POWER_ENABLED
-#define POWER_ENABLED 0
-#endif
-
-// <o> POWER_CONFIG_IRQ_PRIORITY  - Interrupt priority
-// <i> Priorities 0,2 (nRF51) and 0,1,4,5 (nRF52) are reserved for SoftDevice
-// <0=> 0 (highest) 
-// <1=> 1 
-// <2=> 2 
-// <3=> 3 
-// <4=> 4 
-// <5=> 5 
-// <6=> 6 
-// <7=> 7 
-#ifndef POWER_CONFIG_IRQ_PRIORITY
-#define POWER_CONFIG_IRQ_PRIORITY 7
-#endif
-
-// <q> POWER_CONFIG_DEFAULT_DCDCEN  - The default configuration of main DCDC regulator
- 
-
-// <i> This settings means only that components for DCDC regulator are installed and it can be enabled.
-
-#ifndef POWER_CONFIG_DEFAULT_DCDCEN
-#define POWER_CONFIG_DEFAULT_DCDCEN 0
-#endif
-
-// <q> POWER_CONFIG_DEFAULT_DCDCENHV  - The default configuration of High Voltage DCDC regulator
- 
-
-// <i> This settings means only that components for DCDC regulator are installed and it can be enabled.
-
-#ifndef POWER_CONFIG_DEFAULT_DCDCENHV
-#define POWER_CONFIG_DEFAULT_DCDCENHV 0
-#endif
-
-// </e>
 
 // <q> PPI_ENABLED  - nrf_drv_ppi - PPI peripheral driver
  
@@ -1934,19 +1895,6 @@
 #define NRF_TWI_MNGR_ENABLED 0
 #endif
 
-// <e> APP_UART_ENABLED - app_uart - UART driver
-//==========================================================
-#ifndef APP_UART_ENABLED
-#define APP_UART_ENABLED 0
-#endif
-// <o> APP_UART_DRIVER_INSTANCE  - UART instance used
- 
-// <0=> 0 
-
-#ifndef APP_UART_DRIVER_INSTANCE
-#define APP_UART_DRIVER_INSTANCE 0
-#endif
-
 
 // <q> BUTTON_ENABLED  - app_button - buttons handling module
  
@@ -2455,39 +2403,11 @@
 #define NRF_FPRINTF_ENABLED 0
 #endif
 
-// <e> NRF_FSTORAGE_ENABLED - nrf_fstorage - Flash abstraction library
-//==========================================================
-#ifndef NRF_FSTORAGE_ENABLED
-#define NRF_FSTORAGE_ENABLED 0
-#endif
-// <h> nrf_fstorage_sd - Implementation using the SoftDevice.
 
-// <i> Configuration options for the fstorage implementation using the SoftDevice.
-//==========================================================
-// <o> NRF_FSTORAGE_SD_QUEUE_SIZE - Size of the internal queue of operations. 
-// <i> Increase this value if API calls frequently return the error @ref NRF_ERROR_NO_MEM.
 
-#ifndef NRF_FSTORAGE_SD_QUEUE_SIZE
-#define NRF_FSTORAGE_SD_QUEUE_SIZE 4
-#endif
 
-// <o> NRF_FSTORAGE_SD_MAX_RETRIES - Maximum number of attempts at executing an operation when the SoftDevice is busy. 
-// <i> Increase this value if events frequently return the @ref NRF_ERROR_TIMEOUT error.
-// <i> The SoftDevice might fail to schedule flash access due to high BLE activity.
 
-#ifndef NRF_FSTORAGE_SD_MAX_RETRIES
-#define NRF_FSTORAGE_SD_MAX_RETRIES 8
-#endif
 
-// <o> NRF_FSTORAGE_SD_MAX_WRITE_SIZE - Maximum number of bytes to be written to flash in a single operation. 
-// <i> This value must be a multiple of four.
-// <i> Lowering this value can increase the chances of the SoftDevice being able to execute flash operations in between radio activity.
-// <i> This value is bound by the maximum number of bytes that can be written to flash in a single call to @ref sd_flash_write.
-// <i> That is 1024 bytes for nRF51 ICs and 4096 bytes for nRF52 ICs.
-
-#ifndef NRF_FSTORAGE_SD_MAX_WRITE_SIZE
-#define NRF_FSTORAGE_SD_MAX_WRITE_SIZE 4096
-#endif
 
 // </h> 
 //==========================================================
@@ -2806,51 +2726,6 @@
 
 #ifndef NRF_LOG_BACKEND_RTT_TEMP_BUFFER_SIZE
 #define NRF_LOG_BACKEND_RTT_TEMP_BUFFER_SIZE 64
-#endif
-
-// </e>
-
-// <e> NRF_LOG_BACKEND_UART_ENABLED - nrf_log_backend_uart - Log UART backend
-//==========================================================
-#ifndef NRF_LOG_BACKEND_UART_ENABLED
-#define NRF_LOG_BACKEND_UART_ENABLED 0
-#endif
-// <o> NRF_LOG_BACKEND_UART_TX_PIN - UART TX pin 
-#ifndef NRF_LOG_BACKEND_UART_TX_PIN
-#define NRF_LOG_BACKEND_UART_TX_PIN 6
-#endif
-
-// <o> NRF_LOG_BACKEND_UART_BAUDRATE  - Default Baudrate
- 
-// <323584=> 1200 baud 
-// <643072=> 2400 baud 
-// <1290240=> 4800 baud 
-// <2576384=> 9600 baud 
-// <3862528=> 14400 baud 
-// <5152768=> 19200 baud 
-// <7716864=> 28800 baud 
-// <10289152=> 38400 baud 
-// <15400960=> 57600 baud 
-// <20615168=> 76800 baud 
-// <30801920=> 115200 baud 
-// <61865984=> 230400 baud 
-// <67108864=> 250000 baud 
-// <121634816=> 460800 baud 
-// <251658240=> 921600 baud 
-// <268435456=> 1000000 baud 
-
-#ifndef NRF_LOG_BACKEND_UART_BAUDRATE
-#define NRF_LOG_BACKEND_UART_BAUDRATE 30801920
-#endif
-
-// <o> NRF_LOG_BACKEND_UART_TEMP_BUFFER_SIZE - Size of buffer for partially processed strings. 
-// <i> Size of the buffer is a trade-off between RAM usage and processing.
-// <i> if buffer is smaller then strings will often be fragmented.
-// <i> It is recommended to use size which will fit typical log and only the
-// <i> longer one will be fragmented.
-
-#ifndef NRF_LOG_BACKEND_UART_TEMP_BUFFER_SIZE
-#define NRF_LOG_BACKEND_UART_TEMP_BUFFER_SIZE 64
 #endif
 
 // </e>
@@ -6934,11 +6809,6 @@
 
 // </e>
 
-// <e> NRF_SDH_ENABLED - nrf_sdh - SoftDevice handler
-//==========================================================
-#ifndef NRF_SDH_ENABLED
-#define NRF_SDH_ENABLED 0
-#endif
 // <h> Dispatch model 
 
 // <i> This setting configures how Stack events are dispatched to the application.
@@ -7098,11 +6968,7 @@
 
 // </e>
 
-// <e> NRF_SDH_SOC_ENABLED - nrf_sdh_soc - SoftDevice SoC event handler
-//==========================================================
-#ifndef NRF_SDH_SOC_ENABLED
-#define NRF_SDH_SOC_ENABLED 0
-#endif
+
 // <h> SoC Observers - Observers and priority levels
 
 //==========================================================

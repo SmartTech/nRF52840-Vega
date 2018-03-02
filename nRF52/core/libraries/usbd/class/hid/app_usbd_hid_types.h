@@ -163,7 +163,7 @@ typedef enum {
 #define APP_USBD_HID_PHYSICAL_ITEM(size)    \
     APP_USBD_HID_DESCRIPTOR_PHYSICAL, ((size) & 0xFF), ((size) / 256)
 
-      
+
 /**
  * @brief HID descriptor, binary layout.
  */
@@ -177,10 +177,13 @@ typedef union {
         struct {
             uint8_t  bRDescriptorType;   //!< Class descriptor type.
             uint16_t wDescriptorLength;  //!< Class descriptor length (little endian).
+#ifdef __cplusplus
         } reports[0];
+#else
+        } reports[];
+#endif
     } raw;
 } app_usbd_hid_descriptor_t;
-
 
 #pragma pack(pop)
 

@@ -4,6 +4,7 @@
 #include "nRF5x_TWI.h"
 #include "nRF5x_USB.h"
 #include "nRF5x_RTC.h"
+#include "nRF5x_TEST.h"
 
 //HardwareSerial Serial0(nRF52_UART0, LINK_RX, LINK_TX);
 //HardwareSerial Serial1(nRF52_UART1, P1_01,   P1_02);
@@ -126,18 +127,20 @@ void TWI_init() {
   }
 }
 
+
 //=============================================================================
 // Инициализация --------------------------------------------------------------
 void setup() {
-  
+    
   nRF5x_USB_CDC_init();
-  
+  nRF5x_USB_MSC_init();
+  //nRF5x_USB_AUDIO_init();
+    
   UART_init();
   
   SPI_init();
   
   TWI_init();
-  
   
   nRF5x_RTC_resetTime(2);                            // обнуляем время
   nRF5x_RTC_ALARM_t alarm = nRF5x_RTC_DEFAULT_ALARM; // объявляем аларм
@@ -157,6 +160,12 @@ void setup() {
 // Главный цикл ---------------------------------------------------------------
 void loop() {
   
+  nRF5x_USB_handle();
+  
+  static long lastMillis = 0;
+  if(millis() - lastMillis < 1000) return;
+  lastMillis = millis();
+  
   // изменение состояния светодиода
   digitalToggle(LED_1); // так же можно использовать togglePin(LED_1);
   
@@ -169,18 +178,16 @@ void loop() {
   
   // Отправка в uart через класс HardwareSerial
   //Serial0.println("Lora [version] = " + String(version));
-  
-  // задержка в 1000 микросекунд (основана на системном таймере)
-  delay(1000);
-  
+    
   // Контроль перехода в сон
   static int sleepAfter   = 6;
   static int sleepCount   = 1;
   static int sleepCounter = 0;
   if(sleepCounter++ > sleepAfter * sleepCount) {
     sleepCount++;
-    sleep();
+    //sleep();
   }
+  
 
 }
 

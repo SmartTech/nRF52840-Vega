@@ -222,7 +222,11 @@ typedef struct
 {
     uint8_t  bLength;         //!< Size of the descriptor in bytes.
     uint8_t  bDescriptorType; //!< Should equal to @ref APP_USBD_DESCRIPTOR_STRING.
+#ifdef __cplusplus
     uint16_t wLANGID[0];       //!< The array of LANGID codes supported by the device.
+#else
+    uint16_t wLANGID[];       //!< The array of LANGID codes supported by the device.
+#endif
 } app_usbd_descriptor_string0_t;
 /**
  * @brief Raw descriptor - Any normal string
@@ -233,7 +237,11 @@ typedef struct
 {
     uint8_t  bLength;         //!< Size of the descriptor in bytes.
     uint8_t  bDescriptorType; //!< Should equal to @ref APP_USBD_DESCRIPTOR_STRING.
+	  #ifdef __cplusplus
     uint16_t bString[0];       //!< UNICODE encoded string.
+	  #else
+		uint16_t bString[]; 
+	  #endif
 } app_usbd_descriptor_string_t;
 
 

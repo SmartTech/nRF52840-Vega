@@ -395,6 +395,7 @@ static inline uint32_t nrf_atomic_u32_fetch_sub(nrf_atomic_u32_t * p_data, uint3
     uint32_t new_val;
 
     NRF_ATOMIC_OP(sub, old_val, new_val, p_data, value);
+    (void)new_val;
     UNUSED_PARAMETER(old_val);
     UNUSED_PARAMETER(new_val);
     return old_val;

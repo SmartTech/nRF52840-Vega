@@ -1,35 +1,51 @@
 #ifndef _NRF5x_USB_H_
 #define _NRF5x_USB_H_
-#ifdef NRF52840_XXAA  // USB есть только у серии nRF52840
-
-#include "nrf.h"
-
-#include "nrf_drv_power.h"
-#include "nrf_drv_usbd.h"
 
 #include "app_usbd.h"
 #include "app_usbd_core.h"
-#include "app_usbd_hid_generic.h"
-#include "app_usbd_hid_mouse.h"
-#include "app_usbd_hid_kbd.h"
+#include "app_usbd_string_desc.h"
 
-#ifndef USBD_POWER_DETECTION
-#define USBD_POWER_DETECTION true
-#endif
+#include "nrf_drv_power.h"
 
-#ifdef _cplusplus
+#include "nRF5x_USB_CDC.h"
+#include "nRF5x_USB_MSC.h"
+#include "nRF5x_USB_AUDIO.h"
+#include "nRF5x_USB_MOUSE.h"
+#include "nRF5x_USB_KEYBOARD.h"
+#include "nRF5x_USB_GENERIC.h"
+
+#ifdef __cplusplus
 extern "C" {
 #endif
 
-uint8_t nRF5x_USB_CDC_init(void);
-uint8_t nRF5x_USB_MSC_init(void);
-uint8_t nRF5x_USB_AUDIO_init(void);
-uint8_t nRF5x_USB_MOUSE_init(void);
-uint8_t nRF5x_USB_KEABOARD_init(void);
+#define nRF5x_USB_USE_CDC               1
+#define nRF5x_USB_USE_MSC               1
+#define nRF5x_USB_USE_AUDIO             0
+#define nRF5x_USB_USE_MOUSE             0
+#define nRF5x_USB_USE_KEABOARD          0
+#define nRF5x_USB_USE_GENERIC           0
 
-#ifdef _cplusplus
+
+#define nRF5x_USB_INTERFACE_MOUSE       0
+#define nRF5x_USB_INTERFACE_KBD         1
+#define nRF5x_USB_INTERFACE_GENERIC     2
+#define nRF5x_USB_INTERFACE_CDC_COMM    3
+#define nRF5x_USB_INTERFACE_CDC_DATA    4
+
+#define USBD_POWER_DETECTION true
+
+
+uint8_t nRF5x_USB_init(void);
+
+uint8_t nRF5x_USB_connected(void);
+
+void    nRF5x_USB_stop(void);
+void    nRF5x_USB_start(void);
+void    nRF5x_USB_handle(void);
+
+
+#ifdef __cplusplus
 }
 #endif
 
-#endif // NRF52840_XXAA
 #endif // _NRF5x_USB_H_

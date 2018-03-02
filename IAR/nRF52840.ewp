@@ -349,6 +349,10 @@
           <state>$PROJ_DIR$\..\nRF52\system\libraries\atomic_fifo</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\balloc</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\block_dev</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\empty</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\qspi</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\ram</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\sdc</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\bsp</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\button</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\cli</state>
@@ -384,6 +388,10 @@
           <state>$PROJ_DIR$\..\nRF52\system\libraries\twi</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\twi_mngr</state>
           <state>$PROJ_DIR$\..\nRF52\system\libraries\uart</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\sdcard</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\fstorage</state>
+          <state>$PROJ_DIR$\..\nRF52\system\softdevice\common</state>
+          <state>$PROJ_DIR$\..\nRF52\system\softdevice\headers</state>
         </option>
         <option>
           <name>CCStdIncCheck</name>
@@ -546,6 +554,8 @@
         <option>
           <name>ADefines</name>
           <state>NRF52840_XXAA</state>
+          <state>BOARD_PCA10056</state>
+          <state>SYSTICK_ENABLED</state>
         </option>
         <option>
           <name>AList</name>
@@ -642,9 +652,73 @@
         <option>
           <name>AUserIncludes</name>
           <state>$PROJ_DIR$\..</state>
+          <state>$PROJ_DIR$\..\src</state>
           <state>$PROJ_DIR$\..\nRF52\system\toolchain</state>
           <state>$PROJ_DIR$\..\nRF52\system\toolchain\cmsis\include</state>
           <state>$PROJ_DIR$\..\nRF52\system\device</state>
+          <state>$PROJ_DIR$\..\nRF52\system\drivers</state>
+          <state>$PROJ_DIR$\..\nRF52\system\drivers\config</state>
+          <state>$PROJ_DIR$\..\nRF52\system\drivers\include</state>
+          <state>$PROJ_DIR$\..\nRF52\system\hal</state>
+          <state>$PROJ_DIR$\..\nRF52\system\util</state>
+          <state>$PROJ_DIR$\..\nRF52\core</state>
+          <state>$PROJ_DIR$\..\nRF52\core\avr</state>
+          <state>$PROJ_DIR$\..\nRF52\core\inc</state>
+          <state>$PROJ_DIR$\..\nRF52\core\drivers\inc</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\inc</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\config</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\audio</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\cdc\acm</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\generic</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\kbd</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\hid\mouse</state>
+          <state>$PROJ_DIR$\..\nRF52\core\libraries\usbd\class\msc</state>
+          <state>$PROJ_DIR$\..\nRF52\boards</state>
+          <state>$PROJ_DIR$\..\nRF52\libraries\inc</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\atomic</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\atomic_fifo</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\balloc</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\block_dev</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\bsp</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\button</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\cli</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\cli\uart</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\crc16</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\crc32</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\csense</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\csense_drv</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\ecc</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\fds</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\experimental_log\src</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\experimental_memobj</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\experimental_ringbuf</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\experimental_section_vars</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\fifo</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\gpiote</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\hardfault</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\hardfault\nrf52</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\hci</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\led_softblink</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\low_power_pwm</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\mem_manager</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\mutex</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\pwm</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\pwr_mgmt</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\queue</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\sensorsim</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\scheduler</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\slip</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\strerror</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\timer</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\twi</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\twi_mngr</state>
+          <state>$PROJ_DIR$\..\nRF52\system\libraries\uart</state>
         </option>
         <option>
           <name>AExtraOptionsCheckV2</name>
@@ -2059,6 +2133,9 @@
             <name>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_clock.h</name>
           </file>
           <file>
+            <name>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_power.h</name>
+          </file>
+          <file>
             <name>$PROJ_DIR$\..\nRF52\core\drivers\inc\nrf_drv_spi.h</name>
           </file>
           <file>
@@ -2079,6 +2156,9 @@
         </group>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_clock.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_power.c</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\drivers\nrf_drv_spi.c</name>
@@ -2155,6 +2235,9 @@
             <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_SPI.h</name>
           </file>
           <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_TEST.h</name>
+          </file>
+          <file>
             <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_TWI.h</name>
           </file>
           <file>
@@ -2162,6 +2245,48 @@
           </file>
           <file>
             <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB.h</name>
+          </file>
+        </group>
+        <group>
+          <name>usb_class</name>
+          <group>
+            <name>inc</name>
+            <file>
+              <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB_AUDIO.h</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB_CDC.h</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB_GENERIC.h</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB_KEYBOARD.h</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB_MOUSE.h</name>
+            </file>
+            <file>
+              <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_USB_MSC.h</name>
+            </file>
+          </group>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB_AUDIO.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB_CDC.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB_GENERIC.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB_KEYBOARD.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB_MOUSE.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_USB_MSC.c</name>
           </file>
         </group>
         <group>
@@ -2296,34 +2421,10 @@
             <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd.h</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_class_base.h</name>
-          </file>
-          <file>
             <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_core.c</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_core.h</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_descriptor.h</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_langid.h</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_request.h</name>
-          </file>
-          <file>
             <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.c</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.h</name>
-          </file>
-          <file>
-            <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_types.h</name>
           </file>
         </group>
         <file>
@@ -2334,6 +2435,9 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_SPI.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_TEST.c</name>
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_TWI.c</name>
@@ -2378,12 +2482,6 @@
       <file>
         <name>$PROJ_DIR$\..\nRF52\core\WString.cpp</name>
       </file>
-    </group>
-    <group>
-      <name>libraries</name>
-      <group>
-        <name>inc</name>
-      </group>
     </group>
     <group>
       <name>system</name>
@@ -2503,9 +2601,6 @@
             <name>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_pdm.h</name>
           </file>
           <file>
-            <name>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_power.h</name>
-          </file>
-          <file>
             <name>$PROJ_DIR$\..\nRF52\system\drivers\include\nrf_drv_ppi.h</name>
           </file>
           <file>
@@ -2579,9 +2674,6 @@
           <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_pdm.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_power.c</name>
-        </file>
-        <file>
           <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_ppi.c</name>
         </file>
         <file>
@@ -2613,15 +2705,6 @@
         </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_drv_wdt.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_nvic.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\drivers\nrf_soc.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\drivers\sdio.c</name>
         </file>
       </group>
       <group>
@@ -2734,6 +2817,30 @@
       </group>
       <group>
         <name>libraries</name>
+        <group>
+          <name>block_dev</name>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\empty\nrf_block_dev_empty.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\qspi\nrf_block_dev_qspi.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\ram\nrf_block_dev_ram.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\sdc\nrf_block_dev_sdc.c</name>
+          </file>
+          <file>
+            <name>$PROJ_DIR$\..\nRF52\system\libraries\block_dev\qspi\nrf_serial_flash_params.c</name>
+          </file>
+        </group>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\system\libraries\sdcard\app_sdcard.c</name>
+        </file>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\system\libraries\atomic_fifo\nrf_atfifo.c</name>
+        </file>
       </group>
       <group>
         <name>toolchain</name>
@@ -2750,58 +2857,10 @@
           <name>$PROJ_DIR$\..\nRF52\system\util\app_error.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\app_error.h</name>
-        </file>
-        <file>
           <name>$PROJ_DIR$\..\nRF52\system\util\app_error_weak.c</name>
         </file>
         <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\app_error_weak.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\app_util.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\app_util_bds.h</name>
-        </file>
-        <file>
           <name>$PROJ_DIR$\..\nRF52\system\util\app_util_platform.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\app_util_platform.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\nordic_common.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\nrf_assert.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\nrf_assert.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\nrf_bitmask.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\sdk_common.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\sdk_errors.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\sdk_macros.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\sdk_mapped_flags.c</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\sdk_mapped_flags.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\sdk_os.h</name>
-        </file>
-        <file>
-          <name>$PROJ_DIR$\..\nRF52\system\util\sdk_resources.h</name>
         </file>
       </group>
     </group>

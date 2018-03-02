@@ -20,7 +20,7 @@ Stop=1
 Freq=10000000
 MultiCoreRunAll=1
 [DebugChecksum]
-Checksum=1975639228
+Checksum=1940531835
 [CodeCoverage]
 Enabled=_ 0
 [Exceptions]
@@ -127,7 +127,7 @@ ProbeSetup0=2 1 1 2 0 0
 [Disassemble mode]
 mode=0
 [Breakpoints2]
-Bp0=_ 1 "EMUL_DATA" "nrf_drv_uarte_tx" 0 0 0 0 4294967295
+Bp0=_ 0 "EMUL_DATA" "nrf_drv_uarte_tx" 0 0 0 0 4294967295
 Count=1
 [Aliases]
 Count=0
