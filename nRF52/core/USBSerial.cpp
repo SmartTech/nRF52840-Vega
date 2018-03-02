@@ -9,29 +9,21 @@
  */
 #define USB_TIMEOUT 50
 
-bool USBSerial::_hasBegun = false;
-
 USBSerial::USBSerial(void) {
 
 }
 
 void USBSerial::begin(void) {
-	
-    if (_hasBegun) return;
-    _hasBegun = true;
-    //usb_cdcacm_enable(BOARD_USB_DISC_DEV, (uint8_t)BOARD_USB_DISC_BIT);
-    //usb_cdcacm_set_hooks(USB_CDCACM_HOOK_RX, rxHook);
-    //usb_cdcacm_set_hooks(USB_CDCACM_HOOK_IFACE_SETUP, ifaceSetupHook);
-
+    nRF5x_USB_CDC_init();
 }
 
-//Roger Clark. Two new begin functions has been added so that normal Arduino Sketches that use Serial.begin(xxx) will compile.
 void USBSerial::begin(unsigned long ignoreBaud) 
 {
     volatile unsigned long removeCompilerWarningsIgnoreBaud=ignoreBaud;
     ignoreBaud=removeCompilerWarningsIgnoreBaud;
     begin();
 }
+
 void USBSerial::begin(unsigned long ignoreBaud, uint8_t ignore)
 {
     volatile unsigned long removeCompilerWarningsIgnoreBaud=ignoreBaud;
@@ -42,33 +34,27 @@ void USBSerial::begin(unsigned long ignoreBaud, uint8_t ignore)
 }
 
 void USBSerial::end(void) {
-    //usb_cdcacm_disable(BOARD_USB_DISC_DEV, (uint8_t)BOARD_USB_DISC_BIT);
-    //usb_cdcacm_remove_hooks(USB_CDCACM_HOOK_RX | USB_CDCACM_HOOK_IFACE_SETUP);
-    _hasBegun = false;
+    nRF5x_USB_CDC_deinit();
+}
+
+void USBSerial::attachCallback(nRF5x_USB_CDC_eventCallback function) {
+    nRF5x_USB_CDC_attachCallback(function);
 }
 
 size_t USBSerial::write(uint8 ch) {
-    size_t n = 0;
-    this->write(&ch, 1);
-    return n;
+    nRF5x_USB_CDC_write((uint8_t*)ch, 1);
+    return 1;
 }
 
 size_t USBSerial::write(const char *str) {
-    size_t n = 0;
-    this->write((const uint8*)str, strlen(str));
-    return n;
+    //nRF5x_USB_CDC_print(str);
+    nRF5x_USB_CDC_write((uint8_t*)str, strlen(str));
+    return 1;
 }
 
 size_t USBSerial::write(const uint8 *buf, uint32 len) {
-    size_t n = 0;
-    //if (!buf || !usb_is_connected(USBLIB) || !usb_is_configured(USBLIB)) {
-    //    return 0;
-    //}
-    //uint32 txed = 0;
-    //while (txed < len) {
-    //    txed += usb_cdcacm_tx((const uint8*)buf + txed, len - txed);
-    //}
-    return n;
+    nRF5x_USB_CDC_write((uint8_t*)buf, len);
+    return 1;
 }
 
 int USBSerial::available(void) {

@@ -38,6 +38,7 @@
 #include "pinName.h"
 #include "wirish_digital.h"
 #include "HardwareSerial.h"
+#include "USBSerial.h"
 #include "SPIClass.h"
 
 #endif // _NRF52_CORE_H_

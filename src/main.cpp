@@ -6,6 +6,8 @@
 #include "nRF5x_RTC.h"
 #include "nRF5x_TEST.h"
 
+USBSerial Serial;
+
 //HardwareSerial Serial0(nRF52_UART0, LINK_RX, LINK_TX);
 //HardwareSerial Serial1(nRF52_UART1, P1_01,   P1_02);
 
@@ -25,6 +27,13 @@ void uart_1_handler() {
   uint8_t byte;                                           
   nRF5x_UART_read (nRF5x_UART1, &byte, 1);                // byte = Serial1.read();
   nRF5x_UART_write(nRF5x_UART0, &byte, 1);                // Serial0.write(byte);
+}
+
+void cdc_handler(uint8_t* dataPtr, size_t size) {
+  //nRF5x_USB_CDC_write(dataPtr, size);
+  //Serial.println("New Serial data [" + String(size) + String("]: "));
+  Serial.println("New Serial data");
+  //Serial.println(dataPtr[0]);
 }
 
 void SX1272_reset() {
@@ -132,9 +141,16 @@ void TWI_init() {
 // Инициализация --------------------------------------------------------------
 void setup() {
     
-  nRF5x_USB_CDC_init();
-  nRF5x_USB_MSC_init();
-  //nRF5x_USB_AUDIO_init();
+  nRF5x_USB_init();
+  //nRF5x_USB_CDC_init();
+  //nRF5x_USB_CDC_attachCallback(cdc_handler);
+  
+  //Serial.begin();
+  //Serial.attachCallback(cdc_handler);
+  
+  //nRF5x_USB_MSC_init();
+  
+  //nRF5x_USB_GENERIC_init();
     
   UART_init();
   
@@ -178,7 +194,7 @@ void loop() {
   
   // Отправка в uart через класс HardwareSerial
   //Serial0.println("Lora [version] = " + String(version));
-    
+  
   // Контроль перехода в сон
   static int sleepAfter   = 6;
   static int sleepCount   = 1;
@@ -187,7 +203,6 @@ void loop() {
     sleepCount++;
     //sleep();
   }
-  
 
 }
 

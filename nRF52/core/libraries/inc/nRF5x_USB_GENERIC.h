@@ -1,5 +1,5 @@
-#ifndef _NRF5x_USB_MSC_H_
-#define _NRF5x_USB_MSC_H_
+#ifndef _NRF5x_USB_GENERIC_H_
+#define _NRF5x_USB_GENERIC_H_
 
 #include "nRF5x_USB.h"
 
@@ -17,4 +17,4 @@ uint8_t nRF5x_USB_GENERIC_init(void);
 }
 #endif
 
-#endif // _NRF5x_USB_MSC_H_
+#endif // _NRF5x_USB_GENERIC_H_

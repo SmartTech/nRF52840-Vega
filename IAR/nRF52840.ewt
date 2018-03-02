@@ -2877,6 +2877,9 @@
         <file>
           <name>$PROJ_DIR$\..\nRF52\system\libraries\atomic_fifo\nrf_atfifo.c</name>
         </file>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\system\libraries\queue\nrf_queue.c</name>
+        </file>
       </group>
       <group>
         <name>toolchain</name>

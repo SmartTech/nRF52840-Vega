@@ -15,7 +15,6 @@ void SPIClass::begin()
   nRF5x_SPI_begin(port, pinMOSI, pinMISO, pinSCK);
 }
 
-
 void SPIClass::end()
 {
   nRF5x_SPI_deinit(port);
@@ -35,7 +34,6 @@ void SPIClass::setDataMode(uint8_t mode)
 {
   nRF5x_SPI_setMode(port, mode);
 }
-
 
 void SPIClass::setClockDivider(uint8_t freq)
 {

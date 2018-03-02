@@ -23,7 +23,7 @@ extern "C" {
 #define nRF5x_USB_USE_AUDIO             0
 #define nRF5x_USB_USE_MOUSE             0
 #define nRF5x_USB_USE_KEABOARD          0
-#define nRF5x_USB_USE_GENERIC           0
+#define nRF5x_USB_USE_GENERIC           1
 
 
 #define nRF5x_USB_INTERFACE_MOUSE       0

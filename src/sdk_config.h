@@ -4,7 +4,7 @@
 
 //-----------------------------------------------------------------------------
 #define APP_USBD_VID                     0x1915 // Vendor ID
-#define APP_USBD_PID                     0x520E // Product ID
+#define APP_USBD_PID                     0x520F // Product ID
 
 //-----------------------------------------------------------------------------
 #define SYSTICK_ENABLED                       1
@@ -17,6 +17,7 @@
 //#define APP_FIFO_ENABLED                      1
 
 //-----------------------------------------------------------------------------
+#define NRF_QUEUE_ENABLED                     1
 #define NRF_FSTORAGE_ENABLED                  0
 #define NRF_SDH_ENABLED                       0
 #define NRF_SDH_SOC_ENABLED                   0
@@ -2544,12 +2545,6 @@
 
 // </e>
 
-// <q> NRF_QUEUE_ENABLED  - nrf_queue - Queue module
- 
-
-#ifndef NRF_QUEUE_ENABLED
-#define NRF_QUEUE_ENABLED 0
-#endif
 
 // <q> NRF_SECTION_ITER_ENABLED  - nrf_section_iter - Section iterator
  

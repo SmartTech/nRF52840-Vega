@@ -4,11 +4,12 @@
 #include "Print.h"
 #include "Stream.h"
 
-/**
- * @brief Virtual serial terminal.
- */
+#include "nRF5x_USB_CDC.h"
+
 class USBSerial : public Stream {
   
+private:
+      
 public:
   
     USBSerial(void);
@@ -18,6 +19,8 @@ public:
     void begin(unsigned long);
     void begin(unsigned long, uint8_t);
     void end(void);
+    
+    void attachCallback(nRF5x_USB_CDC_eventCallback function);
 
     virtual int available(void);
 
@@ -36,6 +39,8 @@ public:
     uint8 getRTS();
     uint8 getDTR();
     uint8 pending();
+    
+    uint8_t isConnected();
 
     operator bool();
     
@@ -43,9 +48,6 @@ public:
 
     //uint8 isConnected() __attribute__((deprecated("Use !Serial instead"))) { return (bool) *this; }
 
-protected:
-  
-    static bool _hasBegun;
     
 };
 
