@@ -2226,6 +2226,9 @@
         <group>
           <name>inc</name>
           <file>
+            <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_ADC.h</name>
+          </file>
+          <file>
             <name>$PROJ_DIR$\..\nRF52\core\libraries\inc\nRF5x_FIFO.h</name>
           </file>
           <file>
@@ -2427,6 +2430,9 @@
             <name>$PROJ_DIR$\..\nRF52\core\libraries\usbd\app_usbd_string_desc.c</name>
           </file>
         </group>
+        <file>
+          <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_ADC.c</name>
+        </file>
         <file>
           <name>$PROJ_DIR$\..\nRF52\core\libraries\nRF5x_FIFO.c</name>
         </file>

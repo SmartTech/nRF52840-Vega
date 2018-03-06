@@ -1,6 +1,6 @@
 ###############################################################################
 #
-# IAR ELF Linker V7.40.3.8902/W32 for ARM                 02/Mar/2018  18:19:06
+# IAR ELF Linker V7.40.3.8902/W32 for ARM                 06/Mar/2018  16:43:44
 # Copyright 2007-2015 IAR Systems AB.
 #
 #    Output file  =  D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Exe\nRF52840.out
@@ -28,6 +28,7 @@
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\iar_startup_nrf52840.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\itoa.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\main.o
+#        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF5x_ADC.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF5x_FIFO.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF5x_RTC.o
 #        D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj\nRF5x_SPI.o
@@ -113,156 +114,161 @@ __dlib_dynamic_initialization = normal
 "P1":  place in [from 0x00000000 to 0x000fffff] { ro };
 "P2":  place in [from 0x20000000 to 0x2003ffff] { rw, block CSTACK, block HEAP };
 
-  Section             Kind        Address    Size  Object
-  -------             ----        -------    ----  ------
-"A1":                                       0x200
-  .intvec             ro code  0x00000000   0x200  iar_startup_nrf52840.o [1]
-                             - 0x00000200   0x200
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A1":                                      0x200
+  .intvec            ro code  0x00000000   0x200  iar_startup_nrf52840.o [1]
+                            - 0x00000200   0x200
 
-"P1":                                      0x4969
-  .text               ro code  0x00000200   0xf90  nrf_drv_usbd.o [1]
-  .text               ro code  0x00001190    0x76  ABImemcpy_unaligned.o [5]
-  .text               ro code  0x00001206     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00001208    0x24  app_util_platform.o [1]
-  .text               ro code  0x0000122c    0x40  nrf_drv_systick.o [1]
-  .text               ro code  0x0000126c    0x54  nrf_drv_common.o [1]
-  .text               ro code  0x000012c0     0x6  ABImemclr.o [5]
-  .text               ro code  0x000012c6     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x000012c8   0x1e4  nrf_drv_clock.o [1]
-  .text               ro code  0x000014ac    0xa0  nrf_drv_power.o [1]
-  .text               ro code  0x0000154c    0x5e  ABImemset.o [5]
-  .text               ro code  0x000015aa     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x000015ac   0x674  app_usbd.o [1]
-  .text               ro code  0x00001c20   0x104  nrf_atfifo.o [1]
-  .text               ro code  0x00001d24     0x6  ABImemclr4.o [5]
-  .text               ro code  0x00001d2a     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00001d2c    0x32  ABImemset48.o [5]
-  .text               ro code  0x00001d5e     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00001d60   0x5bc  app_usbd_core.o [1]
-  .text               ro code  0x0000231c    0x30  app_usbd_string_desc.o [1]
-  .text               ro code  0x0000234c   0x53c  nrf_drv_twi.o [1]
-  .text               ro code  0x00002888   0x4a0  nrf_drv_uarte.o [1]
-  .text               ro code  0x00002d28   0x44c  nRF5x_UART.o [1]
-  .text               ro code  0x00003174    0xa2  nRF5x_FIFO.o [1]
-  .text               ro code  0x00003216     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00003218   0x330  nrf_drv_spi.o [1]
-  .text               ro code  0x00003548   0x284  nRF5x_RTC.o [1]
-  .text               ro code  0x000037cc   0x26c  app_usbd_cdc_acm.o [1]
-  .text               ro code  0x00003a38   0x244  nrf_drv_gpiote.o [1]
-  .text               ro code  0x00003c7c   0x204  main.o [1]
-  .text               ro code  0x00003e80    0x18  USBSerial.o [1]
-  .text               ro code  0x00003e98    0x78  delay.o [1]
-  .text               ro code  0x00003f10   0x1f0  nRF5x_SPI.o [1]
-  .text               ro code  0x00004100   0x102  nRF5x_TWI.o [1]
-  .text               ro code  0x00004202     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004204    0x7c  nRF5x_USB.o [1]
-  .text               ro code  0x00004280   0x120  wirish_digital.o [1]
-  .text               ro code  0x000043a0    0xcc  nRF5x_USB_CDC.o [1]
-  .text               ro code  0x0000446c    0x1e  app_error.o [1]
-  .text               ro code  0x0000448a     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x0000448c    0x30  app_error_weak.o [1]
-  .text               ro code  0x000044bc   0x13c  system_nrf52840.o [1]
-  .text               ro code  0x000045f8   0x100  nrf_drv_spis.o [1]
-  .text               ro code  0x000046f8    0xd0  packbits_init.o [5]
-  .text               ro code  0x000047c8     0x6  abort.o [3]
-  .text               ro code  0x000047ce     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x000047d0     0xc  XXexit.o [5]
-  .rodata             const    0x000047dc    0x74  app_usbd_string_desc.o [1]
-  .text               ro code  0x00004850    0x50  nrf_drv_swi.o [1]
-  .rodata             const    0x000048a0    0x44  nRF5x_USB_CDC.o [1]
-  .text               ro code  0x000048e4    0x40  zero_init3.o [5]
-  .text               ro code  0x00004924    0x28  data_init.o [5]
-  .rodata             const    0x0000494c    0x24  app_usbd_core.o [1]
-  .rodata             const    0x00004970    0x24  USBSerial.o [1]
-  .text               ro code  0x00004994    0x22  fpinit_M.o [4]
-  .iar.init_table     const    0x000049b8    0x30  - Linker created -
-  .text               ro code  0x000049e8     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x000049ec    0x20  cmain_call_ctors.o [5]
-  .text               ro code  0x00004a0c    0x18  cppinit.o [3]
-  .text               ro code  0x00004a24    0x1a  cmain.o [5]
-  .text               ro code  0x00004a3e     0x4  exit.o [3]
-  .text               ro code  0x00004a42     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a44     0xa  cexit.o [5]
-  .text               ro code  0x00004a4e     0x2  iar_startup_nrf52840.o [1]
-  .rodata             const    0x00004a50    0x14  app_usbd_cdc_acm.o [1]
-  .text               ro code  0x00004a64    0x10  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a74     0xc  cstartup_M.o [5]
-  SHT$$PREINIT_ARRAY           0x00004a80     0x0  <Block>
-  SHT$$INIT_ARRAY              0x00004a80     0x4  <Block>
-    .init_array       const    0x00004a80     0x4  main.o [1]
-  .text               ro code  0x00004a84     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a86     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a88     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a8a     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a8c     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a8e     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a90     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a92     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a94     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a96     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a98     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a9a     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a9c     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004a9e     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004aa0     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004aa2     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004aa4     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004aa6     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004aa8     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004aaa     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004aac     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004aae     0x2  iar_startup_nrf52840.o [1]
-  .text               ro code  0x00004ab0     0x2  iar_startup_nrf52840.o [1]
-  .rodata             const    0x00004ab2     0x0  zero_init3.o [5]
-  .rodata             const    0x00004ab2     0x0  packbits_init.o [5]
-  Initializer bytes   const    0x00004ab2    0xb7  <for P2 s0>
-                             - 0x00004b69  0x4969
+"P1":                                     0x54bb
+  .text              ro code  0x00000200  0x1008  nrf_drv_usbd.o [1]
+  .text              ro code  0x00001208    0x76  ABImemcpy_unaligned.o [5]
+  .text              ro code  0x0000127e     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001280    0x24  app_util_platform.o [1]
+  .text              ro code  0x000012a4    0x40  nrf_drv_systick.o [1]
+  .text              ro code  0x000012e4    0x54  nrf_drv_common.o [1]
+  .text              ro code  0x00001338     0x6  ABImemclr.o [5]
+  .text              ro code  0x0000133e     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001340   0x1e4  nrf_drv_clock.o [1]
+  .text              ro code  0x00001524    0xd0  nrf_drv_power.o [1]
+  .text              ro code  0x000015f4    0x5e  ABImemset.o [5]
+  .text              ro code  0x00001652     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001654   0x71c  app_usbd.o [1]
+  .text              ro code  0x00001d70   0x104  nrf_atfifo.o [1]
+  .text              ro code  0x00001e74     0x6  ABImemclr4.o [5]
+  .text              ro code  0x00001e7a     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00001e7c   0x5c8  app_usbd_core.o [1]
+  .text              ro code  0x00002444    0x32  ABImemset48.o [5]
+  .text              ro code  0x00002476     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00002478    0x30  app_usbd_string_desc.o [1]
+  .text              ro code  0x000024a8   0x53c  nrf_drv_twi.o [1]
+  .text              ro code  0x000029e4   0x4a0  nrf_drv_uarte.o [1]
+  .text              ro code  0x00002e84   0x44c  nRF5x_UART.o [1]
+  .text              ro code  0x000032d0    0xa2  nRF5x_FIFO.o [1]
+  .text              ro code  0x00003372     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00003374   0x330  nrf_drv_spi.o [1]
+  .text              ro code  0x000036a4   0x288  app_usbd_cdc_acm.o [1]
+  .text              ro code  0x0000392c   0x284  nRF5x_RTC.o [1]
+  .text              ro code  0x00003bb0   0x24e  app_usbd_hid.o [1]
+  .text              ro code  0x00003dfe     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00003e00   0x244  nrf_drv_gpiote.o [1]
+  .text              ro code  0x00004044   0x224  main.o [1]
+  .text              ro code  0x00004268   0x1d0  nRF5x_USB_CDC.o [1]
+  .text              ro code  0x00004438    0x78  delay.o [1]
+  .text              ro code  0x000044b0   0x1f0  nRF5x_SPI.o [1]
+  .text              ro code  0x000046a0   0x102  nRF5x_TWI.o [1]
+  .text              ro code  0x000047a2     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000047a4    0xf4  nRF5x_USB_GENERIC.o [1]
+  .text              ro code  0x00004898   0x120  wirish_digital.o [1]
+  .text              ro code  0x000049b8    0xd8  nRF5x_USB.o [1]
+  .text              ro code  0x00004a90    0x1e  app_error.o [1]
+  .text              ro code  0x00004aae     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00004ab0   0x1f8  app_usbd_hid_generic.o [1]
+  .text              ro code  0x00004ca8    0x30  app_error_weak.o [1]
+  .text              ro code  0x00004cd8   0x18e  nrf_queue.o [1]
+  .text              ro code  0x00004e66     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00004e68   0x180  nrf_drv_saadc.o [1]
+  .text              ro code  0x00004fe8   0x13c  system_nrf52840.o [1]
+  .text              ro code  0x00005124   0x100  nrf_drv_spis.o [1]
+  .text              ro code  0x00005224    0xd0  packbits_init.o [5]
+  .text              ro code  0x000052f4     0x6  abort.o [3]
+  .text              ro code  0x000052fa     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000052fc     0xc  XXexit.o [5]
+  .rodata            const    0x00005308    0x74  app_usbd_string_desc.o [1]
+  .rodata            const    0x0000537c    0x6c  nRF5x_USB_GENERIC.o [1]
+  .text              ro code  0x000053e8    0x50  nrf_drv_swi.o [1]
+  .rodata            const    0x00005438    0x44  nRF5x_USB_CDC.o [1]
+  .text              ro code  0x0000547c    0x40  zero_init3.o [5]
+  .text              ro code  0x000054bc    0x28  data_init.o [5]
+  .rodata            const    0x000054e4    0x24  app_usbd_core.o [1]
+  .rodata            const    0x00005508    0x24  app_usbd_hid_generic.o [1]
+  .text              ro code  0x0000552c    0x22  fpinit_M.o [4]
+  .iar.init_table    const    0x00005550    0x2c  - Linker created -
+  .text              ro code  0x0000557c     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00005580    0x1a  cmain.o [5]
+  .text              ro code  0x0000559a     0x4  exit.o [3]
+  .text              ro code  0x0000559e     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055a0     0xa  cexit.o [5]
+  .text              ro code  0x000055aa     0x2  iar_startup_nrf52840.o [1]
+  .rodata            const    0x000055ac    0x14  app_usbd_cdc_acm.o [1]
+  .text              ro code  0x000055c0    0x10  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055d0     0xc  cstartup_M.o [5]
+  .text              ro code  0x000055dc     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055de     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055e0     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055e2     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055e4     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055e6     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055e8     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055ea     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055ec     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055ee     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055f0     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055f2     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055f4     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055f6     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055f8     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055fa     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055fc     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x000055fe     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00005600     0x2  iar_startup_nrf52840.o [1]
+  .text              ro code  0x00005602     0x2  iar_startup_nrf52840.o [1]
+  .rodata            const    0x00005604     0x0  zero_init3.o [5]
+  .rodata            const    0x00005604     0x0  packbits_init.o [5]
+  Initializer bytes  const    0x00005604    0xb7  <for P2 s0>
+                            - 0x000056bb  0x54bb
 
-"P2":                                      0x2be0
-  P2 s0                        0x20000000   0x22c  <Init block>
-    .data             inited   0x20000000   0x144  app_usbd.o [1]
-    .data             inited   0x20000144    0x50  nRF5x_SPI.o [1]
-    .data             inited   0x20000194    0x20  nRF5x_TWI.o [1]
-    .data             inited   0x200001b4    0x20  nrf_drv_spi.o [1]
-    .data             inited   0x200001d4    0x14  app_usbd_string_desc.o [1]
-    .data             inited   0x200001e8    0x14  nRF5x_RTC.o [1]
-    .data             inited   0x200001fc    0x10  nrf_drv_twi.o [1]
-    .data             inited   0x2000020c    0x10  nrf_drv_uarte.o [1]
-    .data             inited   0x2000021c     0xc  main.o [1]
-    .data             inited   0x20000228     0x4  system_nrf52840.o [1]
-  .bss                zero     0x2000022c   0x414  nRF5x_USB_CDC.o [1]
-  .bss                zero     0x20000640   0x120  nrf_drv_usbd.o [1]
-  .bss                zero     0x20000760    0xec  nrf_drv_usbd.o [1]
-  .bss                zero     0x2000084c    0x90  nrf_drv_spi.o [1]
-  .bss                zero     0x200008dc    0x6c  nRF5x_UART.o [1]
-  .bss                zero     0x20000948    0x68  nrf_drv_gpiote.o [1]
-  .bss                zero     0x200009b0    0x50  nrf_drv_twi.o [1]
-  .bss                zero     0x20000a00    0x48  nrf_drv_spis.o [1]
-  .bss                zero     0x20000a48    0x40  app_usbd_core.o [1]
-  .bss                zero     0x20000a88    0x40  nrf_drv_uarte.o [1]
-  .bss                zero     0x20000ac8    0x40  nrf_drv_usbd.o [1]
-  .bss                zero     0x20000b08    0x28  nrf_drv_swi.o [1]
-  .bss                zero     0x20000b30    0x20  nRF5x_USB_CDC.o [1]
-  .bss                zero     0x20000b50    0x14  nRF5x_RTC.o [1]
-  .bss                zero     0x20000b64    0x14  nrf_drv_clock.o [1]
-  .bss                zero     0x20000b78    0x10  app_usbd_core.o [1]
-  .bss                zero     0x20000b88    0x10  app_usbd_core.o [1]
-  .bss                zero     0x20000b98    0x10  main.o [1]
-  .bss                zero     0x20000ba8     0xc  nrf_drv_power.o [1]
-  .bss                zero     0x20000bb4     0x8  app_usbd_core.o [1]
-  .bss                zero     0x20000bbc     0x8  delay.o [1]
-  .bss                zero     0x20000bc4     0x8  nRF5x_SPI.o [1]
-  .bss                zero     0x20000bcc     0x4  app_util_platform.o [1]
-  .bss                zero     0x20000bd0     0x4  nRF5x_RTC.o [1]
-  .bss                zero     0x20000bd4     0x4  nRF5x_RTC.o [1]
-  .bss                zero     0x20000bd8     0x2  nRF5x_TWI.o [1]
-  .bss                zero     0x20000bda     0x2  nRF5x_USB.o [1]
-  .bss                zero     0x20000bdc     0x1  app_usbd.o [1]
-  .bss                zero     0x20000bdd     0x1  main.o [1]
-  .bss                zero     0x20000bde     0x1  nRF5x_USB.o [1]
-  CSTACK                       0x20000be0  0x2000  <Block>
-    CSTACK            uninit   0x20000be0  0x2000  <Block tail>
-                             - 0x20002be0  0x2be0
+"P2":                                     0x2c48
+  P2 s0                       0x20000000   0x22c  <Init block>
+    .data            inited   0x20000000   0x144  app_usbd.o [1]
+    .data            inited   0x20000144    0x50  nRF5x_SPI.o [1]
+    .data            inited   0x20000194    0x20  nRF5x_TWI.o [1]
+    .data            inited   0x200001b4    0x20  nrf_drv_spi.o [1]
+    .data            inited   0x200001d4    0x14  app_usbd_string_desc.o [1]
+    .data            inited   0x200001e8    0x14  nRF5x_RTC.o [1]
+    .data            inited   0x200001fc    0x10  nrf_drv_twi.o [1]
+    .data            inited   0x2000020c    0x10  nrf_drv_uarte.o [1]
+    .data            inited   0x2000021c     0xc  main.o [1]
+    .data            inited   0x20000228     0x4  system_nrf52840.o [1]
+  .bss               zero     0x2000022c   0x414  nRF5x_USB_CDC.o [1]
+  .bss               zero     0x20000640   0x120  nrf_drv_usbd.o [1]
+  .bss               zero     0x20000760    0xec  nrf_drv_usbd.o [1]
+  .bss               zero     0x2000084c    0x90  nrf_drv_spi.o [1]
+  .bss               zero     0x200008dc    0x6c  nRF5x_UART.o [1]
+  .bss               zero     0x20000948    0x68  nrf_drv_gpiote.o [1]
+  .bss               zero     0x200009b0    0x50  nrf_drv_twi.o [1]
+  .bss               zero     0x20000a00    0x48  nrf_drv_spis.o [1]
+  .bss               zero     0x20000a48    0x40  app_usbd_core.o [1]
+  .bss               zero     0x20000a88    0x40  nrf_drv_uarte.o [1]
+  .bss               zero     0x20000ac8    0x40  nrf_drv_usbd.o [1]
+  .bss               zero     0x20000b08    0x30  nrf_drv_saadc.o [1]
+  .bss               zero     0x20000b38    0x28  nrf_drv_swi.o [1]
+  .bss               zero     0x20000b60    0x20  nRF5x_USB_CDC.o [1]
+  .bss               zero     0x20000b80    0x14  nRF5x_RTC.o [1]
+  .bss               zero     0x20000b94    0x14  nRF5x_USB_GENERIC.o [1]
+  .bss               zero     0x20000ba8    0x14  nrf_drv_clock.o [1]
+  .bss               zero     0x20000bbc    0x10  app_usbd_core.o [1]
+  .bss               zero     0x20000bcc    0x10  app_usbd_core.o [1]
+  .bss               zero     0x20000bdc    0x10  nRF5x_USB_GENERIC.o [1]
+  .bss               zero     0x20000bec     0xd  nRF5x_USB_GENERIC.o [1]
+  .bss               zero     0x20000bf9     0x2  nRF5x_USB.o [1]
+  .bss               zero     0x20000bfb     0x1  app_usbd.o [1]
+  .bss               zero     0x20000bfc     0xc  nRF5x_USB_GENERIC.o [1]
+  .bss               zero     0x20000c08     0xc  nrf_drv_power.o [1]
+  .bss               zero     0x20000c14     0x8  app_usbd_core.o [1]
+  .bss               zero     0x20000c1c     0x8  delay.o [1]
+  .bss               zero     0x20000c24     0x8  nRF5x_SPI.o [1]
+  .bss               zero     0x20000c2c     0x8  nRF5x_USB_GENERIC.o [1]
+  .bss               zero     0x20000c34     0x4  app_util_platform.o [1]
+  .bss               zero     0x20000c38     0x4  nRF5x_RTC.o [1]
+  .bss               zero     0x20000c3c     0x4  nRF5x_RTC.o [1]
+  .bss               zero     0x20000c40     0x2  nRF5x_TWI.o [1]
+  .bss               zero     0x20000c42     0x1  main.o [1]
+  .bss               zero     0x20000c43     0x1  nRF5x_USB.o [1]
+  .bss               zero     0x20000c44     0x1  nRF5x_USB_GENERIC.o [1]
+  CSTACK                      0x20000c48  0x2000  <Block>
+    CSTACK           uninit   0x20000c48  0x2000  <Block tail>
+                            - 0x20002c48  0x2c48
 
 
 *******************************************************************************
@@ -272,16 +278,14 @@ __dlib_dynamic_initialization = normal
           Address     Size
           -------     ----
 Zero (__iar_zero_init3)
-    1 destination range, total size 0x9b3:
-          0x2000022c  0x9b3
+    1 destination range, total size 0xa19:
+          0x2000022c  0xa19
 
 Copy/packbits (__iar_packbits_init3)
     1 source range, total size 0xb7 (32% of destination):
-          0x00004ab2   0xb7
+          0x00005604   0xb7
     1 destination range, total size 0x22c:
           0x20000000  0x22c
-
-Extra (__iar_cstart_call_ctors)
 
 
 
@@ -292,40 +296,44 @@ Extra (__iar_cstart_call_ctors)
     Module                  ro code  ro data  rw data
     ------                  -------  -------  -------
 D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj: [1]
-    USBSerial.o                  24       36
     app_error.o                  30
     app_error_weak.o             48
-    app_usbd.o                1 652      106      325
-    app_usbd_cdc_acm.o          620       20
-    app_usbd_core.o           1 468       36      104
+    app_usbd.o                1 820      106      325
+    app_usbd_cdc_acm.o          648       20
+    app_usbd_core.o           1 480       36      104
+    app_usbd_hid.o              590
+    app_usbd_hid_generic.o      504       36
     app_usbd_string_desc.o       48      122       20
     app_util_platform.o          36                 4
     delay.o                     120                 8
-    iar_startup_nrf52840.o      598
-    main.o                      516        8       29
+    iar_startup_nrf52840.o      596
+    main.o                      548        4       13
     nRF5x_FIFO.o                162
     nRF5x_RTC.o                 644        7       48
     nRF5x_SPI.o                 496       26       88
     nRF5x_TWI.o                 258       11       34
     nRF5x_UART.o              1 100               108
-    nRF5x_USB.o                 124                 3
-    nRF5x_USB_CDC.o             204       68    1 076
+    nRF5x_USB.o                 216                 3
+    nRF5x_USB_CDC.o             464       68    1 076
+    nRF5x_USB_GENERIC.o         244      108       70
     nrf_atfifo.o                260
     nrf_drv_clock.o             484                20
     nrf_drv_common.o             84
     nrf_drv_gpiote.o            580               104
-    nrf_drv_power.o             160                12
+    nrf_drv_power.o             208                12
+    nrf_drv_saadc.o             384                48
     nrf_drv_spi.o               816       11      176
     nrf_drv_spis.o              256                72
     nrf_drv_swi.o                80                40
     nrf_drv_systick.o            64
     nrf_drv_twi.o             1 340        5       96
     nrf_drv_uarte.o           1 184        5       80
-    nrf_drv_usbd.o            3 984               588
+    nrf_drv_usbd.o            4 104               588
+    nrf_queue.o                 398
     system_nrf52840.o           316        2        4
     wirish_digital.o            288
     -------------------------------------------------
-    Total:                   18 044      463    3 039
+    Total:                   20 898      567    3 141
 
 command line: [2]
     -------------------------------------------------
@@ -333,10 +341,9 @@ command line: [2]
 
 dl7M_tlf.a: [3]
     abort.o                       6
-    cppinit.o                    24
     exit.o                        4
     -------------------------------------------------
-    Total:                       34
+    Total:                       10
 
 m7M_tls.a: [4]
     fpinit_M.o                   34
@@ -352,18 +359,17 @@ rt7M_tl.a: [5]
     XXexit.o                     12
     cexit.o                      10
     cmain.o                      26
-    cmain_call_ctors.o           32
     cstartup_M.o                 12
     data_init.o                  40
     packbits_init.o             208
     zero_init3.o                 64
     -------------------------------------------------
-    Total:                      678
+    Total:                      646
 
     Gaps                          2        2
-    Linker created                        48    8 192
+    Linker created                        44    8 192
 -----------------------------------------------------
-    Grand Total:             18 792      513   11 231
+    Grand Total:             21 590      613   11 333
 
 
 *******************************************************************************
@@ -372,194 +378,215 @@ rt7M_tl.a: [5]
 
 Entry                      Address   Size  Type      Object
 -----                      -------   ----  ----      ------
-.iar.init_table$$Base   0x000049b8          --   Gb  - Linker created -
-.iar.init_table$$Limit  0x000049e8          --   Gb  - Linker created -
-?main                   0x00004a25         Code  Gb  cmain.o [5]
+.iar.init_table$$Base   0x00005550          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0000557c          --   Gb  - Linker created -
+?main                   0x00005581         Code  Gb  cmain.o [5]
 AlarmInternal           0x200001e8    0xc  Data  Gb  nRF5x_RTC.o [1]
-CSTACK$$Base            0x20000be0          --   Gb  - Linker created -
-CSTACK$$Limit           0x20002be0          --   Gb  - Linker created -
-GPIOTE_IRQHandler       0x00003ac3  0x196  Code  Gb  nrf_drv_gpiote.o [1]
-InStream_Read           0x000046f9   0x22  Code  Lc  packbits_init.o [5]
-NVIC_ClearPendingIRQ    0x00003555    0xa  Code  Lc  nRF5x_RTC.o [1]
-NVIC_EnableIRQ          0x00003549    0xc  Code  Lc  nRF5x_RTC.o [1]
-NVIC_SetPriority        0x00003567   0x1a  Code  Lc  nRF5x_RTC.o [1]
-POWER_CLOCK_IRQHandler  0x0000126d    0xe  Code  Gb  nrf_drv_common.o [1]
-RTC0_IRQHandler         0x0000365b   0x2a  Code  Gb  nRF5x_RTC.o [1]
-RTC1_IRQHandler         0x00003685   0x2a  Code  Gb  nRF5x_RTC.o [1]
-RTC2_IRQHandler         0x000036b3   0x2a  Code  Gb  nRF5x_RTC.o [1]
-Region$$Table$$Base     0x000049b8          --   Gb  - Linker created -
-Region$$Table$$Limit    0x000049e8          --   Gb  - Linker created -
-SHT$$INIT_ARRAY$$Base   0x00004a80          --   Gb  - Linker created -
-SHT$$INIT_ARRAY$$Limit  0x00004a84          --   Gb  - Linker created -
-SHT$$PREINIT_ARRAY$$Base
-                        0x00004a80          --   Gb  - Linker created -
-SHT$$PREINIT_ARRAY$$Limit
-                        0x00004a80          --   Gb  - Linker created -
+CSTACK$$Base            0x20000c48          --   Gb  - Linker created -
+CSTACK$$Limit           0x20002c48          --   Gb  - Linker created -
+GPIOTE_IRQHandler       0x00003e8b  0x196  Code  Gb  nrf_drv_gpiote.o [1]
+InStream_Read           0x00005225   0x22  Code  Lc  packbits_init.o [5]
+NVIC_ClearPendingIRQ    0x00003939    0xa  Code  Lc  nRF5x_RTC.o [1]
+NVIC_EnableIRQ          0x0000392d    0xc  Code  Lc  nRF5x_RTC.o [1]
+NVIC_SetPriority        0x0000394b   0x1a  Code  Lc  nRF5x_RTC.o [1]
+POWER_CLOCK_IRQHandler  0x000012e5    0xe  Code  Gb  nrf_drv_common.o [1]
+RTC0_IRQHandler         0x00003a3f   0x2a  Code  Gb  nRF5x_RTC.o [1]
+RTC1_IRQHandler         0x00003a69   0x2a  Code  Gb  nRF5x_RTC.o [1]
+RTC2_IRQHandler         0x00003a97   0x2a  Code  Gb  nRF5x_RTC.o [1]
+RTC_init()              0x0000413b   0x32  Code  Gb  main.o [1]
+Region$$Table$$Base     0x00005550          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000557c          --   Gb  - Linker created -
+SAADC_IRQHandler        0x00004e8b  0x144  Code  Gb  nrf_drv_saadc.o [1]
 SPIM0_SPIS0_TWIM0_TWIS0_SPI0_TWI0_IRQHandler
-                        0x00003523    0x6  Code  Gb  nrf_drv_spi.o [1]
+                        0x0000367f    0x6  Code  Gb  nrf_drv_spi.o [1]
 SPIM2_SPIS2_SPI2_IRQHandler
-                        0x000046e9    0x6  Code  Gb  nrf_drv_spis.o [1]
-SPI_init()              0x00003d23    0xc  Code  Gb  main.o [1]
-SWI0_EGU0_IRQHandler    0x0000486b    0x8  Code  Gb  nrf_drv_swi.o [1]
-SWI1_EGU1_IRQHandler    0x00004873    0x8  Code  Gb  nrf_drv_swi.o [1]
-SWI2_EGU2_IRQHandler    0x0000487b    0x8  Code  Gb  nrf_drv_swi.o [1]
-SWI3_EGU3_IRQHandler    0x00004883    0x8  Code  Gb  nrf_drv_swi.o [1]
-SWI4_EGU4_IRQHandler    0x0000488b    0x8  Code  Gb  nrf_drv_swi.o [1]
-SWI5_EGU5_IRQHandler    0x00004893    0x8  Code  Gb  nrf_drv_swi.o [1]
+                        0x00005215    0x6  Code  Gb  nrf_drv_spis.o [1]
+SPI_init()              0x000040e9    0xc  Code  Gb  main.o [1]
+SWI0_EGU0_IRQHandler    0x00005403    0x8  Code  Gb  nrf_drv_swi.o [1]
+SWI1_EGU1_IRQHandler    0x0000540b    0x8  Code  Gb  nrf_drv_swi.o [1]
+SWI2_EGU2_IRQHandler    0x00005413    0x8  Code  Gb  nrf_drv_swi.o [1]
+SWI3_EGU3_IRQHandler    0x0000541b    0x8  Code  Gb  nrf_drv_swi.o [1]
+SWI4_EGU4_IRQHandler    0x00005423    0x8  Code  Gb  nrf_drv_swi.o [1]
+SWI5_EGU5_IRQHandler    0x0000542b    0x8  Code  Gb  nrf_drv_swi.o [1]
 SX1272_readRegister(unsigned char)
-                        0x00003ccb   0x26  Code  Gb  main.o [1]
-SX1272_reset()          0x00003caf   0x1c  Code  Gb  main.o [1]
-Serial                  0x20000b98   0x10  Data  Gb  main.o [1]
-SysTick_Handler         0x00003ed9    0xa  Code  Gb  delay.o [1]
+                        0x00004091   0x26  Code  Gb  main.o [1]
+SX1272_reset()          0x00004075   0x1c  Code  Gb  main.o [1]
+SysTick_Handler         0x00004479    0xa  Code  Gb  delay.o [1]
 SystemCoreClock         0x20000228    0x4  Data  Gb  system_nrf52840.o [1]
-SystemInit              0x000044bd   0xf4  Code  Gb  system_nrf52840.o [1]
-TWI_init()              0x00003d2f   0x46  Code  Gb  main.o [1]
-TimeInternal            0x20000bd4    0x4  Data  Gb  nRF5x_RTC.o [1]
+SystemInit              0x00004fe9   0xf4  Code  Gb  system_nrf52840.o [1]
+TWI_init()              0x000040f5   0x46  Code  Gb  main.o [1]
+TimeInternal            0x20000c3c    0x4  Data  Gb  nRF5x_RTC.o [1]
 UARTE0_UART0_IRQHandler
-                        0x00002cf7    0x6  Code  Gb  nrf_drv_uarte.o [1]
-UARTE1_IRQHandler       0x00002cfd    0x6  Code  Gb  nrf_drv_uarte.o [1]
-UART_init()             0x00003cf1   0x32  Code  Gb  main.o [1]
+                        0x00002e53    0x6  Code  Gb  nrf_drv_uarte.o [1]
+UARTE1_IRQHandler       0x00002e59    0x6  Code  Gb  nrf_drv_uarte.o [1]
+UART_init()             0x000040b7   0x32  Code  Gb  main.o [1]
 USBD_IRQHandler         0x00000a25  0x154  Code  Gb  nrf_drv_usbd.o [1]
-USBSerial::USBSerial()  0x00003e81   0x10  Code  Gb  USBSerial.o [1]
-Virtual function table for USBSerial
-                        0x00004970   0x24  Data  Gb  USBSerial.o [1]
+USB_init()              0x0000416d   0x14  Code  Gb  main.o [1]
 __Vectors               0x00000000          --   Gb  iar_startup_nrf52840.o [1]
 __Vectors_End           0x00000200         Data  Gb  iar_startup_nrf52840.o [1]
 __Vectors_Size {Abs}    0x00000200          --   Gb  iar_startup_nrf52840.o [1]
-__aeabi_memclr          0x000012c1         Code  Gb  ABImemclr.o [5]
-__aeabi_memclr4         0x00001d25         Code  Gb  ABImemclr4.o [5]
-__call_ctors            0x00004a0d   0x18  Code  Gb  cppinit.o [3]
-__cmain                 0x00004a25         Code  Gb  cmain.o [5]
-__exit                  0x000047d1         Code  Gb  XXexit.o [5]
-__iar_Memset4_word      0x00001d2d         Code  Gb  ABImemset48.o [5]
-__iar_Memset8_word      0x00001d2d         Code  Gb  ABImemset48.o [5]
-__iar_Memset_word       0x0000154d         Code  Gb  ABImemset.o [5]
-__iar_cstart_call_ctors
-                        0x000049ed   0x20  Code  Gb  cmain_call_ctors.o [5]
-__iar_data_init3        0x00004925   0x28  Code  Gb  data_init.o [5]
-__iar_init_vfp          0x00004995         Code  Gb  fpinit_M.o [4]
-__iar_packbits_init3    0x0000471b   0xae  Code  Gb  packbits_init.o [5]
-__iar_program_start     0x00004a75         Code  Gb  cstartup_M.o [5]
+__aeabi_memclr          0x00001339         Code  Gb  ABImemclr.o [5]
+__aeabi_memclr4         0x00001e75         Code  Gb  ABImemclr4.o [5]
+__cmain                 0x00005581         Code  Gb  cmain.o [5]
+__exit                  0x000052fd         Code  Gb  XXexit.o [5]
+__iar_Memset4_word      0x00002445         Code  Gb  ABImemset48.o [5]
+__iar_Memset8_word      0x00002445         Code  Gb  ABImemset48.o [5]
+__iar_Memset_word       0x000015f5         Code  Gb  ABImemset.o [5]
+__iar_data_init3        0x000054bd   0x28  Code  Gb  data_init.o [5]
+__iar_init_vfp          0x0000552d         Code  Gb  fpinit_M.o [4]
+__iar_packbits_init3    0x00005247   0xae  Code  Gb  packbits_init.o [5]
+__iar_program_start     0x000055d1         Code  Gb  cstartup_M.o [5]
 __iar_unaligned___aeabi_memcpy
-                        0x00001191         Code  Gb  ABImemcpy_unaligned.o [5]
+                        0x00001209         Code  Gb  ABImemcpy_unaligned.o [5]
 __iar_unaligned___aeabi_memcpy4
-                        0x000011b1         Code  Gb  ABImemcpy_unaligned.o [5]
+                        0x00001229         Code  Gb  ABImemcpy_unaligned.o [5]
 __iar_unaligned___aeabi_memcpy8
-                        0x000011b1         Code  Gb  ABImemcpy_unaligned.o [5]
-__iar_zero_init3        0x000048e5   0x40  Code  Gb  zero_init3.o [5]
-__sti__routine          0x00003c7d    0x6  Code  Lc  main.o [1]
+                        0x00001229         Code  Gb  ABImemcpy_unaligned.o [5]
+__iar_zero_init3        0x0000547d   0x40  Code  Gb  zero_init3.o [5]
 __vector_table          0x00000000         Data  Gb  iar_startup_nrf52840.o [1]
-_call_main              0x00004a31         Code  Gb  cmain.o [5]
-_exit                   0x00004a45         Code  Gb  cexit.o [5]
-_main                   0x00004a3b         Code  Gb  cmain.o [5]
-_ulTickCount            0x20000bc0    0x4  Data  Lc  delay.o [1]
-abort                   0x000047c9    0x6  Code  Gb  abort.o [3]
+_call_main              0x0000558d         Code  Gb  cmain.o [5]
+_exit                   0x000055a1         Code  Gb  cexit.o [5]
+_main                   0x00005597         Code  Gb  cmain.o [5]
+_ulTickCount            0x20000c20    0x4  Data  Lc  delay.o [1]
+abort                   0x000052f5    0x6  Code  Gb  abort.o [3]
 alarmCallback           0x200001f8    0x4  Data  Gb  nRF5x_RTC.o [1]
 app_error_fault_handler
-                        0x0000448d   0x30  Code  Wk  app_error_weak.o [1]
-app_error_handler_bare  0x0000446d   0x1e  Code  Gb  app_error.o [1]
-app_usbd_all_call       0x00001a79   0x18  Code  Gb  app_usbd.o [1]
+                        0x00004ca9   0x30  Code  Wk  app_error_weak.o [1]
+app_error_handler_bare  0x00004a91   0x1e  Code  Gb  app_error.o [1]
+app_usbd_all_call       0x00001bbf   0x18  Code  Gb  app_usbd.o [1]
 app_usbd_all_iface_deselect
-                        0x00001bbd   0x26  Code  Gb  app_usbd.o [1]
+                        0x00001d03   0x26  Code  Gb  app_usbd.o [1]
 app_usbd_all_iface_select_0
-                        0x00001b95   0x28  Code  Gb  app_usbd.o [1]
+                        0x00001cdb   0x28  Code  Gb  app_usbd.o [1]
 app_usbd_all_until_served_call
-                        0x00001a97   0x1c  Code  Gb  app_usbd.o [1]
+                        0x00001bdd   0x1c  Code  Gb  app_usbd.o [1]
 app_usbd_cdc_acm_class_methods
-                        0x00004a50   0x14  Data  Gb  app_usbd_cdc_acm.o [1]
-app_usbd_cdc_acm_read   0x000039f7   0x1a  Code  Gb  app_usbd_cdc_acm.o [1]
+                        0x000055ac   0x14  Data  Gb  app_usbd_cdc_acm.o [1]
+app_usbd_cdc_acm_read   0x000038e9   0x1a  Code  Gb  app_usbd_cdc_acm.o [1]
 app_usbd_cdc_acm_rx_size
-                        0x000039e1   0x16  Code  Gb  app_usbd_cdc_acm.o [1]
+                        0x000038d3   0x16  Code  Gb  app_usbd_cdc_acm.o [1]
+app_usbd_cdc_acm_write  0x000038b9   0x1a  Code  Gb  app_usbd_cdc_acm.o [1]
+app_usbd_class_append   0x00001a61   0x70  Code  Gb  app_usbd.o [1]
 app_usbd_class_descriptor_find
-                        0x000015e7   0x40  Code  Gb  app_usbd.o [1]
+                        0x0000168f   0x40  Code  Gb  app_usbd.o [1]
 app_usbd_class_first_get
-                        0x00001a07    0x6  Code  Gb  app_usbd.o [1]
+                        0x00001b4d    0x6  Code  Gb  app_usbd.o [1]
 app_usbd_class_iface_ep_get
-                        0x000015c1   0x12  Code  Lc  app_usbd.o [1]
+                        0x00001669   0x12  Code  Lc  app_usbd.o [1]
 app_usbd_class_iface_ep_get
-                        0x000037e1   0x12  Code  Lc  app_usbd_cdc_acm.o [1]
+                        0x000036b9   0x12  Code  Lc  app_usbd_cdc_acm.o [1]
+app_usbd_class_iface_ep_get
+                        0x00004ac5   0x12  Code  Lc  app_usbd_hid_generic.o [1]
 app_usbd_class_iface_get
-                        0x000015ad   0x14  Code  Lc  app_usbd.o [1]
+                        0x00001655   0x14  Code  Lc  app_usbd.o [1]
 app_usbd_class_iface_get
-                        0x000037cd   0x14  Code  Lc  app_usbd_cdc_acm.o [1]
+                        0x000036a5   0x14  Code  Lc  app_usbd_cdc_acm.o [1]
+app_usbd_class_iface_get
+                        0x00004ab1   0x14  Code  Lc  app_usbd_hid_generic.o [1]
 app_usbd_class_rwu_enabled_check
-                        0x000019db    0xa  Code  Gb  app_usbd.o [1]
+                        0x00001b21    0xa  Code  Gb  app_usbd.o [1]
+app_usbd_class_rwu_register
+                        0x00001b0d    0x8  Code  Gb  app_usbd.o [1]
+app_usbd_class_rwu_unregister
+                        0x00001b15    0x6  Code  Gb  app_usbd.o [1]
 app_usbd_class_sof_register
-                        0x000019a5   0x14  Code  Gb  app_usbd.o [1]
+                        0x00001ad7   0x14  Code  Gb  app_usbd.o [1]
 app_usbd_class_sof_unregister
-                        0x000019b9   0x22  Code  Gb  app_usbd.o [1]
+                        0x00001aeb   0x22  Code  Gb  app_usbd.o [1]
 app_usbd_core_event_handler
-                        0x00002175   0xc4  Code  Lc  app_usbd_core.o [1]
+                        0x00002291   0xc4  Code  Lc  app_usbd_core.o [1]
+app_usbd_core_feature_state_get
+                        0x000023eb    0xe  Code  Gb  app_usbd_core.o [1]
 app_usbd_core_handler_call
-                        0x0000165b    0xc  Code  Lc  app_usbd.o [1]
-app_usbd_core_inst      0x00004960   0x10  Data  Gb  app_usbd_core.o [1]
+                        0x00001703    0xc  Code  Lc  app_usbd.o [1]
+app_usbd_core_inst      0x000054f8   0x10  Data  Gb  app_usbd_core.o [1]
 app_usbd_core_inst_data
-                        0x20000bb4    0x8  Data  Lc  app_usbd_core.o [1]
+                        0x20000c14    0x8  Data  Lc  app_usbd_core.o [1]
 app_usbd_core_setup_data_handler_set
-                        0x0000229f   0x20  Code  Gb  app_usbd_core.o [1]
+                        0x000023bb   0x20  Code  Gb  app_usbd_core.o [1]
 app_usbd_core_setup_req_handler
-                        0x00001ff9  0x17c  Code  Lc  app_usbd_core.o [1]
+                        0x00002115  0x17c  Code  Lc  app_usbd_core.o [1]
 app_usbd_core_setup_rsp
-                        0x00002239   0x5e  Code  Gb  app_usbd_core.o [1]
+                        0x00002355   0x5e  Code  Gb  app_usbd_core.o [1]
 app_usbd_core_setup_transfer_buff_get
-                        0x000022bf    0xa  Code  Gb  app_usbd_core.o [1]
+                        0x000023db    0xa  Code  Gb  app_usbd_core.o [1]
 app_usbd_core_state_get
-                        0x000022c9    0x6  Code  Gb  app_usbd_core.o [1]
-app_usbd_disable        0x000017b1    0x4  Code  Gb  app_usbd.o [1]
-app_usbd_ep_call        0x00001a4f   0x2a  Code  Gb  app_usbd.o [1]
+                        0x000023e5    0x6  Code  Gb  app_usbd_core.o [1]
+app_usbd_disable        0x0000185d    0x4  Code  Gb  app_usbd.o [1]
+app_usbd_enable         0x00001859    0x4  Code  Gb  app_usbd.o [1]
+app_usbd_ep_call        0x00001b95   0x2a  Code  Gb  app_usbd.o [1]
 app_usbd_ep_conf_access
-                        0x00001627   0x1c  Code  Lc  app_usbd.o [1]
-app_usbd_ep_enable      0x000019e5   0x22  Code  Gb  app_usbd.o [1]
+                        0x000016cf   0x1c  Code  Lc  app_usbd.o [1]
+app_usbd_ep_enable      0x00001b2b   0x22  Code  Gb  app_usbd.o [1]
 app_usbd_ep_handled_transfer
-                        0x00001ad7   0x24  Code  Gb  app_usbd.o [1]
+                        0x00001c1d   0x24  Code  Gb  app_usbd.o [1]
 app_usbd_ep_instance_set
-                        0x00001643   0x18  Code  Lc  app_usbd.o [1]
-app_usbd_ep_transfer    0x00001ab3   0x24  Code  Gb  app_usbd.o [1]
-app_usbd_event_add      0x00001667   0x32  Code  Lc  app_usbd.o [1]
-app_usbd_event_execute  0x000017e9  0x18c  Code  Gb  app_usbd.o [1]
-app_usbd_event_handler  0x00001699    0x2  Code  Lc  app_usbd.o [1]
+                        0x000016eb   0x18  Code  Lc  app_usbd.o [1]
+app_usbd_ep_transfer    0x00001bf9   0x24  Code  Gb  app_usbd.o [1]
+app_usbd_event_add      0x0000170f   0x32  Code  Lc  app_usbd.o [1]
+app_usbd_event_execute  0x000018ab  0x18c  Code  Gb  app_usbd.o [1]
+app_usbd_event_handler  0x00001741    0x2  Code  Lc  app_usbd.o [1]
 app_usbd_event_queue_process
-                        0x0000197d   0x22  Code  Gb  app_usbd.o [1]
-app_usbd_hfclk_ready    0x0000169b    0x6  Code  Lc  app_usbd.o [1]
-app_usbd_iface_call     0x00001a4b    0x4  Code  Gb  app_usbd.o [1]
+                        0x00001a3f   0x22  Code  Gb  app_usbd.o [1]
+app_usbd_generic_class_methods
+                        0x00005518   0x14  Data  Gb  app_usbd_hid_generic.o [1]
+app_usbd_hfclk_ready    0x00001743    0x6  Code  Lc  app_usbd.o [1]
+app_usbd_hid_event_handler
+                        0x00003d19   0xe6  Code  Gb  app_usbd_hid.o [1]
+app_usbd_hid_generic_in_report_set
+                        0x00004b7d   0x3c  Code  Gb  app_usbd_hid_generic.o [1]
+app_usbd_hid_generic_methods
+                        0x00005508   0x10  Data  Gb  app_usbd_hid_generic.o [1]
+app_usbd_hid_state_flag_clr
+                        0x00003bcd   0x1e  Code  Lc  app_usbd_hid.o [1]
+app_usbd_hid_state_flag_clr
+                        0x00004ad9   0x1e  Code  Lc  app_usbd_hid_generic.o [1]
+app_usbd_hid_state_flag_set
+                        0x00003bb1   0x1c  Code  Lc  app_usbd_hid.o [1]
+app_usbd_iface_call     0x00001b91    0x4  Code  Gb  app_usbd.o [1]
 app_usbd_iface_deselect
-                        0x00001b41   0x34  Code  Gb  app_usbd.o [1]
-app_usbd_iface_find     0x00001a0d   0x3e  Code  Gb  app_usbd.o [1]
-app_usbd_iface_select   0x00001afb   0x40  Code  Gb  app_usbd.o [1]
+                        0x00001c87   0x34  Code  Gb  app_usbd.o [1]
+app_usbd_iface_find     0x00001b53   0x3e  Code  Gb  app_usbd.o [1]
+app_usbd_iface_select   0x00001c41   0x40  Code  Gb  app_usbd.o [1]
 app_usbd_iface_selection_get
-                        0x00001b7d   0x18  Code  Gb  app_usbd.o [1]
-app_usbd_init           0x00001717   0x86  Code  Gb  app_usbd.o [1]
-app_usbd_start          0x000017b5   0x18  Code  Gb  app_usbd.o [1]
-app_usbd_stop           0x000017cd    0x8  Code  Gb  app_usbd.o [1]
+                        0x00001cc3   0x18  Code  Gb  app_usbd.o [1]
+app_usbd_init           0x000017bf   0x86  Code  Gb  app_usbd.o [1]
+app_usbd_start          0x00001861   0x18  Code  Gb  app_usbd.o [1]
+app_usbd_stop           0x00001879    0x8  Code  Gb  app_usbd.o [1]
 app_usbd_string_desc_get
-                        0x0000231d   0x20  Code  Gb  app_usbd_string_desc.o [1]
-app_usbd_suspend_req    0x000017d5    0x6  Code  Gb  app_usbd.o [1]
+                        0x00002479   0x20  Code  Gb  app_usbd_string_desc.o [1]
+app_usbd_suspend_req    0x00001881    0x6  Code  Gb  app_usbd.o [1]
+app_usbd_wakeup_req     0x00001895   0x16  Code  Gb  app_usbd.o [1]
 app_util_critical_region_enter
-                        0x00001223    0x2  Code  Gb  app_util_platform.o [1]
+                        0x0000129b    0x2  Code  Gb  app_util_platform.o [1]
 app_util_critical_region_exit
-                        0x00001225    0x2  Code  Gb  app_util_platform.o [1]
-app_util_disable_irq    0x00001209    0xc  Code  Gb  app_util_platform.o [1]
-app_util_enable_irq     0x00001215    0xe  Code  Gb  app_util_platform.o [1]
-apply_config            0x00002933   0x74  Code  Gb  nrf_drv_uarte.o [1]
-attachedCallback        0x20000b50    0x4  Data  Gb  nRF5x_RTC.o [1]
+                        0x0000129d    0x2  Code  Gb  app_util_platform.o [1]
+app_util_disable_irq    0x00001281    0xc  Code  Gb  app_util_platform.o [1]
+app_util_enable_irq     0x0000128d    0xe  Code  Gb  app_util_platform.o [1]
+apply_config            0x00002a8f   0x74  Code  Gb  nrf_drv_uarte.o [1]
+attachedCallback        0x20000b80    0x4  Data  Gb  nRF5x_RTC.o [1]
 bit2ep                  0x000003e5    0xe  Code  Lc  nrf_drv_usbd.o [1]
-cdc_acm_event_handler   0x00003969   0x70  Code  Lc  app_usbd_cdc_acm.o [1]
+cdc_acm_event_handler   0x00003841   0x70  Code  Lc  app_usbd_cdc_acm.o [1]
 cdc_acm_get_descriptors
-                        0x000039d9    0x8  Code  Lc  app_usbd_cdc_acm.o [1]
+                        0x000038b1    0x8  Code  Lc  app_usbd_cdc_acm.o [1]
 cdc_acm_req_out_data_cb
-                        0x00003821   0x24  Code  Lc  app_usbd_cdc_acm.o [1]
-class_event_handler     0x000015d3    0x6  Code  Lc  app_usbd.o [1]
+                        0x000036f9   0x24  Code  Lc  app_usbd_cdc_acm.o [1]
+cdc_handler(unsigned char *, unsigned int)
+                        0x00004071    0x4  Code  Gb  main.o [1]
+class_event_handler     0x0000167b    0x6  Code  Lc  app_usbd.o [1]
 clock_clk_started_notify
-                        0x00001421   0x24  Code  Lc  nrf_drv_clock.o [1]
-comm_ep_in_addr_get     0x000037fd    0x6  Code  Lc  app_usbd_cdc_acm.o [1]
-data_ep_in_addr_get     0x00003803    0x4  Code  Lc  app_usbd_cdc_acm.o [1]
-data_ep_out_addr_get    0x00003815    0xc  Code  Lc  app_usbd_cdc_acm.o [1]
-delay                   0x00003ee3   0x1e  Code  Gb  delay.o [1]
+                        0x00001499   0x24  Code  Lc  nrf_drv_clock.o [1]
+comm_ep_in_addr_get     0x000036d5    0x6  Code  Lc  app_usbd_cdc_acm.o [1]
+data_ep_in_addr_get     0x000036db    0x4  Code  Lc  app_usbd_cdc_acm.o [1]
+data_ep_out_addr_get    0x000036ed    0xc  Code  Lc  app_usbd_cdc_acm.o [1]
+delay                   0x00004483   0x1e  Code  Gb  delay.o [1]
 digitalToggle(unsigned char)
-                        0x0000439f    0x2  Code  Gb  wirish_digital.o [1]
+                        0x000049b7    0x2  Code  Gb  wirish_digital.o [1]
 digitalWrite(unsigned char, unsigned char)
-                        0x0000439d    0x2  Code  Gb  wirish_digital.o [1]
-enabledTime             0x20000b54    0x4  Data  Gb  nRF5x_RTC.o [1]
+                        0x000049b5    0x2  Code  Gb  wirish_digital.o [1]
+enabledTime             0x20000b84    0x4  Data  Gb  nRF5x_RTC.o [1]
+endpoint_in_event_handler
+                        0x00003ce7   0x30  Code  Lc  app_usbd_hid.o [1]
 ep2bit                  0x000003d3   0x12  Code  Lc  nrf_drv_usbd.o [1]
 ep_state_access         0x000003bf   0x14  Code  Lc  nrf_drv_usbd.o [1]
 ev_accessfault_handler  0x000008cb    0x2  Code  Lc  nrf_drv_usbd.o [1]
@@ -588,40 +615,72 @@ ev_sof_handler          0x000006f3   0x3e  Code  Lc  nrf_drv_usbd.o [1]
 ev_started_handler      0x0000050d   0x20  Code  Lc  nrf_drv_usbd.o [1]
 ev_usbevent_handler     0x0000080f   0x52  Code  Lc  nrf_drv_usbd.o [1]
 ev_usbreset_handler     0x000004ed   0x1c  Code  Lc  nrf_drv_usbd.o [1]
-exit                    0x00004a3f    0x4  Code  Gb  exit.o [3]
-fifo_get                0x000031a5   0x14  Code  Gb  nRF5x_FIFO.o [1]
-fifo_peek               0x00003191   0x14  Code  Gb  nRF5x_FIFO.o [1]
-fifo_put                0x0000317d   0x14  Code  Gb  nRF5x_FIFO.o [1]
-hfclk_stop              0x00001303   0x18  Code  Lc  nrf_drv_clock.o [1]
-interrupts_enable       0x000029a7   0x40  Code  Gb  nrf_drv_uarte.o [1]
-irq_handler_spim        0x000034e7   0x34  Code  Lc  nrf_drv_spi.o [1]
-isSleep                 0x20000bdd    0x1  Data  Gb  main.o [1]
-item_enqueue            0x0000134d   0x16  Code  Lc  nrf_drv_clock.o [1]
-loop()                  0x00003de7   0x5c  Code  Gb  main.o [1]
-m_app_cdc_acm           0x0000444c   0x20  Data  Gb  nRF5x_USB_CDC.o [1]
-m_app_cdc_acm_data      0x20000b30   0x20  Data  Lc  nRF5x_USB_CDC.o [1]
-m_app_usbd_state        0x20000b80    0x1  Data  Lc  app_usbd_core.o [1]
+exit                    0x0000559b    0x4  Code  Gb  exit.o [3]
+fifo_get                0x00003301   0x14  Code  Gb  nRF5x_FIFO.o [1]
+fifo_peek               0x000032ed   0x14  Code  Gb  nRF5x_FIFO.o [1]
+fifo_put                0x000032d9   0x14  Code  Gb  nRF5x_FIFO.o [1]
+hfclk_stop              0x0000137b   0x18  Code  Lc  nrf_drv_clock.o [1]
+hid_acc_for_report_get  0x000047a5   0x18  Code  Lc  nRF5x_USB_GENERIC.o [1]
+hid_generic_ep_transfer_in
+                        0x00004c35   0x26  Code  Lc  app_usbd_hid_generic.o [1]
+hid_generic_ep_transfer_out
+                        0x00004c5b   0x2e  Code  Lc  app_usbd_hid_generic.o [1]
+hid_generic_event_handler
+                        0x00004c89   0x10  Code  Lc  app_usbd_hid_generic.o [1]
+hid_generic_get_descriptors
+                        0x00004c99    0x4  Code  Lc  app_usbd_hid_generic.o [1]
+hid_generic_mouse_process_state
+                        0x000047bd   0x6c  Code  Lc  nRF5x_USB_GENERIC.o [1]
+hid_generic_on_get_report
+                        0x00004bc1    0x4  Code  Lc  app_usbd_hid_generic.o [1]
+hid_generic_on_set_report
+                        0x00004bdb   0x5a  Code  Lc  app_usbd_hid_generic.o [1]
+hid_generic_on_set_report_data_cb
+                        0x00004bc5   0x16  Code  Lc  app_usbd_hid_generic.o [1]
+hid_generic_transfer_set
+                        0x00004af9   0x84  Code  Lc  app_usbd_hid_generic.o [1]
+interrupts_enable       0x00002b03   0x40  Code  Gb  nrf_drv_uarte.o [1]
+irq_handler_spim        0x00003643   0x34  Code  Lc  nrf_drv_spi.o [1]
+isSleep                 0x20000c42    0x1  Data  Gb  main.o [1]
+item_enqueue            0x000013c5   0x16  Code  Lc  nrf_drv_clock.o [1]
+loop()                  0x000041cd   0x5c  Code  Gb  main.o [1]
+m_app_cdc_acm           0x00004418   0x20  Data  Gb  nRF5x_USB_CDC.o [1]
+m_app_cdc_acm_data      0x20000b60   0x20  Data  Lc  nRF5x_USB_CDC.o [1]
+m_app_hid_generic       0x00004864   0x34  Data  Gb  nRF5x_USB_GENERIC.o [1]
+m_app_hid_generic_data  0x20000b94   0x14  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_app_hid_generic_in    0x20000c2c    0x8  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_app_hid_generic_out   0x000053cc    0x8  Data  Gb  nRF5x_USB_GENERIC.o [1]
+m_app_hid_generic_out_buf
+                        0x20000c44    0x1  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_app_hid_generic_queue
+                        0x000053d4   0x14  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_app_hid_generic_queue_nrf_queue_buffer
+                        0x20000bdc   0x10  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_app_hid_generic_queue_nrf_queue_cb
+                        0x20000bfc    0xc  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_app_usbd_state        0x20000bc4    0x1  Data  Lc  app_usbd_core.o [1]
 m_bus_suspend           0x20000761    0x1  Data  Lc  nrf_drv_usbd.o [1]
 m_cb                    0x20000948   0x68  Data  Lc  nrf_drv_gpiote.o [1]
+m_cb                    0x20000b08   0x30  Data  Lc  nrf_drv_saadc.o [1]
 m_cb                    0x2000084c   0x90  Data  Lc  nrf_drv_spi.o [1]
 m_cb                    0x20000a00   0x48  Data  Lc  nrf_drv_spis.o [1]
 m_cb                    0x200009b0   0x50  Data  Lc  nrf_drv_twi.o [1]
 m_cb                    0x20000a88   0x40  Data  Lc  nrf_drv_uarte.o [1]
 m_cdc_acm_class_descriptors
-                        0x000048a0   0x44  Data  Lc  nRF5x_USB_CDC.o [1]
-m_clock_cb              0x20000b64   0x14  Data  Lc  nrf_drv_clock.o [1]
-m_configuration_dsc     0x000022fc    0xc  Data  Lc  app_usbd_core.o [1]
-m_core_methods          0x0000494c   0x14  Data  Lc  app_usbd_core.o [1]
+                        0x00005438   0x44  Data  Lc  nRF5x_USB_CDC.o [1]
+m_clock_cb              0x20000ba8   0x14  Data  Lc  nrf_drv_clock.o [1]
+m_configuration_dsc     0x00002424    0xc  Data  Lc  app_usbd_core.o [1]
+m_core_methods          0x000054e4   0x14  Data  Lc  app_usbd_core.o [1]
 m_current_conf          0x20000000    0xc  Data  Lc  app_usbd.o [1]
 m_descriptor_conf_feed_data
-                        0x20000b88   0x10  Data  Lc  app_usbd_core.o [1]
-m_device_dsc            0x000022e8   0x14  Data  Lc  app_usbd_core.o [1]
+                        0x20000bcc   0x10  Data  Lc  app_usbd_core.o [1]
+m_device_dsc            0x00002410   0x14  Data  Lc  app_usbd_core.o [1]
 m_device_features_state
-                        0x20000b81    0x1  Data  Lc  app_usbd_core.o [1]
+                        0x20000bc5    0x1  Data  Lc  app_usbd_core.o [1]
 m_dma_pending           0x20000763    0x1  Data  Lc  nrf_drv_usbd.o [1]
-m_drv_state             0x20000b08    0x1  Data  Lc  nrf_drv_swi.o [1]
+m_drv_state             0x20000b38    0x1  Data  Lc  nrf_drv_swi.o [1]
 m_drv_state             0x20000760    0x1  Data  Lc  nrf_drv_usbd.o [1]
-m_ep0_handler_desc      0x20000b78    0x8  Data  Lc  app_usbd_core.o [1]
+m_ep0_handler_desc      0x20000bbc    0x8  Data  Lc  app_usbd_core.o [1]
 m_ep_consumer_state     0x200007e0   0x6c  Data  Gb  nrf_drv_usbd.o [1]
 m_ep_dma_waiting        0x2000076c    0x4  Data  Lc  nrf_drv_usbd.o [1]
 m_ep_feeder_state       0x20000774   0x6c  Data  Gb  nrf_drv_usbd.o [1]
@@ -632,194 +691,219 @@ m_epout_conf            0x20000010   0x48  Data  Lc  app_usbd.o [1]
 m_event_handler         0x20000764    0x4  Data  Lc  nrf_drv_usbd.o [1]
 m_event_queue_data      0x20000060   0x84  Data  Lc  app_usbd.o [1]
 m_event_queue_inst      0x200000e4   0x10  Data  Lc  app_usbd.o [1]
-m_in_critical_region    0x20000bcc    0x4  Data  Lc  app_util_platform.o [1]
-m_isr                   0x00001128   0x68  Data  Lc  nrf_drv_usbd.o [1]
+m_hid_generic_class_descriptors
+                        0x000053b0   0x1c  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_hid_generic_rep_descriptor
+                        0x0000537c   0x34  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_in_critical_region    0x20000c34    0x4  Data  Lc  app_util_platform.o [1]
+m_isr                   0x000011a0   0x68  Data  Lc  nrf_drv_usbd.o [1]
 m_last_setup_dir        0x20000762    0x1  Data  Lc  nrf_drv_usbd.o [1]
+m_mouse_state           0x20000bec    0x8  Data  Gb  nRF5x_USB_GENERIC.o [1]
 m_p_first_cinst         0x20000058    0x4  Data  Lc  app_usbd.o [1]
 m_p_first_sof_cinst     0x2000005c    0x4  Data  Lc  app_usbd.o [1]
-m_pofwarn_handler       0x20000ba8    0x4  Data  Lc  nrf_drv_power.o [1]
-m_rwu_pending           0x20000b84    0x4  Data  Lc  app_usbd_core.o [1]
+m_pofwarn_handler       0x20000c08    0x4  Data  Lc  nrf_drv_power.o [1]
+m_report_pending        0x20000bf8    0x1  Data  Lc  nRF5x_USB_GENERIC.o [1]
+m_rwu_pending           0x20000bc8    0x4  Data  Lc  app_usbd_core.o [1]
 m_rwu_registered_counter
-                        0x20000bdc    0x1  Data  Lc  app_usbd.o [1]
+                        0x20000bfb    0x1  Data  Lc  app_usbd.o [1]
 m_setup_data_handler_empty_desc
-                        0x0000230c    0x8  Data  Lc  app_usbd_core.o [1]
+                        0x00002434    0x8  Data  Lc  app_usbd_core.o [1]
 m_setup_transfer_buff   0x20000a48   0x40  Data  Lc  app_usbd_core.o [1]
 m_simulated_dataepstatus
                         0x20000770    0x4  Data  Lc  nrf_drv_usbd.o [1]
-m_sleepevt_handler      0x20000bac    0x4  Data  Lc  nrf_drv_power.o [1]
+m_sleepevt_handler      0x20000c0c    0x4  Data  Lc  nrf_drv_power.o [1]
 m_string_dsc            0x200001d4   0x14  Data  Lc  app_usbd_string_desc.o [1]
-m_string_translation    0x00002344    0x8  Data  Lc  app_usbd_string_desc.o [1]
+m_string_translation    0x000024a0    0x8  Data  Lc  app_usbd_string_desc.o [1]
 m_sustate               0x2000000c    0x1  Data  Lc  app_usbd.o [1]
-m_swi_flags             0x20000b0c    0xc  Data  Lc  nrf_drv_swi.o [1]
-m_swi_handlers          0x20000b18   0x18  Data  Lc  nrf_drv_swi.o [1]
+m_swi_flags             0x20000b3c    0xc  Data  Lc  nrf_drv_swi.o [1]
+m_swi_handlers          0x20000b48   0x18  Data  Lc  nrf_drv_swi.o [1]
 m_tx_buffer             0x20000ac8   0x40  Data  Lc  nrf_drv_usbd.o [1]
-m_usbevt_handler        0x20000bb0    0x4  Data  Lc  nrf_drv_power.o [1]
-main                    0x00003e69    0xc  Code  Gb  main.o [1]
-millis                  0x00003ec9   0x10  Code  Gb  delay.o [1]
-nRF5x_FIFO_get          0x000031fb   0x1c  Code  Gb  nRF5x_FIFO.o [1]
-nRF5x_FIFO_init         0x000031b9   0x22  Code  Gb  nRF5x_FIFO.o [1]
-nRF5x_FIFO_length       0x00003175    0x8  Code  Gb  nRF5x_FIFO.o [1]
-nRF5x_FIFO_put          0x000031db   0x20  Code  Gb  nRF5x_FIFO.o [1]
-nRF5x_RTC_TIME_handler  0x000036dd   0x62  Code  Gb  nRF5x_RTC.o [1]
-nRF5x_RTC_enableTime    0x0000373f   0x28  Code  Gb  nRF5x_RTC.o [1]
-nRF5x_RTC_getSecond     0x00003779    0x6  Code  Gb  nRF5x_RTC.o [1]
-nRF5x_RTC_init          0x00003591   0xb4  Code  Gb  nRF5x_RTC.o [1]
-nRF5x_RTC_inited        0x20000bd0    0x4  Data  Gb  nRF5x_RTC.o [1]
-nRF5x_RTC_resetTime     0x00003767    0x8  Code  Gb  nRF5x_RTC.o [1]
-nRF5x_RTC_setAlarm      0x0000377f   0x14  Code  Gb  nRF5x_RTC.o [1]
-nRF5x_RTC_setTimeValue  0x0000376f    0xa  Code  Gb  nRF5x_RTC.o [1]
-nRF5x_RTC_start         0x00003645   0x10  Code  Gb  nRF5x_RTC.o [1]
-nRF5x_SPI_0_handler     0x00003f1b    0x6  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_1_handler     0x00003f21    0x6  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_2_handler     0x00003f27    0x6  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_3_handler     0x00003f2d    0x6  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_begin         0x00003fd1   0x3c  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_handler       0x00003f11    0xa  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_init          0x0000400d   0x60  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_inited_flag   0x20000bc4    0x4  Data  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_transfer      0x000040e1   0x20  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_wait_xfer     0x00003f35   0x9c  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_SPI_writeRead     0x0000406d   0x52  Code  Gb  nRF5x_SPI.o [1]
-nRF5x_TWI_begin         0x00004101   0x18  Code  Gb  nRF5x_TWI.o [1]
+m_usbevt_handler        0x20000c10    0x4  Data  Lc  nrf_drv_power.o [1]
+main                    0x00004251    0xc  Code  Gb  main.o [1]
+millis                  0x00004469   0x10  Code  Gb  delay.o [1]
+nRF5x_FIFO_get          0x00003357   0x1c  Code  Gb  nRF5x_FIFO.o [1]
+nRF5x_FIFO_init         0x00003315   0x22  Code  Gb  nRF5x_FIFO.o [1]
+nRF5x_FIFO_length       0x000032d1    0x8  Code  Gb  nRF5x_FIFO.o [1]
+nRF5x_FIFO_put          0x00003337   0x20  Code  Gb  nRF5x_FIFO.o [1]
+nRF5x_RTC_TIME_handler  0x00003ac1   0x62  Code  Gb  nRF5x_RTC.o [1]
+nRF5x_RTC_enableTime    0x00003b23   0x28  Code  Gb  nRF5x_RTC.o [1]
+nRF5x_RTC_getSecond     0x00003b5d    0x6  Code  Gb  nRF5x_RTC.o [1]
+nRF5x_RTC_init          0x00003975   0xb4  Code  Gb  nRF5x_RTC.o [1]
+nRF5x_RTC_inited        0x20000c38    0x4  Data  Gb  nRF5x_RTC.o [1]
+nRF5x_RTC_resetTime     0x00003b4b    0x8  Code  Gb  nRF5x_RTC.o [1]
+nRF5x_RTC_setAlarm      0x00003b63   0x14  Code  Gb  nRF5x_RTC.o [1]
+nRF5x_RTC_setTimeValue  0x00003b53    0xa  Code  Gb  nRF5x_RTC.o [1]
+nRF5x_RTC_start         0x00003a29   0x10  Code  Gb  nRF5x_RTC.o [1]
+nRF5x_SPI_0_handler     0x000044bb    0x6  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_1_handler     0x000044c1    0x6  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_2_handler     0x000044c7    0x6  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_3_handler     0x000044cd    0x6  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_begin         0x00004571   0x3c  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_handler       0x000044b1    0xa  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_init          0x000045ad   0x60  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_inited_flag   0x20000c24    0x4  Data  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_transfer      0x00004681   0x20  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_wait_xfer     0x000044d5   0x9c  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_SPI_writeRead     0x0000460d   0x52  Code  Gb  nRF5x_SPI.o [1]
+nRF5x_TWI_begin         0x000046a1   0x18  Code  Gb  nRF5x_TWI.o [1]
 nRF5x_TWI_beginTransmission
-                        0x000041d3   0x30  Code  Gb  nRF5x_TWI.o [1]
-nRF5x_TWI_deinit        0x00004161   0x2e  Code  Gb  nRF5x_TWI.o [1]
-nRF5x_TWI_init          0x00004119   0x48  Code  Gb  nRF5x_TWI.o [1]
-nRF5x_TWI_inited_flag   0x20000bd8    0x2  Data  Gb  nRF5x_TWI.o [1]
-nRF5x_TWI_setFreq       0x0000418f   0x2a  Code  Gb  nRF5x_TWI.o [1]
-nRF5x_UART_0_handler    0x00002db3    0x6  Code  Gb  nRF5x_UART.o [1]
-nRF5x_UART_1_handler    0x00002db9    0x6  Code  Gb  nRF5x_UART.o [1]
+                        0x00004773   0x30  Code  Gb  nRF5x_TWI.o [1]
+nRF5x_TWI_deinit        0x00004701   0x2e  Code  Gb  nRF5x_TWI.o [1]
+nRF5x_TWI_init          0x000046b9   0x48  Code  Gb  nRF5x_TWI.o [1]
+nRF5x_TWI_inited_flag   0x20000c40    0x2  Data  Gb  nRF5x_TWI.o [1]
+nRF5x_TWI_setFreq       0x0000472f   0x2a  Code  Gb  nRF5x_TWI.o [1]
+nRF5x_UART_0_handler    0x00002f0f    0x6  Code  Gb  nRF5x_UART.o [1]
+nRF5x_UART_1_handler    0x00002f15    0x6  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_attachCallback
-                        0x00002f29   0x1a  Code  Gb  nRF5x_UART.o [1]
+                        0x00003085   0x1a  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_callback     0x200008dc   0x18  Data  Gb  nRF5x_UART.o [1]
-nRF5x_UART_get          0x00002f9b   0x4c  Code  Gb  nRF5x_UART.o [1]
-nRF5x_UART_handler      0x00002d29   0x8a  Code  Gb  nRF5x_UART.o [1]
-nRF5x_UART_init         0x00002dbf  0x16a  Code  Gb  nRF5x_UART.o [1]
+nRF5x_UART_get          0x000030f7   0x4c  Code  Gb  nRF5x_UART.o [1]
+nRF5x_UART_handler      0x00002e85   0x8a  Code  Gb  nRF5x_UART.o [1]
+nRF5x_UART_init         0x00002f1b  0x16a  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_inited_flag  0x200008f4    0x2  Data  Gb  nRF5x_UART.o [1]
-nRF5x_UART_put          0x00002ff3   0x80  Code  Gb  nRF5x_UART.o [1]
-nRF5x_UART_read         0x00002f43   0x26  Code  Gb  nRF5x_UART.o [1]
+nRF5x_UART_put          0x0000314f   0x80  Code  Gb  nRF5x_UART.o [1]
+nRF5x_UART_read         0x0000309f   0x26  Code  Gb  nRF5x_UART.o [1]
 nRF5x_UART_rx_buffer    0x20000938    0x8  Data  Gb  nRF5x_UART.o [1]
 nRF5x_UART_rx_fifo      0x200008f8   0x20  Data  Gb  nRF5x_UART.o [1]
 nRF5x_UART_rx_ovf       0x200008f6    0x2  Data  Gb  nRF5x_UART.o [1]
 nRF5x_UART_tx_buffer    0x20000940    0x8  Data  Gb  nRF5x_UART.o [1]
 nRF5x_UART_tx_fifo      0x20000918   0x20  Data  Gb  nRF5x_UART.o [1]
-nRF5x_UART_wait_tx      0x00003075   0xac  Code  Gb  nRF5x_UART.o [1]
-nRF5x_UART_write        0x00002f69   0x32  Code  Gb  nRF5x_UART.o [1]
+nRF5x_UART_wait_tx      0x000031d1   0xac  Code  Gb  nRF5x_UART.o [1]
+nRF5x_UART_write        0x000030c5   0x32  Code  Gb  nRF5x_UART.o [1]
+nRF5x_USB_CDC_attachCallback
+                        0x0000430d    0xa  Code  Gb  nRF5x_USB_CDC.o [1]
 nRF5x_USB_CDC_callback  0x2000022c    0x8  Data  Gb  nRF5x_USB_CDC.o [1]
 nRF5x_USB_CDC_event     0x20000234    0x8  Data  Gb  nRF5x_USB_CDC.o [1]
-nRF5x_USB_CDC_handle    0x00004413   0x34  Code  Gb  nRF5x_USB_CDC.o [1]
+nRF5x_USB_CDC_handle    0x000043d9   0x34  Code  Gb  nRF5x_USB_CDC.o [1]
+nRF5x_USB_CDC_init      0x000042db   0x32  Code  Gb  nRF5x_USB_CDC.o [1]
 nRF5x_USB_CDC_inited    0x2000023d    0x1  Data  Gb  nRF5x_USB_CDC.o [1]
 nRF5x_USB_CDC_opened    0x2000023c    0x1  Data  Gb  nRF5x_USB_CDC.o [1]
 nRF5x_USB_CDC_tx_flag   0x2000023e    0x1  Data  Gb  nRF5x_USB_CDC.o [1]
+nRF5x_USB_CDC_write     0x00004319   0xc0  Code  Gb  nRF5x_USB_CDC.o [1]
+nRF5x_USB_GENERIC_handle
+                        0x00004861    0x2  Code  Gb  nRF5x_USB_GENERIC.o [1]
+nRF5x_USB_GENERIC_init  0x00004837   0x26  Code  Gb  nRF5x_USB_GENERIC.o [1]
 nRF5x_USB_cdc_ev_handler
-                        0x000043a1   0x72  Code  Lc  nRF5x_USB_CDC.o [1]
+                        0x00004269   0x72  Code  Lc  nRF5x_USB_CDC.o [1]
 nRF5x_USB_cdc_rx_buffer
                         0x20000240  0x400  Data  Gb  nRF5x_USB_CDC.o [1]
+nRF5x_USB_connected     0x00004a21    0x6  Code  Gb  nRF5x_USB.o [1]
 nRF5x_USB_connection_handle
-                        0x0000421d   0x1a  Code  Gb  nRF5x_USB.o [1]
-nRF5x_USB_ev_handler    0x00004205   0x18  Code  Gb  nRF5x_USB.o [1]
-nRF5x_USB_handle        0x0000425d   0x16  Code  Gb  nRF5x_USB.o [1]
-nRF5x_USB_init          0x00004237   0x1a  Code  Gb  nRF5x_USB.o [1]
-nRF5x_USB_isConnected   0x20000bda    0x1  Data  Gb  nRF5x_USB.o [1]
+                        0x00004a27   0x1a  Code  Gb  nRF5x_USB.o [1]
+nRF5x_USB_ev_handler    0x000049b9   0x18  Code  Gb  nRF5x_USB.o [1]
+nRF5x_USB_generic_ev_handler
+                        0x00004829    0xe  Code  Lc  nRF5x_USB_GENERIC.o [1]
+nRF5x_USB_handle        0x00004a65   0x1a  Code  Gb  nRF5x_USB.o [1]
+nRF5x_USB_init          0x00004a41   0x1a  Code  Gb  nRF5x_USB.o [1]
+nRF5x_USB_isConnected   0x20000bf9    0x1  Data  Gb  nRF5x_USB.o [1]
+nRF5x_USB_power_event_handler
+                        0x000049d1   0x26  Code  Gb  nRF5x_USB.o [1]
+nRF5x_USB_start         0x000049f7   0x18  Code  Gb  nRF5x_USB.o [1]
+nRF5x_USB_stop          0x00004a0f   0x12  Code  Gb  nRF5x_USB.o [1]
 nRF5x_spi_config        0x20000144   0x50  Data  Gb  nRF5x_SPI.o [1]
 nRF5x_twi_config        0x20000194   0x20  Data  Gb  nRF5x_TWI.o [1]
-nrf_atfifo_init         0x00001c21   0x26  Code  Gb  nrf_atfifo.o [1]
-nrf_atfifo_item_alloc   0x00001c49   0x44  Code  Gb  nrf_atfifo.o [1]
-nrf_atfifo_item_free    0x00001d05   0x20  Code  Gb  nrf_atfifo.o [1]
-nrf_atfifo_item_get     0x00001cad   0x46  Code  Gb  nrf_atfifo.o [1]
-nrf_atfifo_item_put     0x00001c8d   0x20  Code  Gb  nrf_atfifo.o [1]
+nrf_atfifo_init         0x00001d71   0x26  Code  Gb  nrf_atfifo.o [1]
+nrf_atfifo_item_alloc   0x00001d99   0x44  Code  Gb  nrf_atfifo.o [1]
+nrf_atfifo_item_free    0x00001e55   0x20  Code  Gb  nrf_atfifo.o [1]
+nrf_atfifo_item_get     0x00001dfd   0x46  Code  Gb  nrf_atfifo.o [1]
+nrf_atfifo_item_put     0x00001ddd   0x20  Code  Gb  nrf_atfifo.o [1]
 nrf_atomic_u32_and      0x00000279   0x18  Code  Lc  nrf_drv_usbd.o [1]
-nrf_bitmask_bit_is_set  0x00003aad   0x10  Code  Lc  nrf_drv_gpiote.o [1]
-nrf_clock_event_check   0x000012dd    0xe  Code  Lc  nrf_drv_clock.o [1]
-nrf_clock_event_clear   0x000012c9   0x14  Code  Lc  nrf_drv_clock.o [1]
+nrf_bitmask_bit_is_set  0x00003e75   0x10  Code  Lc  nrf_drv_gpiote.o [1]
+nrf_clock_event_check   0x00001355    0xe  Code  Lc  nrf_drv_clock.o [1]
+nrf_clock_event_clear   0x00001341   0x14  Code  Lc  nrf_drv_clock.o [1]
 nrf_clock_hf_is_running
-                        0x000012eb   0x18  Code  Lc  nrf_drv_clock.o [1]
-nrf_delay_us            0x000023a5   0x88  Code  Lc  nrf_drv_twi.o [1]
+                        0x00001363   0x18  Code  Lc  nrf_drv_clock.o [1]
+nrf_delay_us            0x00002501   0x88  Code  Lc  nrf_drv_twi.o [1]
 nrf_drv_clock_hfclk_release
-                        0x00001401   0x16  Code  Gb  nrf_drv_clock.o [1]
+                        0x00001479   0x16  Code  Gb  nrf_drv_clock.o [1]
 nrf_drv_clock_hfclk_request
-                        0x000013ab   0x46  Code  Gb  nrf_drv_clock.o [1]
-nrf_drv_clock_init      0x0000131b   0x32  Code  Gb  nrf_drv_clock.o [1]
+                        0x00001423   0x46  Code  Gb  nrf_drv_clock.o [1]
+nrf_drv_clock_init      0x00001393   0x32  Code  Gb  nrf_drv_clock.o [1]
 nrf_drv_clock_lfclk_request
-                        0x00001363   0x48  Code  Gb  nrf_drv_clock.o [1]
-nrf_drv_clock_onIRQ     0x00001445   0x46  Code  Gb  nrf_drv_clock.o [1]
+                        0x000013db   0x48  Code  Gb  nrf_drv_clock.o [1]
+nrf_drv_clock_onIRQ     0x000014bd   0x46  Code  Gb  nrf_drv_clock.o [1]
 nrf_drv_common_irq_enable
-                        0x0000127b   0x34  Code  Gb  nrf_drv_common.o [1]
+                        0x000012f3   0x34  Code  Gb  nrf_drv_common.o [1]
 nrf_drv_common_irq_enable_check
                         0x00000201   0x14  Code  Lc  nrf_drv_usbd.o [1]
-nrf_drv_power_onIRQ     0x000014bf   0x84  Code  Gb  nrf_drv_power.o [1]
+nrf_drv_power_onIRQ     0x00001565   0x84  Code  Gb  nrf_drv_power.o [1]
+nrf_drv_power_usbevt_init
+                        0x00001537   0x1e  Code  Gb  nrf_drv_power.o [1]
+nrf_drv_power_usbevt_uninit
+                        0x00001555   0x10  Code  Gb  nrf_drv_power.o [1]
 nrf_drv_spi0            0x200001b4    0x8  Data  Gb  nrf_drv_spi.o [1]
 nrf_drv_spi1            0x200001bc    0x8  Data  Gb  nrf_drv_spi.o [1]
 nrf_drv_spi2            0x200001c4    0x8  Data  Gb  nrf_drv_spi.o [1]
 nrf_drv_spi3            0x200001cc    0x8  Data  Gb  nrf_drv_spi.o [1]
 nrf_drv_spi_get_instance
-                        0x0000329d   0x22  Code  Gb  nrf_drv_spi.o [1]
-nrf_drv_spi_init        0x000032bf   0xfe  Code  Gb  nrf_drv_spi.o [1]
-nrf_drv_spi_transfer    0x000033bd   0x1e  Code  Gb  nrf_drv_spi.o [1]
-nrf_drv_spi_xfer        0x0000348d   0x5a  Code  Gb  nrf_drv_spi.o [1]
-nrf_drv_swi_process     0x00004851   0x1a  Code  Lc  nrf_drv_swi.o [1]
+                        0x000033f9   0x22  Code  Gb  nrf_drv_spi.o [1]
+nrf_drv_spi_init        0x0000341b   0xfe  Code  Gb  nrf_drv_spi.o [1]
+nrf_drv_spi_transfer    0x00003519   0x1e  Code  Gb  nrf_drv_spi.o [1]
+nrf_drv_spi_xfer        0x000035e9   0x5a  Code  Gb  nrf_drv_spi.o [1]
+nrf_drv_swi_process     0x000053e9   0x1a  Code  Lc  nrf_drv_swi.o [1]
 nrf_drv_systick_delay_ticks
-                        0x0000123b   0x12  Code  Gb  nrf_drv_systick.o [1]
+                        0x000012b3   0x12  Code  Gb  nrf_drv_systick.o [1]
 nrf_drv_systick_delay_us
-                        0x0000124d    0xe  Code  Gb  nrf_drv_systick.o [1]
-nrf_drv_systick_init    0x0000122d    0xe  Code  Gb  nrf_drv_systick.o [1]
+                        0x000012c5    0xe  Code  Gb  nrf_drv_systick.o [1]
+nrf_drv_systick_init    0x000012a5    0xe  Code  Gb  nrf_drv_systick.o [1]
 nrf_drv_twi0            0x200001fc    0x8  Data  Gb  nrf_drv_twi.o [1]
 nrf_drv_twi1            0x20000204    0x8  Data  Gb  nrf_drv_twi.o [1]
-nrf_drv_twi_disable     0x000025c7   0x30  Code  Gb  nrf_drv_twi.o [1]
-nrf_drv_twi_enable      0x000025ab   0x1c  Code  Gb  nrf_drv_twi.o [1]
+nrf_drv_twi_disable     0x00002723   0x30  Code  Gb  nrf_drv_twi.o [1]
+nrf_drv_twi_enable      0x00002707   0x1c  Code  Gb  nrf_drv_twi.o [1]
 nrf_drv_twi_get_instance
-                        0x0000242d   0x12  Code  Gb  nrf_drv_twi.o [1]
-nrf_drv_twi_init        0x000024df   0x72  Code  Gb  nrf_drv_twi.o [1]
-nrf_drv_twi_rx          0x0000281f   0x16  Code  Gb  nrf_drv_twi.o [1]
-nrf_drv_twi_uninit      0x00002551   0x5a  Code  Gb  nrf_drv_twi.o [1]
-nrf_drv_twi_xfer        0x00002805   0x1a  Code  Gb  nrf_drv_twi.o [1]
+                        0x00002589   0x12  Code  Gb  nrf_drv_twi.o [1]
+nrf_drv_twi_init        0x0000263b   0x72  Code  Gb  nrf_drv_twi.o [1]
+nrf_drv_twi_rx          0x0000297b   0x16  Code  Gb  nrf_drv_twi.o [1]
+nrf_drv_twi_uninit      0x000026ad   0x5a  Code  Gb  nrf_drv_twi.o [1]
+nrf_drv_twi_xfer        0x00002961   0x1a  Code  Gb  nrf_drv_twi.o [1]
 nrf_drv_uart0           0x2000020c    0x8  Data  Gb  nrf_drv_uarte.o [1]
 nrf_drv_uart1           0x20000214    0x8  Data  Gb  nrf_drv_uarte.o [1]
 nrf_drv_uart_rx_for_uarte
-                        0x00002ad5   0x94  Code  Gb  nrf_drv_uarte.o [1]
+                        0x00002c31   0x94  Code  Gb  nrf_drv_uarte.o [1]
 nrf_drv_uart_tx_for_uarte
-                        0x00002a3f   0x52  Code  Gb  nrf_drv_uarte.o [1]
+                        0x00002b9b   0x52  Code  Gb  nrf_drv_uarte.o [1]
 nrf_drv_uarte_get_instance
-                        0x00002923   0x10  Code  Gb  nrf_drv_uarte.o [1]
-nrf_drv_uarte_init      0x000029e7   0x4c  Code  Gb  nrf_drv_uarte.o [1]
-nrf_drv_uarte_rx        0x00002b71   0x56  Code  Gb  nrf_drv_uarte.o [1]
-nrf_drv_uarte_tx        0x00002a91   0x34  Code  Gb  nrf_drv_uarte.o [1]
+                        0x00002a7f   0x10  Code  Gb  nrf_drv_uarte.o [1]
+nrf_drv_uarte_init      0x00002b43   0x4c  Code  Gb  nrf_drv_uarte.o [1]
+nrf_drv_uarte_rx        0x00002ccd   0x56  Code  Gb  nrf_drv_uarte.o [1]
+nrf_drv_uarte_tx        0x00002bed   0x34  Code  Gb  nrf_drv_uarte.o [1]
 nrf_drv_uarte_tx_in_progress
-                        0x00002ac5   0x10  Code  Gb  nrf_drv_uarte.o [1]
+                        0x00002c21   0x10  Code  Gb  nrf_drv_uarte.o [1]
 nrf_drv_usbd_active_irq_config
-                        0x00000cef    0x4  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000d65    0x4  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_consumer   0x000002c5   0x34  Code  Gb  nrf_drv_usbd.o [1]
-nrf_drv_usbd_disable    0x00000bfb   0x26  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_disable    0x00000c5f   0x26  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_enable     0x00000bfb   0x64  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_abort   0x000004bd    0x2  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_disable
-                        0x00000d85   0x38  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000dfb   0x38  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_dtoggle_clear
-                        0x00000f45    0x8  Code  Gb  nrf_drv_usbd.o [1]
-nrf_drv_usbd_ep_enable  0x00000d15   0x70  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000fbd    0x8  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_ep_enable  0x00000d8b   0x70  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_enable_check
-                        0x00000d11    0x4  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000d87    0x4  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_handled_transfer
-                        0x00000e71   0x60  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000ee9   0x60  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_max_packet_size_get
-                        0x00000d07    0xa  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000d7d    0xa  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_max_packet_size_set
-                        0x00000cfb    0xc  Code  Gb  nrf_drv_usbd.o [1]
-nrf_drv_usbd_ep_stall   0x00000f1b    0x4  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000d71    0xc  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_ep_stall   0x00000f93    0x4  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_stall_check
-                        0x00000f23   0x1c  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000f9b   0x1c  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_stall_clear
-                        0x00000f1f    0x4  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000f97    0x4  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_status_get
-                        0x00000edd   0x22  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000f55   0x22  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_to_int  0x00000291   0x1a  Code  Lc  nrf_drv_usbd.o [1]
 nrf_drv_usbd_ep_transfer
-                        0x00000dd5   0x96  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000e4d   0x96  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_epout_size_get
-                        0x00000eff   0x1c  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000f77   0x1c  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_errata_type_52840_proto1
                         0x0000024f   0x2a  Code  Lc  nrf_drv_usbd.o [1]
 nrf_drv_usbd_feeder_buffer_get
-                        0x00000ed9    0x4  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000f51    0x4  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_feeder_flash
                         0x00000347   0x38  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_feeder_flash_zlp
@@ -829,72 +913,81 @@ nrf_drv_usbd_feeder_ram
 nrf_drv_usbd_feeder_ram_zlp
                         0x0000031d   0x2a  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_init       0x00000b79   0x74  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_is_enabled
+                        0x00000cf1   0x12  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_last_setup_dir_get
-                        0x00000fcb    0x6  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00001043    0x6  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_setup_clear
-                        0x00000fbf    0x6  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00001037    0x6  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_setup_data_clear
-                        0x00000f95   0x2a  Code  Gb  nrf_drv_usbd.o [1]
-nrf_drv_usbd_setup_get  0x00000f5d   0x34  Code  Gb  nrf_drv_usbd.o [1]
+                        0x0000100d   0x2a  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_setup_get  0x00000fd5   0x34  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_setup_stall
-                        0x00000fc5    0x6  Code  Gb  nrf_drv_usbd.o [1]
-nrf_drv_usbd_start      0x00000c21   0x34  Code  Gb  nrf_drv_usbd.o [1]
-nrf_drv_usbd_stop       0x00000c61   0x2c  Code  Gb  nrf_drv_usbd.o [1]
-nrf_drv_usbd_suspend    0x00000c8d   0x34  Code  Gb  nrf_drv_usbd.o [1]
+                        0x0000103d    0x6  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_start      0x00000c85   0x34  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_stop       0x00000cc5   0x2c  Code  Gb  nrf_drv_usbd.o [1]
+nrf_drv_usbd_suspend    0x00000d03   0x34  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_suspend_irq_config
-                        0x00000ce9    0x6  Code  Gb  nrf_drv_usbd.o [1]
+                        0x00000d5f    0x6  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_transfer_out_drop
-                        0x00000fd5   0x52  Code  Gb  nrf_drv_usbd.o [1]
+                        0x0000104d   0x52  Code  Gb  nrf_drv_usbd.o [1]
 nrf_drv_usbd_wakeup_req
-                        0x00000cc1   0x20  Code  Gb  nrf_drv_usbd.o [1]
-nrf_gpio_cfg            0x00003233   0x30  Code  Lc  nrf_drv_spi.o [1]
-nrf_gpio_cfg            0x000028b3   0x30  Code  Lc  nrf_drv_uarte.o [1]
+                        0x00000d37   0x20  Code  Gb  nrf_drv_usbd.o [1]
+nrf_gpio_cfg            0x0000338f   0x30  Code  Lc  nrf_drv_spi.o [1]
+nrf_gpio_cfg            0x00002a0f   0x30  Code  Lc  nrf_drv_uarte.o [1]
 nrf_gpio_cfg(unsigned int, nrf_gpio_pin_dir_t, nrf_gpio_pin_input_t, nrf_gpio_pin_pull_t, nrf_gpio_pin_drive_t, nrf_gpio_pin_sense_t)
-                        0x00004281   0x2e  Code  Lc  wirish_digital.o [1]
-nrf_gpio_cfg_input      0x000028f5    0xe  Code  Lc  nrf_drv_uarte.o [1]
+                        0x00004899   0x2e  Code  Lc  wirish_digital.o [1]
+nrf_gpio_cfg_input      0x00002a51    0xe  Code  Lc  nrf_drv_uarte.o [1]
 nrf_gpio_cfg_input(unsigned int, nrf_gpio_pin_pull_t)
-                        0x000042af   0x10  Code  Lc  wirish_digital.o [1]
-nrf_gpio_cfg_output     0x00003263   0x16  Code  Lc  nrf_drv_spi.o [1]
-nrf_gpio_cfg_output     0x000028e3   0x12  Code  Lc  nrf_drv_uarte.o [1]
+                        0x000048c7   0x10  Code  Lc  wirish_digital.o [1]
+nrf_gpio_cfg_output     0x000033bf   0x16  Code  Lc  nrf_drv_spi.o [1]
+nrf_gpio_cfg_output     0x00002a3f   0x12  Code  Lc  nrf_drv_uarte.o [1]
 nrf_gpio_cfg_sense_input(unsigned int, nrf_gpio_pin_pull_t, nrf_gpio_pin_sense_t)
-                        0x000042bf    0xe  Code  Lc  wirish_digital.o [1]
-nrf_gpio_cfg_sense_set  0x00003a5f   0x26  Code  Lc  nrf_drv_gpiote.o [1]
-nrf_gpio_pin_clear      0x00003287    0xc  Code  Lc  nrf_drv_spi.o [1]
-nrf_gpio_pin_clear      0x00002389   0x10  Code  Lc  nrf_drv_twi.o [1]
+                        0x000048d7    0xe  Code  Lc  wirish_digital.o [1]
+nrf_gpio_cfg_sense_set  0x00003e27   0x26  Code  Lc  nrf_drv_gpiote.o [1]
+nrf_gpio_pin_clear      0x000033e3    0xc  Code  Lc  nrf_drv_spi.o [1]
+nrf_gpio_pin_clear      0x000024e5   0x10  Code  Lc  nrf_drv_twi.o [1]
 nrf_gpio_pin_clear(unsigned int)
-                        0x000042e1    0xc  Code  Lc  wirish_digital.o [1]
-nrf_gpio_pin_set        0x00003279    0xe  Code  Lc  nrf_drv_spi.o [1]
-nrf_gpio_pin_set        0x00002377   0x12  Code  Lc  nrf_drv_twi.o [1]
-nrf_gpio_pin_set        0x00002909   0x1a  Code  Lc  nrf_drv_uarte.o [1]
+                        0x000048f9    0xc  Code  Lc  wirish_digital.o [1]
+nrf_gpio_pin_set        0x000033d5    0xe  Code  Lc  nrf_drv_spi.o [1]
+nrf_gpio_pin_set        0x000024d3   0x12  Code  Lc  nrf_drv_twi.o [1]
+nrf_gpio_pin_set        0x00002a65   0x1a  Code  Lc  nrf_drv_uarte.o [1]
 nrf_gpio_pin_set(unsigned int)
-                        0x000042d3    0xe  Code  Lc  wirish_digital.o [1]
+                        0x000048eb    0xe  Code  Lc  wirish_digital.o [1]
 nrf_gpio_pin_toggle(unsigned int)
-                        0x000042f7   0x26  Code  Lc  wirish_digital.o [1]
+                        0x0000490f   0x26  Code  Lc  wirish_digital.o [1]
 nrf_gpio_pin_write(unsigned int, unsigned int)
-                        0x0000431d    0xa  Code  Lc  wirish_digital.o [1]
-nrf_gpio_ports_read     0x00003a85   0x28  Code  Lc  nrf_drv_gpiote.o [1]
-nrf_gpiote_event_clear  0x00003a47   0x18  Code  Lc  nrf_drv_gpiote.o [1]
+                        0x00004935    0xa  Code  Lc  wirish_digital.o [1]
+nrf_gpio_ports_read     0x00003e4d   0x28  Code  Lc  nrf_drv_gpiote.o [1]
+nrf_gpiote_event_clear  0x00003e0f   0x18  Code  Lc  nrf_drv_gpiote.o [1]
 nrf_gpiote_event_is_set
-                        0x00003a39    0xe  Code  Lc  nrf_drv_gpiote.o [1]
+                        0x00003e01    0xe  Code  Lc  nrf_drv_gpiote.o [1]
 nrf_power_event_get_and_clear
-                        0x000014ad   0x12  Code  Lc  nrf_drv_power.o [1]
-nrf_rtc_event_clear     0x00003581   0x10  Code  Lc  nRF5x_RTC.o [1]
-nrf_spim_event_check    0x00003229    0xa  Code  Lc  nrf_drv_spi.o [1]
-nrf_spim_event_clear    0x00003219   0x10  Code  Lc  nrf_drv_spi.o [1]
-nrf_spis_event_check    0x00004609    0xa  Code  Lc  nrf_drv_spis.o [1]
-nrf_spis_event_clear    0x000045f9   0x10  Code  Lc  nrf_drv_spis.o [1]
-nrf_spis_rx_buffer_set  0x00004619    0x4  Code  Lc  nrf_drv_spis.o [1]
-nrf_spis_tx_buffer_set  0x00004613    0x6  Code  Lc  nrf_drv_spis.o [1]
-nrf_twim_event_check    0x0000235d    0xa  Code  Lc  nrf_drv_twi.o [1]
-nrf_twim_event_clear    0x0000234d   0x10  Code  Lc  nrf_drv_twi.o [1]
-nrf_twim_rx_buffer_set  0x0000236d    0x4  Code  Lc  nrf_drv_twi.o [1]
-nrf_twim_tx_buffer_set  0x00002367    0x6  Code  Lc  nrf_drv_twi.o [1]
-nrf_uarte_event_check   0x00002899    0xa  Code  Lc  nrf_drv_uarte.o [1]
-nrf_uarte_event_clear   0x00002889   0x10  Code  Lc  nrf_drv_uarte.o [1]
+                        0x00001525   0x12  Code  Lc  nrf_drv_power.o [1]
+nrf_queue_generic_pop   0x00004db5   0x7e  Code  Gb  nrf_queue.o [1]
+nrf_queue_is_empty      0x00004e55   0x12  Code  Gb  nrf_queue.o [1]
+nrf_queue_is_full       0x00004cff   0x18  Code  Gb  nrf_queue.o [1]
+nrf_queue_next_idx      0x00004cd9    0xe  Code  Lc  nrf_queue.o [1]
+nrf_queue_push          0x00004d17   0x9e  Code  Gb  nrf_queue.o [1]
+nrf_rtc_event_clear     0x00003965   0x10  Code  Lc  nRF5x_RTC.o [1]
+nrf_saadc_event_check   0x00004e69    0xe  Code  Lc  nrf_drv_saadc.o [1]
+nrf_saadc_event_clear   0x00004e77   0x14  Code  Lc  nrf_drv_saadc.o [1]
+nrf_spim_event_check    0x00003385    0xa  Code  Lc  nrf_drv_spi.o [1]
+nrf_spim_event_clear    0x00003375   0x10  Code  Lc  nrf_drv_spi.o [1]
+nrf_spis_event_check    0x00005135    0xa  Code  Lc  nrf_drv_spis.o [1]
+nrf_spis_event_clear    0x00005125   0x10  Code  Lc  nrf_drv_spis.o [1]
+nrf_spis_rx_buffer_set  0x00005145    0x4  Code  Lc  nrf_drv_spis.o [1]
+nrf_spis_tx_buffer_set  0x0000513f    0x6  Code  Lc  nrf_drv_spis.o [1]
+nrf_twim_event_check    0x000024b9    0xa  Code  Lc  nrf_drv_twi.o [1]
+nrf_twim_event_clear    0x000024a9   0x10  Code  Lc  nrf_drv_twi.o [1]
+nrf_twim_rx_buffer_set  0x000024c9    0x4  Code  Lc  nrf_drv_twi.o [1]
+nrf_twim_tx_buffer_set  0x000024c3    0x6  Code  Lc  nrf_drv_twi.o [1]
+nrf_uarte_event_check   0x000029f5    0xa  Code  Lc  nrf_drv_uarte.o [1]
+nrf_uarte_event_clear   0x000029e5   0x10  Code  Lc  nrf_drv_uarte.o [1]
 nrf_uarte_hwfc_pins_set
-                        0x000028a9    0x4  Code  Lc  nrf_drv_uarte.o [1]
+                        0x00002a05    0x4  Code  Lc  nrf_drv_uarte.o [1]
 nrf_uarte_txrx_pins_set
-                        0x000028a3    0x6  Code  Lc  nrf_drv_uarte.o [1]
+                        0x000029ff    0x6  Code  Lc  nrf_drv_uarte.o [1]
 nrf_usbd_ep_enable_check
                         0x00000235   0x14  Code  Lc  nrf_drv_usbd.o [1]
 nrf_usbd_epin_dma_handler
@@ -905,54 +998,58 @@ nrf_usbd_event_check    0x0000022d    0x8  Code  Lc  nrf_drv_usbd.o [1]
 nrf_usbd_event_clear    0x00000221    0xc  Code  Lc  nrf_drv_usbd.o [1]
 nrf_usbd_task_trigger   0x00000215    0xc  Code  Lc  nrf_drv_usbd.o [1]
 pinMode(unsigned char, unsigned char)
-                        0x0000433d   0x60  Code  Gb  wirish_digital.o [1]
-rtcCallback             0x20000b58    0xc  Data  Gb  nRF5x_RTC.o [1]
-rx_done_event           0x00002bc7   0x1a  Code  Gb  nrf_drv_uarte.o [1]
-setup()                 0x00003d75   0x62  Code  Gb  main.o [1]
+                        0x00004955   0x60  Code  Gb  wirish_digital.o [1]
+queue_utilization_get   0x00004ce7   0x18  Code  Lc  nrf_queue.o [1]
+rtcCallback             0x20000b88    0xc  Data  Gb  nRF5x_RTC.o [1]
+rx_done_event           0x00002d23   0x1a  Code  Gb  nrf_drv_uarte.o [1]
+setup()                 0x00004181   0x3c  Code  Gb  main.o [1]
 setup_data_handler_empty
-                        0x00001d77    0x4  Code  Lc  app_usbd_core.o [1]
+                        0x00001e93    0x4  Code  Lc  app_usbd_core.o [1]
 setup_device_req_get_descriptor
-                        0x00001e5b   0xce  Code  Lc  app_usbd_core.o [1]
+                        0x00001f77   0xce  Code  Lc  app_usbd_core.o [1]
 setup_device_req_get_status
-                        0x00001e23   0x38  Code  Lc  app_usbd_core.o [1]
-setup_device_req_std    0x00001f29   0xd0  Code  Lc  app_usbd_core.o [1]
-setup_event_handler     0x000038ff   0x68  Code  Lc  app_usbd_cdc_acm.o [1]
-setup_req_class_out     0x00003845   0xba  Code  Lc  app_usbd_cdc_acm.o [1]
-spi_xfer_done           0x20000bc8    0x4  Data  Lc  nRF5x_SPI.o [1]
-spim_int_enable         0x000033db   0x12  Code  Gb  nrf_drv_spi.o [1]
+                        0x00001f3f   0x38  Code  Lc  app_usbd_core.o [1]
+setup_device_req_std    0x00002045   0xd0  Code  Lc  app_usbd_core.o [1]
+setup_event_handler     0x000037d7   0x68  Code  Lc  app_usbd_cdc_acm.o [1]
+setup_event_handler     0x00003c39   0xae  Code  Lc  app_usbd_hid.o [1]
+setup_req_class_out     0x0000371d   0xba  Code  Lc  app_usbd_cdc_acm.o [1]
+setup_req_std_in        0x00003bf7   0x42  Code  Lc  app_usbd_hid.o [1]
+spi_xfer_done           0x20000c28    0x4  Data  Lc  nRF5x_SPI.o [1]
+spim_int_enable         0x00003537   0x12  Code  Gb  nrf_drv_spi.o [1]
 spim_list_enable_handle
-                        0x000033ed   0x1a  Code  Gb  nrf_drv_spi.o [1]
-spim_xfer               0x00003407   0x86  Code  Lc  nrf_drv_spi.o [1]
-spis_irq_handler        0x00004679   0x70  Code  Lc  nrf_drv_spis.o [1]
-spis_state_change       0x00004675    0x4  Code  Lc  nrf_drv_spis.o [1]
+                        0x00003549   0x1a  Code  Gb  nrf_drv_spi.o [1]
+spim_xfer               0x00003563   0x86  Code  Lc  nrf_drv_spi.o [1]
+spis_irq_handler        0x000051a5   0x70  Code  Lc  nrf_drv_spis.o [1]
+spis_state_change       0x000051a1    0x4  Code  Lc  nrf_drv_spis.o [1]
 spis_state_entry_action_execute
-                        0x00004623   0x52  Code  Lc  nrf_drv_spis.o [1]
-sustate_set             0x000016a1   0x76  Code  Lc  app_usbd.o [1]
-systick_init            0x00003e99   0x30  Code  Gb  delay.o [1]
-systick_inited          0x20000bbc    0x1  Data  Gb  delay.o [1]
+                        0x0000514f   0x52  Code  Lc  nrf_drv_spis.o [1]
+sustate_set             0x00001749   0x76  Code  Lc  app_usbd.o [1]
+systick_init            0x00004439   0x30  Code  Gb  delay.o [1]
+systick_inited          0x20000c1c    0x1  Data  Gb  delay.o [1]
 tickerTime              0x200001f4    0x4  Data  Gb  nRF5x_RTC.o [1]
-twi_clear_bus           0x00002455   0x7a  Code  Gb  nrf_drv_twi.o [1]
-twi_process_error       0x0000243f   0x16  Code  Gb  nrf_drv_twi.o [1]
+twi_clear_bus           0x000025b1   0x7a  Code  Gb  nrf_drv_twi.o [1]
+twi_process_error       0x0000259b   0x16  Code  Gb  nrf_drv_twi.o [1]
 twim_list_enable_handle
-                        0x000025f7   0x1a  Code  Gb  nrf_drv_twi.o [1]
-twim_xfer               0x00002611  0x1da  Code  Gb  nrf_drv_twi.o [1]
-tx_done_event           0x00002be1   0x1e  Code  Gb  nrf_drv_uarte.o [1]
-uart_0_handler()        0x00003c83   0x14  Code  Gb  main.o [1]
-uart_1_handler()        0x00003c97   0x12  Code  Gb  main.o [1]
-uarte_irq_handler       0x00002c1b   0xd8  Code  Gb  nrf_drv_uarte.o [1]
-usbd_core_state_set     0x00001d61   0x16  Code  Lc  app_usbd_core.o [1]
+                        0x00002753   0x1a  Code  Gb  nrf_drv_twi.o [1]
+twim_xfer               0x0000276d  0x1da  Code  Gb  nrf_drv_twi.o [1]
+tx_done_event           0x00002d3d   0x1e  Code  Gb  nrf_drv_uarte.o [1]
+uart_0_handler()        0x00004045   0x14  Code  Gb  main.o [1]
+uart_1_handler()        0x00004059   0x12  Code  Gb  main.o [1]
+uarte_irq_handler       0x00002d77   0xd8  Code  Gb  nrf_drv_uarte.o [1]
+usbd_core_state_set     0x00001e7d   0x16  Code  Lc  app_usbd_core.o [1]
 usbd_descriptor_conf_feeder
-                        0x00001d7b   0xa8  Code  Lc  app_usbd_core.o [1]
+                        0x00001e97   0xa8  Code  Lc  app_usbd_core.o [1]
 usbd_descriptor_feeder_desc
-                        0x00002314    0x8  Data  Lc  app_usbd_core.o [1]
+                        0x0000243c    0x8  Data  Lc  app_usbd_core.o [1]
 usbd_dma_start          0x000003f3   0x14  Code  Lc  nrf_drv_usbd.o [1]
 usbd_dmareq_process     0x000008cd  0x150  Code  Lc  nrf_drv_usbd.o [1]
 usbd_ep_abort           0x00000407   0x9e  Code  Lc  nrf_drv_usbd.o [1]
 usbd_ep_abort_all       0x000004bf   0x2e  Code  Lc  nrf_drv_usbd.o [1]
 usbd_ep_data_handler    0x00000731   0x3a  Code  Lc  nrf_drv_usbd.o [1]
-user_event_handler      0x000037f3    0xa  Code  Lc  app_usbd_cdc_acm.o [1]
-user_event_state_proc   0x000015d9    0xe  Code  Lc  app_usbd.o [1]
-wake()                  0x00003e4d    0x8  Code  Gb  main.o [1]
+user_event_handler      0x000036cb    0xa  Code  Lc  app_usbd_cdc_acm.o [1]
+user_event_handler      0x00003beb    0xc  Code  Lc  app_usbd_hid.o [1]
+user_event_state_proc   0x00001681    0xe  Code  Lc  app_usbd.o [1]
+wake()                  0x00004235    0x8  Code  Gb  main.o [1]
 
 
 [1] = D:\Projects\Vega\nRF52840-Vega\IAR\Debug\Obj
@@ -961,9 +1058,9 @@ wake()                  0x00003e4d    0x8  Code  Gb  main.o [1]
 [4] = m7M_tls.a
 [5] = rt7M_tl.a
 
-  18 792 bytes of readonly  code memory
-     513 bytes of readonly  data memory
-  11 231 bytes of readwrite data memory
+  21 590 bytes of readonly  code memory
+     613 bytes of readonly  data memory
+  11 333 bytes of readwrite data memory
 
 Errors: none
 Warnings: none

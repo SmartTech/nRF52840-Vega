@@ -4,14 +4,15 @@
 #include "nRF5x_TWI.h"
 #include "nRF5x_USB.h"
 #include "nRF5x_RTC.h"
+#include "nRF5x_ADC.h"
 #include "nRF5x_TEST.h"
 
-USBSerial Serial;
+//USBSerial      Serial;
 
 //HardwareSerial Serial0(nRF52_UART0, LINK_RX, LINK_TX);
 //HardwareSerial Serial1(nRF52_UART1, P1_01,   P1_02);
 
-//SPIClass SPI(nRF5x_SPI0, LORA_MOSI, LORA_MISO, LORA_SCK);
+//SPIClass       SPI(nRF5x_SPI0, LORA_MOSI, LORA_MISO, LORA_SCK);
 
 void sleep(void);
 void wake(void);
@@ -19,21 +20,19 @@ uint8_t isSleep = false;
 
 void uart_0_handler() {
   uint8_t byte;
-  nRF5x_UART_read (nRF5x_UART0, &byte, 1);                // byte = Serial0.read();
-  nRF5x_UART_write(nRF5x_UART1, &byte, 1);                // Serial1.write(byte);
+  nRF5x_UART_read (nRF5x_UART0, &byte, 1);     // byte = Serial0.read();
+  nRF5x_UART_write(nRF5x_UART1, &byte, 1);     // Serial1.write(byte);
 }
 
 void uart_1_handler() {
-  uint8_t byte;                                           
-  nRF5x_UART_read (nRF5x_UART1, &byte, 1);                // byte = Serial1.read();
-  nRF5x_UART_write(nRF5x_UART0, &byte, 1);                // Serial0.write(byte);
+  uint8_t byte;
+  nRF5x_UART_read (nRF5x_UART1, &byte, 1);     // byte = Serial1.read();
+  nRF5x_UART_write(nRF5x_UART0, &byte, 1);     // Serial0.write(byte);
 }
 
 void cdc_handler(uint8_t* dataPtr, size_t size) {
-  //nRF5x_USB_CDC_write(dataPtr, size);
-  //Serial.println("New Serial data [" + String(size) + String("]: "));
-  Serial.println("New Serial data");
-  //Serial.println(dataPtr[0]);
+  nRF5x_USB_CDC_write(dataPtr, size);          // Serial.write(dataPtr, size);
+  
 }
 
 void SX1272_reset() {
@@ -45,7 +44,7 @@ void SX1272_reset() {
 
 uint8_t SX1272_readRegister(uint8_t address) {
     uint8_t value = 0;                         // 
-    digitalWrite(LORA_NSS, LOW);                  // устанавливаем линию NSS
+    digitalWrite(LORA_NSS, LOW);               // устанавливаем линию NSS
     bitClear(address, 7);                      // очищаем бит 7 для записи в регистр
     // Вариант #1
     nRF5x_SPI_transfer(nRF5x_SPI0, address);   // огранизуем передачу для указания адреса чтения (ответ не важен)
@@ -136,33 +135,49 @@ void TWI_init() {
   }
 }
 
-
-//=============================================================================
-// Инициализация --------------------------------------------------------------
-void setup() {
-    
-  nRF5x_USB_init();
-  //nRF5x_USB_CDC_init();
-  //nRF5x_USB_CDC_attachCallback(cdc_handler);
-  
-  //Serial.begin();
-  //Serial.attachCallback(cdc_handler);
-  
-  //nRF5x_USB_MSC_init();
-  
-  //nRF5x_USB_GENERIC_init();
-    
-  UART_init();
-  
-  SPI_init();
-  
-  TWI_init();
+//===========================================================================
+// инициализации RTC
+void RTC_init() {
   
   nRF5x_RTC_resetTime(2);                            // обнуляем время
   nRF5x_RTC_ALARM_t alarm = nRF5x_RTC_DEFAULT_ALARM; // объявляем аларм
   alarm.time.second = 15;                            // задаем секунды аларма
   nRF5x_RTC_setAlarm(alarm, wake);                   // устанавливаем аларм
   nRF5x_RTC_enableTime(2);                           // активируем счетчик
+  
+}
+
+void ADC_init() {
+  
+}
+
+//===========================================================================
+// инициализации USB
+void USB_init() {
+  
+  nRF5x_USB_GENERIC_init();
+  
+  nRF5x_USB_CDC_init();                      // Serial.begin();
+  nRF5x_USB_CDC_attachCallback(cdc_handler); // Serial.attachCallback(cdc_handler);
+
+  //nRF5x_USB_MSC_init();
+}
+
+//=============================================================================
+// Инициализация --------------------------------------------------------------
+void setup() {
+  
+  USB_init();
+  
+  UART_init();
+  
+  SPI_init();
+  
+  TWI_init();
+  
+  RTC_init();
+  
+  ADC_init();
   
   pinMode(LED_1, OUTPUT);
   

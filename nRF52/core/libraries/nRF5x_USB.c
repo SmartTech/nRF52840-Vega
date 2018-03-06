@@ -104,4 +104,5 @@ void nRF5x_USB_handle(void) {
     while (app_usbd_event_queue_process()) { /* Nothing to do */ }
     nRF5x_USB_connection_handle();
     nRF5x_USB_CDC_handle();
+    nRF5x_USB_GENERIC_handle();
 }

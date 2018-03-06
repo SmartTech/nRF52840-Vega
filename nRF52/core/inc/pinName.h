@@ -65,34 +65,35 @@
  *  Analog pins mapping
  * -----------------------------------------------------------*/
  
-#define A0    P0_02                  // AIN0
-#define A1    P0_03                  // AIN1
-#define A2    P0_04                  // AIN2
-#define A3    P0_05                  // AIN3
-#define A4    P0_28                  // AIN4
-#define A5    P0_29                  // AIN5
-#define A6    P0_30                  // AIN6
-#define A7    P0_31                  // AIN7
+#define A0    SAADC_CH_PSELP_PSELP_AnalogInput0 // 1 // P0_02 // AIN0
+#define A1    SAADC_CH_PSELP_PSELP_AnalogInput1 // 2 // P0_03 // AIN1
+#define A2    SAADC_CH_PSELP_PSELP_AnalogInput2 // 3 // P0_04 // AIN2
+#define A3    SAADC_CH_PSELP_PSELP_AnalogInput3 // 4 // P0_05 // AIN3
+#define A4    SAADC_CH_PSELP_PSELP_AnalogInput4 // 5 // P0_28 // AIN4
+#define A5    SAADC_CH_PSELP_PSELP_AnalogInput5 // 6 // P0_29 // AIN5
+#define A6    SAADC_CH_PSELP_PSELP_AnalogInput6 // 7 // P0_30 // AIN6
+#define A7    SAADC_CH_PSELP_PSELP_AnalogInput7 // 8 // P0_31 // AIN7
+#define VDD   SAADC_CH_PSELP_PSELP_VDD          // 9 // VDD
 
 /* -------------------------------------------------------------
  *  PCA10056 board pins mapping
  * ------------------------------------------------------------*/
  
-#define PIN_RX    P1_01                  // P1.01 // NRF_GPIO_PIN_MAP(1, 1)
-#define PIN_TX    P1_02                  // P1.02 // NRF_GPIO_PIN_MAP(1, 2)
-#define PIN_RTS   P1_03                  // P1.03 // NRF_GPIO_PIN_MAP(1, 3)
-#define PIN_CTS   P1_04                  // P1.04 // NRF_GPIO_PIN_MAP(1, 4)
-
-#define LINK_RX   P0_08                  // P0.08 // NRF_GPIO_PIN_MAP(0, 8)
-#define LINK_TX   P0_06                  // P0.06 // NRF_GPIO_PIN_MAP(0, 6)
-
-#define PIN_SDA   P0_30                  // P0.30 // NRF_GPIO_PIN_MAP(0,30)
-#define PIN_SCL   P0_31                  // P0.31 // NRF_GPIO_PIN_MAP(0,31)
-
-#define PIN_MOSI  P1_11                  // P1.11 // NRF_GPIO_PIN_MAP(1,11)
-#define PIN_MISO  P1_12                  // P1.12 // NRF_GPIO_PIN_MAP(1,12) 
-#define PIN_SCK   P1_13                  // P1.13 // NRF_GPIO_PIN_MAP(1,13)
-#define PIN_NSS   P1_10                  // P1.10 // NRF_GPIO_PIN_MAP(1,10)
+#define PIN_RX     P1_01                  // P1.01 // NRF_GPIO_PIN_MAP(1, 1)
+#define PIN_TX     P1_02                  // P1.02 // NRF_GPIO_PIN_MAP(1, 2)
+#define PIN_RTS    P1_03                  // P1.03 // NRF_GPIO_PIN_MAP(1, 3)
+#define PIN_CTS    P1_04                  // P1.04 // NRF_GPIO_PIN_MAP(1, 4)
+                   
+#define LINK_RX    P0_08                  // P0.08 // NRF_GPIO_PIN_MAP(0, 8)
+#define LINK_TX    P0_06                  // P0.06 // NRF_GPIO_PIN_MAP(0, 6)
+                   
+#define PIN_SDA    P0_30                  // P0.30 // NRF_GPIO_PIN_MAP(0,30)
+#define PIN_SCL    P0_31                  // P0.31 // NRF_GPIO_PIN_MAP(0,31)
+                   
+#define PIN_MOSI   P1_11                  // P1.11 // NRF_GPIO_PIN_MAP(1,11)
+#define PIN_MISO   P1_12                  // P1.12 // NRF_GPIO_PIN_MAP(1,12) 
+#define PIN_SCK    P1_13                  // P1.13 // NRF_GPIO_PIN_MAP(1,13)
+#define PIN_NSS    P1_10                  // P1.10 // NRF_GPIO_PIN_MAP(1,10)
 
 #define LORA_NSS   P1_12                  // P1.12 // NRF_GPIO_PIN_MAP(1,12)
 #define LORA_MOSI  P1_13                  // P1.13 // NRF_GPIO_PIN_MAP(1,13)

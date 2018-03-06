@@ -39,7 +39,7 @@
       
       
       
-    <Wnd3>
+    <Wnd0>
         <Tabs>
           <Tab>
             <Identity>TabID-14694-10713</Identity>
@@ -55,7 +55,7 @@
           </Tab>
         <Tab><Identity>TabID-12770-27209</Identity><TabName>Ambiguous Definitions</TabName><Factory>Select-Ambiguous-Definitions</Factory><Session/></Tab></Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd3><Wnd4>
+      <SelectedTab>0</SelectedTab></Wnd0><Wnd1>
         <Tabs>
           <Tab>
             <Identity>TabID-25442-10717</Identity>
@@ -67,20 +67,20 @@
           </Tab>
         </Tabs>
         
-      <SelectedTab>0</SelectedTab></Wnd4><Wnd5><Tabs><Tab><Identity>TabID-18060-22666</Identity><TabName>Disassembly</TabName><Factory>Disassembly</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd5></Windows>
+      <SelectedTab>0</SelectedTab></Wnd1><Wnd2><Tabs><Tab><Identity>TabID-18060-22666</Identity><TabName>Disassembly</TabName><Factory>Disassembly</Factory><Session/></Tab></Tabs><SelectedTab>0</SelectedTab></Wnd2></Windows>
     <Editor>
       
       
       
       
-    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\nRF5x_USB_GENERIC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>11</YPos2><SelStart2>629</SelStart2><SelEnd2>629</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\inc\nRF5x_USB.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>134</SelStart2><SelEnd2>134</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>12</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>21</YPos2><SelStart2>0</SelStart2><SelEnd2>0</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_desc.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>63</YPos2><SelStart2>3408</SelStart2><SelEnd2>3408</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\usbd\class\hid\mouse\app_usbd_hid_mouse_internal.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>96</YPos2><SelStart2>3852</SelStart2><SelEnd2>3852</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\main.cpp</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>194</YPos2><SelStart2>7988</SelStart2><SelEnd2>7988</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\sdk_config.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>238</SelStart2><SelEnd2>238</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\nRF5x_USB_CDC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>132</YPos2><SelStart2>5593</SelStart2><SelEnd2>5593</SelEnd2></Tab><ActiveTab>8</ActiveTab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
+    <Pane><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\nRF5x_USB_GENERIC.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>11</YPos2><SelStart2>1850</SelStart2><SelEnd2>1850</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\inc\nRF5x_USB_GENERIC.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>169</SelStart2><SelEnd2>169</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\nRF52\core\libraries\nRF5x_USB.c</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>63</YPos2><SelStart2>975</SelStart2><SelEnd2>975</SelEnd2></Tab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\main.cpp</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>192</YPos2><SelStart2>7422</SelStart2><SelEnd2>7422</SelEnd2></Tab><ActiveTab>3</ActiveTab><Tab><Factory>TextEditor</Factory><Filename>$WS_DIR$\src\sdk_config.h</Filename><XPos>0</XPos><YPos>0</YPos><SelStart>0</SelStart><SelEnd>0</SelEnd><XPos2>0</XPos2><YPos2>0</YPos2><SelStart2>238</SelStart2><SelEnd2>238</SelEnd2></Tab></Pane><ActivePane>0</ActivePane><Sizes><Pane><X>1000000</X><Y>1000000</Y></Pane></Sizes><SplitMode>1</SplitMode></Editor>
     <Positions>
       
       
       
       
       
-    <Top><Row0><Sizes><Toolbar-00DC9590><key>iaridepm.enu1</key></Toolbar-00DC9590></Sizes></Row0><Row1><Sizes><Toolbar-25400C40><key>debuggergui.enu1</key></Toolbar-25400C40></Sizes></Row1><Row2><Sizes><Toolbar-253FE148><key>armjlink.enu1</key></Toolbar-253FE148></Sizes></Row2></Top><Left><Row0><Sizes><Wnd4><Rect><Top>-2</Top><Left>-2</Left><Bottom>756</Bottom><Right>328</Right><x>-2</x><y>-2</y><xscreen>614</xscreen><yscreen>145</yscreen><sizeHorzCX>650424</sizeHorzCX><sizeHorzCY>146169</sizeHorzCY><sizeVertCX>349576</sizeVertCX><sizeVertCY>764113</sizeVertCY></Rect></Wnd4></Sizes></Row0></Left><Right><Row0><Sizes><Wnd5><Rect><Top>-2</Top><Left>-2</Left><Bottom>756</Bottom><Right>178</Right><x>-2</x><y>-2</y><xscreen>148</xscreen><yscreen>141</yscreen><sizeHorzCX>156780</sizeHorzCX><sizeHorzCY>142137</sizeHorzCY><sizeVertCX>190678</sizeVertCX><sizeVertCY>764113</sizeVertCY></Rect></Wnd5></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd3><Rect><Top>-2</Top><Left>-2</Left><Bottom>143</Bottom><Right>946</Right><x>-2</x><y>-2</y><xscreen>948</xscreen><yscreen>145</yscreen><sizeHorzCX>1004237</sizeHorzCX><sizeHorzCY>146169</sizeHorzCY><sizeVertCX>650424</sizeVertCX><sizeVertCY>146169</sizeVertCY></Rect></Wnd3></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
+    <Top><Row0><Sizes><Toolbar-027D92B0><key>iaridepm.enu1</key></Toolbar-027D92B0></Sizes></Row0><Row1><Sizes><Toolbar-117A02E0><key>debuggergui.enu1</key></Toolbar-117A02E0></Sizes></Row1><Row2><Sizes><Toolbar-117A2D10><key>armjlink.enu1</key></Toolbar-117A2D10></Sizes></Row2></Top><Left><Row0><Sizes><Wnd1><Rect><Top>-2</Top><Left>-2</Left><Bottom>756</Bottom><Right>328</Right><x>-2</x><y>-2</y><xscreen>614</xscreen><yscreen>145</yscreen><sizeHorzCX>531142</sizeHorzCX><sizeHorzCY>146169</sizeHorzCY><sizeVertCX>285467</sizeVertCX><sizeVertCY>764113</sizeVertCY></Rect></Wnd1></Sizes></Row0></Left><Right><Row0><Sizes><Wnd2><Rect><Top>-2</Top><Left>-2</Left><Bottom>756</Bottom><Right>178</Right><x>-2</x><y>-2</y><xscreen>148</xscreen><yscreen>141</yscreen><sizeHorzCX>128028</sizeHorzCX><sizeHorzCY>142137</sizeHorzCY><sizeVertCX>155709</sizeVertCX><sizeVertCY>764113</sizeVertCY></Rect></Wnd2></Sizes></Row0></Right><Bottom><Row0><Sizes><Wnd0><Rect><Top>-2</Top><Left>-2</Left><Bottom>143</Bottom><Right>1158</Right><x>-2</x><y>-2</y><xscreen>1160</xscreen><yscreen>145</yscreen><sizeHorzCX>1003460</sizeHorzCX><sizeHorzCY>146169</sizeHorzCY><sizeVertCX>531142</sizeVertCX><sizeVertCY>146169</sizeVertCY></Rect></Wnd0></Sizes></Row0></Bottom><Float><Sizes/></Float></Positions>
   </Desktop>
 </Project>
 

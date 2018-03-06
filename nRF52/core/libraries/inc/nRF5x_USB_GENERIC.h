@@ -11,6 +11,7 @@ extern "C" {
 
 
 uint8_t nRF5x_USB_GENERIC_init(void);
+void    nRF5x_USB_GENERIC_handle(void);
 
 
 #ifdef __cplusplus
